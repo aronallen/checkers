@@ -16,7 +16,7 @@ int main (int argc, const char * argv[]) {
 	int select;
 	int theTime;
 	int move;
-	int moveNumber = 0;
+	int moveCounter = 0;
 
 	
 	srand(time(0));
@@ -48,14 +48,14 @@ int main (int argc, const char * argv[]) {
 		changeTurn(&theGame);
 		
 		findMoversForGame(&theGame);
-		moveNumber++;
+		moveCounter++;
 	}
 	
 	printGame(&theGame);
 	
 	theTime = time(0) - theTime;
 	
-	printf("%d, moves in %d seconds\n",moveNumber, theTime );
+	printf("%d, moves in %d seconds\n",moveCounter, theTime );
 	
 	return 0;
 }

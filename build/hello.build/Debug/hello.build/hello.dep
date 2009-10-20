@@ -1,3 +1,11 @@
+2092e6dd2b1e328887759d3d7d1d28ef ebf08a38df0adfea720855b76063af3c ffffffffffffffffffffffffffffffff 28880 /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
+0000000047fad15d000000000000002d d65b7bfa3500286597205631e8b25f8d ffffffffffffffffffffffffffffffff 8160 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
+ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 5784 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
+000000004752458000000000000023d1 5cda3fe0151e5f67fd34d4b8842dc184 ffffffffffffffffffffffffffffffff 8424 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
+ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 6096 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
+ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 6944 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
+ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 9204 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
+ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffff 6060 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
 ffffffffffffffffffffffffffffffff 47bb12fdf5ed2f7921986770c6d8ee29 ffffffffffffffffffffffffffffffff 8392 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
 ffffffffffffffffffffffffffffffff c98e2b1289c850320e527ae722ab58c8 ffffffffffffffffffffffffffffffff 28752 /Users/aronallen/checkers copy/build/Debug/hello
 000000004a752d020000000000000387 518b961672e9ab06955660639e32ccf0 ffffffffffffffffffffffffffffffff 5784 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
