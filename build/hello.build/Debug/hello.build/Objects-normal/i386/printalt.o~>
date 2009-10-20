@@ -1,0 +1,7 @@
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c:10:19: error: print.h: No such file or directory
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c:13: error: syntax error before 'bitboard'
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c: In function 'printBitboard':
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c:21: error: 'bitboard' undeclared (first use in this function)
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c:21: error: (Each undeclared identifier is reported only once
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c:21: error: for each function it appears in.)
+/Users/aronallen/Downloads/Learn C Projects/02.01 - hello/printalt.c:21: error: 'bitboardForRealPosition' undeclared (first use in this function)

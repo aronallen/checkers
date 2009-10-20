@@ -1,0 +1,29 @@
+ffffffffffffffffffffffffffffffff 47bb12fdf5ed2f7921986770c6d8ee29 ffffffffffffffffffffffffffffffff 8392 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
+ffffffffffffffffffffffffffffffff c98e2b1289c850320e527ae722ab58c8 ffffffffffffffffffffffffffffffff 28752 /Users/aronallen/checkers copy/build/Debug/hello
+000000004a752d020000000000000387 518b961672e9ab06955660639e32ccf0 ffffffffffffffffffffffffffffffff 5784 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
+0000000047b9385a0000000000003f4e 160e73ad8ae79b51bcd7c93ee11d1d15 ffffffffffffffffffffffffffffffff 6096 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
+000000000dcce3870000000000003d02 b298dc7bacb644fbb51724907d3d7ee6 ffffffffffffffffffffffffffffffff 6944 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
+000000000dcfb468000000000000216f f66881730729627235dd7489bfa920ee ffffffffffffffffffffffffffffffff 9204 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
+000000000dcb1f3d00000000000033f8 47e69e2508619fea079ae7fcb85269dc ffffffffffffffffffffffffffffffff 6060 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
+0000000047ba7e310000000000000028 5c438b526566d3a65e226afdd1e64c72 ffffffffffffffffffffffffffffffff 8096 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
+0000000047ba7d5a000000000000002a fc6961a4f482f994af71e0024bca04cd ffffffffffffffffffffffffffffffff 6840 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/main.o
+000000004a752d020000000000000387 4d49b5531327d2581677768b245323d4 ffffffffffffffffffffffffffffffff 4760 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/positions.o
+000000004749603f0000000000001689 1b3774ed8ca678485424793a4a4e8039 ffffffffffffffffffffffffffffffff 9864 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o
+0000000047b9385a0000000000003f4e d334f4e56e5d9a6289f5d5316327a1c0 ffffffffffffffffffffffffffffffff 5384 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o
+000000000dcce3870000000000003d02 a883e44f415af8cd049ffbde4834e641 ffffffffffffffffffffffffffffffff 5512 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o
+000000000dcfb468000000000000216f 9a1786f5ddb0dd26f52865a3e16dd930 ffffffffffffffffffffffffffffffff 8068 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/mover.o
+000000000dcb1f3d00000000000033f8 7770f3739faf6a6d49e1b67833019630 ffffffffffffffffffffffffffffffff 5164 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/print.o
+ffffffffffffffffffffffffffffffff 572dd052d1847c2de27cd538c14e5d65 ffffffffffffffffffffffffffffffff 10476 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/main.o
+ffffffffffffffffffffffffffffffff 0d26e9af1a85d034203c7c75eaaced59 ffffffffffffffffffffffffffffffff 30704 /Users/aronallen/checkers/build/Debug/hello
+000000004a7543b20000000000000275 a54d44334d4707694b2c5fad6bac2f02 ffffffffffffffffffffffffffffffff 5044 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/positions.o
+000000004a26932d0000000000007fc0 d3298e99b25294f48d396e46d24be230 ffffffffffffffffffffffffffffffff 7460 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o
+0000000000521a83000000000000694d 1be9e22dfb079bb8aed9161a739eb135 ffffffffffffffffffffffffffffffff 4544 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o
+000000004a21e0d90000000000006543 4ab9d867d8cba0aed33bfd3e627c1d9a ffffffffffffffffffffffffffffffff 5788 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o
+000000004a2758670000000000007807 cb2a40e4bd79c0bb3168f2d59eaf145d ffffffffffffffffffffffffffffffff 10320 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/mover.o
+000000004a24e62e0000000000006bd6 9d82e94e1e3e13f6985c303d86f556d0 ffffffffffffffffffffffffffffffff 5640 /Users/aronallen/checkers/build/hello.build/Debug/hello.build/Objects-normal/i386/print.o
+ffffffffffffffffffffffffffffffff 2d794f8480eee9277bd2e7039d0b45d3 ffffffffffffffffffffffffffffffff 0 /Users/aronallen/Downloads/Learn C Projects/02.01 - hello/build/hello.build/Debug/hello.build/Objects-normal/i386/main.o
+ffffffffffffffffffffffffffffffff 5fd8432c38a9e90c1f1fc6f2e3f2c817 ffffffffffffffffffffffffffffffff 0 /Users/aronallen/Downloads/Learn C Projects/02.01 - hello/build/Debug/hello
+ffffffffffffffffffffffffffffffff 4922d97d519562f32780978762398088 ffffffffffffffffffffffffffffffff 3116 /Users/aronallen/Downloads/Learn C Projects/02.01 - hello/build/hello.build/Debug/hello.build/Objects-normal/i386/print.o
+ffffffffffffffffffffffffffffffff 57fb9062789269d6b796f00ed5dbbf9a ffffffffffffffffffffffffffffffff 0 /Users/aronallen/Downloads/Learn C Projects/02.01 - hello/build/hello.build/Debug/hello.build/Objects-normal/i386/printalt.o
+00000000000000080000000000000414 cb4b420d42fb108fb3cc48fe1f85b375 ffffffffffffffffffffffffffffffff 2072 /Users/aronallen/Downloads/Learn C Projects/02.01 - hello/build/hello.build/Debug/hello.build/Objects-normal/i386/definitionsalt.o
+000000004a7172cc0000000000000431 9ae20da75622467078aedac90291d023 ffffffffffffffffffffffffffffffff 2072 /Users/aronallen/Downloads/Learn C Projects/02.01 - hello/build/hello.build/Debug/hello.build/Objects-normal/i386/definitions.o

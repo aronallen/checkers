@@ -1,0 +1,2 @@
+/Users/aronallen/checkers copy/print.c:20: error: conflicting types for 'printGame'
+/Users/aronallen/checkers copy/print.h:11: error: previous declaration of 'printGame' was here

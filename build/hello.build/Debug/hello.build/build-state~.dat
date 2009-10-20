@@ -1,0 +1,292 @@
+Thello
+v7
+r0
+t273519402.327522
+cCheck dependencies
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/main.o "/Users/aronallen/checkers copy/main.c" normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/print.o "/Users/aronallen/checkers copy/print.c" normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/mover.o "/Users/aronallen/checkers copy/mover.c" normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o "/Users/aronallen/checkers copy/commitmove.c" normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o "/Users/aronallen/checkers copy/jumper.c" normal i386 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/positions.o "/Users/aronallen/checkers copy/positions.c" normal i386 c com.apple.compilers.gcc.4_2
+cLd "/Users/aronallen/checkers copy/build/Debug/hello" normal i386
+
+N/Developer/SDKs/MacOSX10.5.sdk
+c000000004A49A9E400000000000000EE
+t1246341604
+s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h
+c0000000047BA99310000000000003D1D
+t1203411249
+s15645
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdlib.h
+c0000000047BA99310000000000002A79
+t1203411249
+s10873
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/time.h
+c0000000047BA9932000000000000178E
+t1203411250
+s6030
+
+N/Users/aronallen/checkers copy/bitops.c
+c000000004A7686480000000000000A51
+t1249281608
+s2641
+i<stdio.h>
+i"main.h"
+i"bitops.h"
+
+N/Users/aronallen/checkers copy/bitops.h
+c000000004A76860B000000000000024C
+t1249281547
+s588
+
+N/Users/aronallen/checkers copy/build/Debug/hello
+t1251826602
+s23688
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o
+t1251826601
+s5512
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o
+t1251826601
+s4404
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.LinkFileList
+c000000004A75CFB800000000000002A3
+t1249234872
+s675
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o
+t1251826601
+s9864
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/main.o
+t1251826601
+s6556
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/mover.o
+t1251826601
+s8068
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/positions.o
+t1251826601
+s4760
+
+N/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/print.o
+t1251826601
+s5164
+
+N/Users/aronallen/checkers copy/commitmove.c
+c000000004A75660C000000000000058C
+t1249207820
+s1420
+i<stdio.h>
+i"main.h"
+i"print.h"
+i"mover.h"
+i"bitops.h"
+i"commitmove.h"
+
+N/Users/aronallen/checkers copy/commitmove.h
+c000000004A72CADD00000000000000D5
+t1249037021
+s213
+
+N/Users/aronallen/checkers copy/definitions.h
+c000000004A717ACB000000000000008B
+t1248950987
+s139
+
+N/Users/aronallen/checkers copy/jumper.c
+c000000004A85917900000000000022E0
+t1250267513
+s8928
+i<stdio.h>
+i"main.h"
+i"mover.h"
+i"print.h"
+i"bitops.h"
+i"jumper.h"
+i"print.h"
+i"positions.h"
+
+N/Users/aronallen/checkers copy/jumper.h
+c000000004A76932E00000000000001BC
+t1249284910
+s444
+
+N/Users/aronallen/checkers copy/main.c
+c000000004A858E25000000000000087F
+t1250266661
+s2175
+i<stdio.h>
+i<stdlib.h>
+i<time.h>
+i"main.h"
+i"print.h"
+i"mover.h"
+i"bitops.h"
+i"positions.h"
+i"commitmove.h"
+i"jumper.h"
+
+N/Users/aronallen/checkers copy/main.h
+c000000004A767AF50000000000000802
+t1249278709
+s2050
+
+N/Users/aronallen/checkers copy/mover.c
+c000000004A75D60000000000000014BA
+t1249236480
+s5306
+i<stdio.h>
+i"main.h"
+i"mover.h"
+i"bitops.h"
+i"positions.h"
+
+N/Users/aronallen/checkers copy/mover.h
+c000000004A75D1AA000000000000027D
+t1249235370
+s637
+
+N/Users/aronallen/checkers copy/positions.c
+c000000004A75D6340000000000000814
+t1249236532
+s2068
+i"main.h"
+i"print.h"
+i"mover.h"
+i"positions.h"
+
+N/Users/aronallen/checkers copy/positions.h
+c000000004A75D60D00000000000000FB
+t1249236493
+s251
+
+N/Users/aronallen/checkers copy/print.c
+c000000004A76865D0000000000000537
+t1249281629
+s1335
+i<stdio.h>
+i"main.h"
+i"print.h"
+i"bitops.h"
+i"definitions.h"
+
+N/Users/aronallen/checkers copy/print.h
+c000000004A7686640000000000000117
+t1249281636
+s279
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies273519401#273519401#0(0"0(0#1#0"7947009927035180032#0"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.794063
+e273519401.841500
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o
+x/Users/aronallen/checkers copy/bitops.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/aronallen/checkers copy/bitops.c273519401#273519401#0(0"0(0#0#39"/Users/aronallen/checkers copy/bitops.c4300882208#1164"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/bitops.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o "/Users/aronallen/checkers copy/commitmove.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.826072
+e273519401.863819
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o
+x/Users/aronallen/checkers copy/commitmove.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/aronallen/checkers copy/commitmove.c273519401#273519401#0(0"0(0#0#43"/Users/aronallen/checkers copy/commitmove.c4300882208#1172"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/commitmove.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/commitmove.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o "/Users/aronallen/checkers copy/jumper.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.841611
+e273519401.918452
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o
+x/Users/aronallen/checkers copy/jumper.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/aronallen/checkers copy/jumper.c273519401#273519401#0(0"0(0#0#39"/Users/aronallen/checkers copy/jumper.c4300882208#1164"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/jumper.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/jumper.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/main.o "/Users/aronallen/checkers copy/main.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.451418
+e273519401.793920
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/main.o
+x/Users/aronallen/checkers copy/main.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@45"Compile /Users/aronallen/checkers copy/main.c273519401#273519401#0(0"0(0#0#37"/Users/aronallen/checkers copy/main.c4049696142338911744#1160"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/main.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/mover.o "/Users/aronallen/checkers copy/mover.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.739223
+e273519401.825962
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/mover.o
+x/Users/aronallen/checkers copy/mover.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Users/aronallen/checkers copy/mover.c273519401#273519401#0(0"0(0#0#38"/Users/aronallen/checkers copy/mover.c4300882208#1162"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/mover.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/mover.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/positions.o "/Users/aronallen/checkers copy/positions.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.863929
+e273519401.908334
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/positions.o
+x/Users/aronallen/checkers copy/positions.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@50"Compile /Users/aronallen/checkers copy/positions.c273519401#273519401#0(0"0(0#0#42"/Users/aronallen/checkers copy/positions.c4300882208#1170"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/positions.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/positions.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/print.o "/Users/aronallen/checkers copy/print.c" normal i386 c com.apple.compilers.gcc.4_2
+s273519401.471405
+e273519401.739058
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/i386/print.o
+x/Users/aronallen/checkers copy/print.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Users/aronallen/checkers copy/print.c273519401#273519401#0(0"0(0#0#38"/Users/aronallen/checkers copy/print.c4049696142338911744#1162"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/i386" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/print.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/print.o"0#
+
+CLd "/Users/aronallen/checkers copy/build/Debug/hello" normal i386
+s273519401.918550
+e273519402.327445
+r1
+xLd
+x/Users/aronallen/checkers copy/build/Debug/hello
+xnormal
+xi386
+lSLF07#2@53"Link /Users/aronallen/checkers copy/build/Debug/hello273519401#273519402#0(0"0(0#0#0"4300882208#456"    cd "/Users/aronallen/checkers copy"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/checkers copy/build/Debug" "-F/Users/aronallen/checkers copy/build/Debug" -filelist "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/i386/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/checkers copy/build/Debug/hello"0#
+
