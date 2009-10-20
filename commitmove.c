@@ -13,56 +13,7 @@
 #include "bitops.h"
 #include "commitmove.h"
 
-struct GAME movePieceInGame(int origin, int destination, struct GAME game) {
-	
-	if (game.moveCount == 0){
-		printf("error: no moves calculated for game\n");
-		return game;
-	}
-	
-	
-	int i;
 
-	
-	for (i=0 ; i<game.moveCount;i++){
-		
-		if (bitboardForRealPosition[origin]==game.moves[i].origin){
-			if (bitboardForRealPosition[destination]==game.moves[i].destination){
-				
-				if (game.turn == 'w'){
-				
-					game.white = game.white^game.moves[i].origin;
-					game.white = game.white^game.moves[i].destination;
-					
-					if (game.kings & bitboardForRealPosition[origin]){
-						game.kings = game.kings^game.moves[i].origin;
-						game.kings = game.kings^game.moves[i].destination;
-					}
-					game.moveCount = 0;
-				
-				}
-								 
-				if (game.turn == 'b'){
-					game.black = game.black^game.moves[i].origin;
-					game.black = game.black^game.moves[i].destination;
-					
-					if (game.kings & bitboardForRealPosition[origin]){
-						game.kings = game.kings^game.moves[i].origin;
-						game.kings = game.kings^game.moves[i].destination;
-					}
-					
-					game.moveCount = 0;
-				}
-			
-			}
-		}
-		
-	}
-
-	
-	game.notOccupied = ~(game.black|game.white);
-	return game;
-}
 
 void makeMove(int moveNumber, struct GAME *game){	
 	if ((*game).moveCount == 0 || moveNumber > (*game).moveCount){
@@ -71,7 +22,6 @@ void makeMove(int moveNumber, struct GAME *game){
 	}
 	
 	int origin = realPositionForBitboard((*game).moves[moveNumber].origin);
-	int destination = realPositionForBitboard((*game).moves[moveNumber].destination);
 	
 	
 		

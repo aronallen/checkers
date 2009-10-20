@@ -7,6 +7,5 @@
  *
  */
 
-struct GAME movePieceInGame(int origin, int destination, struct GAME game);
 
 void makeMove(int moveNumber, struct GAME *game);
