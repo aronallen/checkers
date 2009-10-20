@@ -44,9 +44,7 @@ int main (int argc, const char * argv[]) {
 
 		
 		makeMove(move, &theGame);	
-		
 		changeTurn(&theGame);
-		
 		findMoversForGame(&theGame);
 		moveCounter++;
 	}

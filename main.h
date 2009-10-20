@@ -21,11 +21,13 @@
  ################################### 
  */
 
+
+//DEFINES
 #define BITBOARD unsigned
 #define MAX_MOVES 20
 #define MAX_JUMPS 20
 
-//BitMaskArray
+//BitMaskArray used for locating bits on BITBOARD
 static const BITBOARD bitboardForRealPosition[32] = {
 0x00000800,0x00000020,0x80000000,0x02000000,
 0x00000400,0x00000010,0x40000000,0x01000000,
@@ -38,6 +40,7 @@ static const BITBOARD bitboardForRealPosition[32] = {
 };
 
 
+//JUMP_DIRECTIONS struct, used for analyzing jumps
 struct JUMP_DIRECTIONS {
 
 	int northWest;
@@ -47,6 +50,7 @@ struct JUMP_DIRECTIONS {
 
 };
 
+//PIECES struct, used for containing a count of all pieces for a specific player, including their real and BITBOARD position.
 struct PIECES {
 
 	int piecesCount;
@@ -55,11 +59,13 @@ struct PIECES {
 
 };
 
+//MOVE struct, used for storing found moves. contains two BITBOARDs, an origin and destination.
 struct MOVE {
 	BITBOARD origin;
 	BITBOARD destination;
 };
 
+//JUMP struct, used for storing found jumps.
 struct JUMP {
 	BITBOARD origin;
 	BITBOARD intermediates[12];
@@ -70,28 +76,59 @@ struct JUMP {
 	int endOfJump;
 };
 
-
+//GAME struct, containing all pieces, BITBOARDS
 struct GAME {
+	
+	//a BITBOARD with a bit set for all unocupied squares.
 	BITBOARD notOccupied;
+	
+	//a BITBOARD containing all kings, & with a color, to get all kings for that color.
 	BITBOARD kings;
+	
+	//a BITBOARD containing all black pieces.
 	BITBOARD black;
+	
+	//a BITBOARD containing all white pieces.	
 	BITBOARD white;
+	
+	//Turn indicator, b for black, w for white.
 	char turn;
+	
+	//total available move count
 	int moveCount;
+	
+	//total available jump count
 	int jumpCount;
+	
+	//Array of all possible JUMPs
 	struct JUMP jumps[MAX_JUMPS];
+	
+	//Array of all possible MOVEs
 	struct MOVE moves[MAX_MOVES];
+	
+	//PIECES struct containing more detailed information of white pieces.
 	struct PIECES whitePieces;
+
+	//PIECES struct containing more detailed information of black pieces.
 	struct PIECES blackPieces;
+	
+	//a stalemate count indicator.
 	int staleMateCount;
 };
 
 //Game Functions
 
+//Creates a new game, with a default setup.
 struct GAME newGame();
+
+//Creates a new game, with a specified setup.
 struct GAME game(BITBOARD black, BITBOARD white, BITBOARD kings,char turn);
+
+//changes the turn to the opposite player.
 void changeTurn(struct GAME *game);
+
+//runs through the GAME struct, updating the data throughout the struct, to correspond to recent changes, should be run after every move, and jump.
 void cleanUp (struct GAME *game);
 
+//returns 0 or 1 depending on selection.
 int isPieceFriendly (struct GAME game, BITBOARD position);
-struct GAME staleMateChecker (struct GAME oldGame, struct GAME newGame);
