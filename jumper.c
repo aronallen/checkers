@@ -8,7 +8,7 @@
  */
 
 #include <stdio.h>
-
+#include <memory.h>
 #include "main.h"
 #include "mover.h"
 #include "print.h"
@@ -24,17 +24,9 @@ void jumpNorthWest(struct GAME *game, struct JUMP *jump){
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_WEST_MOVE;
 	
-	if ((*game).turn == 'w')
-		enemy = (*game).black;
-	else
-		enemy = (*game).white;
- 
 	
-	if ((*jump).intermediatePosistions == 0)
-		position = (*jump).origin;
-	else
-		position = (*jump).intermediates[(*jump).intermediatePosistions-1];
-	
+	enemy = ((*game).turn == 'w') ? (*game).black : (*game).white;
+	position = ((*jump).intermediatePosistions == 0) ? (*jump).origin : (*jump).intermediates[(*jump).intermediatePosistions-1];
 	
 	(*jump).direcetionsForPositions[realPositionForBitboard(position)].northWest = 1;
 	
@@ -66,16 +58,8 @@ void jumpNorthEast(struct GAME *game, struct JUMP *jump){
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_EAST_MOVE;
 	
-	if ((*game).turn == 'w')
-		enemy = (*game).black;
-	else
-		enemy = (*game).white;
-	
-	
-	if ((*jump).intermediatePosistions == 0)
-		position = (*jump).origin;
-	else
-		position = (*jump).intermediates[(*jump).intermediatePosistions-1];
+	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
+	position = ((*jump).intermediatePosistions == 0) ?(*jump).origin :(*jump).intermediates[(*jump).intermediatePosistions-1];
 	
 	
 	(*jump).direcetionsForPositions[realPositionForBitboard(position)].northEast = 1;
@@ -107,16 +91,8 @@ void jumpSouthWest(struct GAME *game, struct JUMP *jump){
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_SOUTH_MOVE & LEGAL_WEST_MOVE;
 	
-	if ((*game).turn == 'w')
-		enemy = (*game).black;
-	else
-		enemy = (*game).white;
-	
-	
-	if ((*jump).intermediatePosistions == 0)
-		position = (*jump).origin;
-	else
-		position = (*jump).intermediates[(*jump).intermediatePosistions-1];
+	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
+	position = ((*jump).intermediatePosistions == 0) ?(*jump).origin :(*jump).intermediates[(*jump).intermediatePosistions-1];
 	
 	
 	(*jump).direcetionsForPositions[realPositionForBitboard(position)].southWest = 1;
@@ -146,16 +122,8 @@ void jumpSouthEast(struct GAME *game, struct JUMP *jump){
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_SOUTH_MOVE & LEGAL_EAST_MOVE;
 	
-	if ((*game).turn == 'w')
-		enemy = (*game).black;
-	else
-		enemy = (*game).white;
-	
-	
-	if ((*jump).intermediatePosistions == 0)
-		position = (*jump).origin;
-	else
-		position = (*jump).intermediates[(*jump).intermediatePosistions-1];
+	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
+	position = ((*jump).intermediatePosistions == 0) ?(*jump).origin : (*jump).intermediates[(*jump).intermediatePosistions-1];
 	
 	
 	(*jump).direcetionsForPositions[realPositionForBitboard(position)].southEast = 1;
@@ -180,26 +148,15 @@ void jumpSouthEast(struct GAME *game, struct JUMP *jump){
 
 
 
-void findJumpersForGame(struct GAME *game);
+void findJumpersForGame(struct GAME *game){
+
+
+
+
+
+};
 			
 			
 void newJump(struct JUMP *jump){
-
-	int i;
-
-	(*jump).origin = 0;
-	(*jump).removePieces = 0;
-	(*jump).intermediatePosistions = 0;
-	(*jump).endOfJump = 0;
-	for(i=0; i<32;i++){
-		if (i < 12)
-			(*jump).intermediates[i] = 0;
-		
-		(*jump).direcetionsForPositions[i].northWest = 0;
-		(*jump).direcetionsForPositions[i].northEast = 0;
-		(*jump).direcetionsForPositions[i].southWest = 0;
-		(*jump).direcetionsForPositions[i].southEast = 0;
-
-	}
-	return;
+	memset(jump, 0, sizeof(*jump));
 }

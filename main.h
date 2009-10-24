@@ -41,32 +41,32 @@ static const BITBOARD bitboardForRealPosition[32] = {
 
 
 //JUMP_DIRECTIONS struct, used for analyzing jumps
-struct JUMP_DIRECTIONS {
+typedef struct _JUMP_DIRECTIONS {
 
 	int northWest;
 	int northEast;
 	int southWest;
 	int southEast;
 
-};
+}JUMP_DIRECTIONS, * PJUMP_DIRECTIONS;
 
 //PIECES struct, used for containing a count of all pieces for a specific player, including their real and BITBOARD position.
-struct PIECES {
+typedef struct _PIECES {
 
 	int piecesCount;
 	int positions[12];
 	BITBOARD positionsBitboard[12];
 
-};
+}PIECES, * PPIECES;
 
 //MOVE struct, used for storing found moves. contains two BITBOARDs, an origin and destination.
-struct MOVE {
+typedef struct _MOVE {
 	BITBOARD origin;
 	BITBOARD destination;
-};
+}MOVE, * PMOVE;
 
 //JUMP struct, used for storing found jumps.
-struct JUMP {
+typedef struct _JUMP {
 	BITBOARD origin;
 	BITBOARD intermediates[12];
 	struct JUMP_DIRECTIONS direcetionsForPositions[32];
@@ -74,10 +74,10 @@ struct JUMP {
 	BITBOARD removePieces;
 	int intermediatePosistions;
 	int endOfJump;
-};
+}JUMP, * PJUMP;
 
 //GAME struct, containing all pieces, BITBOARDS
-struct GAME {
+typedef struct _GAME {
 	
 	//a BITBOARD with a bit set for all unocupied squares.
 	BITBOARD notOccupied;
@@ -114,21 +114,21 @@ struct GAME {
 	
 	//a stalemate count indicator.
 	int staleMateCount;
-};
+}GAME, *PGAME;
 
 //Game Functions
 
 //Creates a new game, with a default setup.
-struct GAME newGame();
+GAME newGame();
 
 //Creates a new game, with a specified setup.
-struct GAME game(BITBOARD black, BITBOARD white, BITBOARD kings,char turn);
+GAME game(BITBOARD black, BITBOARD white, BITBOARD kings,char turn);
 
 //changes the turn to the opposite player.
-void changeTurn(struct GAME *game);
+void changeTurn(PGAME game);
 
 //runs through the GAME struct, updating the data throughout the struct, to correspond to recent changes, should be run after every move, and jump.
-void cleanUp (struct GAME *game);
+void cleanUp (PGAME game);
 
 //returns 0 or 1 depending on selection.
-int isPieceFriendly (struct GAME game, BITBOARD position);
+int isPieceFriendly (GAME game, BITBOARD position);

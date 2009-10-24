@@ -12,7 +12,7 @@
 
 
 int main (int argc, const char * argv[]) {
-	struct GAME theGame;
+	GAME theGame;
 	int select;
 	int theTime;
 	int move;
@@ -61,19 +61,17 @@ int main (int argc, const char * argv[]) {
 
 
 //Setsup a new game.
-struct GAME newGame(){
+GAME newGame(){
 	BITBOARD white = 0x041C71C3;
 	BITBOARD black = 0xE3820C38;
-	
-	
 	BITBOARD kings = 0x00000000;
 	char turn = 'b';
 	return game(black, white, kings, turn);
 }
 
-struct GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
+GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
 	
-	struct GAME game;
+	GAME game;
 	
 	if (turn != 'w' && turn !='b')
 		turn = 'b';
@@ -96,7 +94,7 @@ struct GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
 	return game;
 }
 
-void changeTurn(struct GAME *game){
+void changeTurn(PGAME game){
 
 	if ((*game).turn == 'w')
 		(*game).turn = 'b';
@@ -113,7 +111,7 @@ void changeTurn(struct GAME *game){
 	return;
 }
 
-void cleanUp (struct GAME *game){
+void cleanUp (PGAME game){
 
 	(*game).notOccupied =~((*game).white|(*game).black);
 	(*game).moveCount = 0;
@@ -122,7 +120,7 @@ void cleanUp (struct GAME *game){
 	return;
 }
 
-int isPieceFriendly (struct GAME game, BITBOARD position){
+int isPieceFriendly (GAME game, BITBOARD position){
 
 	if (game.turn == 'w'){
 		if (pieceAtPosition(&game, position) == 'w' || pieceAtPosition(&game, position) == 'W')

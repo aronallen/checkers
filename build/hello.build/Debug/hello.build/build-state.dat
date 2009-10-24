@@ -1,7 +1,7 @@
 Thello
 v7
 r0
-t277760578.715735
+t278038571.805012
 cCheck dependencies
 cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
@@ -16,6 +16,11 @@ N/Developer/SDKs/MacOSX10.5.sdk
 c000000004AB44D2500000000000000EE
 t1253330213
 s238
+
+N/Developer/SDKs/MacOSX10.5.sdk/usr/include/memory.h
+c0000000047BA99300000000000000765
+t1203411248
+s1893
 
 N/Developer/SDKs/MacOSX10.5.sdk/usr/include/stdio.h
 c0000000047BA99310000000000003D1D
@@ -46,8 +51,8 @@ t1249281547
 s588
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
-t1256067778
-s28784
+t1256345771
+s28968
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
 t1256067778
@@ -63,8 +68,8 @@ t1256063861
 s787
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
-t1256067778
-s8424
+t1256345764
+s8700
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
 t1256067778
@@ -104,10 +109,11 @@ t1248950987
 s139
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c
-c000000004A9EB4C600000000000017B8
-t1251914950
-s6072
+c000000004AE250A400000000000015A2
+t1256345764
+s5538
 i<stdio.h>
+i<memory.h>
 i"main.h"
 i"mover.h"
 i"print.h"
@@ -373,7 +379,7 @@ s279
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies277760578#277760578#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies278038571#278038571#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal i386 c com.apple.compilers.gcc.4_2
 s273519401.794063
@@ -521,8 +527,8 @@ o/Users/aronallen/checkers copy/commitmove.c:74: warning: unused variable 'desti
 lSLF07#2@51"Compile /Users/aronallen/checkers copy/commitmove.c273604722#273604722#0(156"/Users/aronallen/checkers copy/commitmove.c: In function 'makeMove':/Users/aronallen/checkers copy/commitmove.c:74: warning: unused variable 'destination'1(22@29"Unused variable 'destination'273604722#69#87#0(6@43"/Users/aronallen/checkers copy/commitmove.c273604622#74#0#74#0#19"unused variable '*'0(0#0#43"/Users/aronallen/checkers copy/commitmove.c4300882208#1178"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/commitmove.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s277760578.603350
-e277760578.699090
+s278038571.786908
+e278038571.788147
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
@@ -531,7 +537,7 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/aronallen/Xcode Projects/Checkers GIT/jumper.c277760578#277760578#0(0"0(0#0#53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c4300885448#1324"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
+lSLF07#2@61"Compile /Users/aronallen/Xcode Projects/Checkers GIT/jumper.c278038571#278038571#0(0"0(0#0#53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c4300885448#1324"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/checkers copy/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273605353.354774
@@ -651,14 +657,14 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@46"Compile /Users/aronallen/checkers copy/print.c273604722#273604722#0(0"0(0#0#38"/Users/aronallen/checkers copy/print.c4300882208#1168"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/print.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o"0#
 
 CLd "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello" normal x86_64
-s277760578.699196
-e277760578.715682
+s278038571.788311
+e278038571.804959
 r1
 xLd
 x/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
 xnormal
 xx86_64
-lSLF07#2@67"Link /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello277760578#277760578#0(0"0(0#0#0"4300885448#530"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" -filelist "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello"0#
+lSLF07#2@67"Link /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello278038571#278038571#0(0"0(0#0#0"4300885448#530"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" -filelist "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello"0#
 
 CLd "/Users/aronallen/checkers copy/build/Debug/hello" normal i386
 s273604655.881398
