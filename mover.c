@@ -99,11 +99,6 @@ BITBOARD moveSouthEast(PGAME game, BITBOARD piece){
 
 void findMoversForGame(PGAME game){
 	
-	if ((*game).turn != 'w' && (*game).turn != 'b'){
-		printf("error: invalid player turn indication, pass 'b' or 'w', you passed %c",(*game).turn);
-		return;
-	}
-	
 	int i;
 	int a = 0;
 	

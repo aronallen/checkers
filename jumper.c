@@ -18,7 +18,7 @@
 #include "positions.h"
 
 
-void jumpNorthWest(PGAME game, PJUMP jump){
+int jumpNorthWest(PGAME game, PJUMP jump){
 
 	BITBOARD enemy;
 	BITBOARD position;
@@ -40,19 +40,20 @@ void jumpNorthWest(PGAME game, PJUMP jump){
 			(*jump).removePieces = (*jump).removePieces | northWestRotate(position);
 			(*jump).intermediatePosistions ++;
 			(*jump).direcetionsForPositions[realPositionForBitboard(position)].northWest = 2;
+			return 1;
 
 			
 		}
 		
 	}
 
-	return;
+	return 0;
 }
 
 
 
 
-void jumpNorthEast(PGAME game, PJUMP jump){
+int jumpNorthEast(PGAME game, PJUMP jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -75,17 +76,18 @@ void jumpNorthEast(PGAME game, PJUMP jump){
 			(*jump).removePieces = (*jump).removePieces | northEastRotate(position);
 			(*jump).intermediatePosistions ++;
 			(*jump).direcetionsForPositions[realPositionForBitboard(position)].northEast = 2;
+			return 1;
 
 		}
 		
 	}
 	
-	return;
+	return 0;
 }
 
 
 
-void jumpSouthWest(PGAME game, PJUMP jump){
+int jumpSouthWest(PGAME game, PJUMP jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -107,16 +109,17 @@ void jumpSouthWest(PGAME game, PJUMP jump){
 			(*jump).removePieces = (*jump).removePieces | southWestRotate(position);
 			(*jump).intermediatePosistions ++;
 			(*jump).direcetionsForPositions[realPositionForBitboard(position)].southWest = 2;
+			return 1;
 
 		}
 		
 	}
 	
-	return;
+	return 0;
 }
 
 
-void jumpSouthEast(PGAME game, PJUMP jump){
+int jumpSouthEast(PGAME game, PJUMP jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -138,18 +141,103 @@ void jumpSouthEast(PGAME game, PJUMP jump){
 			(*jump).removePieces = (*jump).removePieces | southEastRotate(position);
 			(*jump).intermediatePosistions ++;
 			(*jump).direcetionsForPositions[realPositionForBitboard(position)].southEast = 2;
+			return 1;
 
 		}
 		
 	}
 	
-	return;
+	return 0;
 }
+
+
+void findNextJump(PGAME game, PJUMP jump){
+
+	int jumpSuccses = 0;
+	
+	PJUMP originalJump = jump;
+	
+	int currentPosition;
+	
+	if ((*jump).intermediatePosistions)
+		currentPosition = realPositionForBitboard((*jump).intermediates[(*jump).intermediatePosistions]);
+	
+	int jumpNumber = (*game).jumpCount;
+	if ((*game).jumps[(jumpNumber)].direcetionsForPositions[currentPosition].northWest == 2||jumpNorthWest(game, jump)){
+		findNextJump(game, jump);
+		jumpSuccses = 1;
+	}
+	
+	jump = originalJump;
+	
+	if ((*game).jumps[(jumpNumber)].direcetionsForPositions[currentPosition].northEast == 2||jumpNorthEast(game, jump)){
+		findNextJump(game,jump);
+		jumpSuccses = 1;
+	}
+	
+	jump = originalJump;
+	
+	if ((*game).jumps[(jumpNumber)].direcetionsForPositions[currentPosition].southWest == 2||jumpSouthWest(game, jump)){
+		findNextJump(game, jump);
+		jumpSuccses = 1;
+	}
+	
+	jump = originalJump;
+	
+	if ((*game).jumps[(jumpNumber)].direcetionsForPositions[currentPosition].southEast == 2||jumpNorthEast(game, jump)) {
+		findNextJump(game, jump);
+		jumpSuccses = 1;
+	}
+	
+	if (!jumpSuccses && (*jump).intermediatePosistions){
+		(*jump).endOfJump = 1;
+		(*game).jumpCount++;
+	}
+
+};
+
 
 
 
 void findJumpersForGame(PGAME game){
-
+	
+	int i;
+	PJUMP jumper;
+	newJump(jumper);
+	
+	if ((*game).turn=='w'){
+		
+		piecesInGameForActivePlayer(game);
+		
+		for (i=0;i<(*game).whitePieces.piecesCount;i++){
+		
+			(*jumper).origin = (*game).whitePieces.positionsBitboard[i];
+			findNextJump(game, jumper);
+			//Check if some jump was found and add it to the jump stack
+			
+			
+			i++;
+		};
+	
+	}
+	if ((*game).turn=='b'){
+		
+		piecesInGameForActivePlayer(game);
+		
+		
+		for (i=0;i<(*game).blackPieces.piecesCount;i++){
+		
+			(*jumper).origin = (*game).blackPieces.positionsBitboard[i];
+			findNextJump(game, jumper);
+			//Check if some jump was found and add it to the jump stack
+			
+			i++;
+		};
+			
+	}
+	
+	
+	
 };
 			
 			
