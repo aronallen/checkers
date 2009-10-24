@@ -15,7 +15,7 @@
 
 
 
-BITBOARD moveNorthWest(struct GAME *game, BITBOARD piece){
+BITBOARD moveNorthWest(PGAME game, BITBOARD piece){
 	
 	BITBOARD move = 0;
 	
@@ -38,7 +38,7 @@ BITBOARD moveNorthWest(struct GAME *game, BITBOARD piece){
 
 }
 
-BITBOARD moveNorthEast(struct GAME *game, BITBOARD piece){
+BITBOARD moveNorthEast(PGAME game, BITBOARD piece){
 	
 	BITBOARD move = 0x0;
 	
@@ -58,7 +58,7 @@ BITBOARD moveNorthEast(struct GAME *game, BITBOARD piece){
 	
 	return move;
 }
-BITBOARD moveSouthWest(struct GAME *game, BITBOARD piece){
+BITBOARD moveSouthWest(PGAME game, BITBOARD piece){
 	BITBOARD move = 0x0;
 
 	if (bitsInBitboard(piece)!=1){
@@ -78,7 +78,7 @@ BITBOARD moveSouthWest(struct GAME *game, BITBOARD piece){
 }
 
 
-BITBOARD moveSouthEast(struct GAME *game, BITBOARD piece){
+BITBOARD moveSouthEast(PGAME game, BITBOARD piece){
 
 	BITBOARD move = 0;
 	
@@ -97,7 +97,7 @@ BITBOARD moveSouthEast(struct GAME *game, BITBOARD piece){
 	return move;
 }
 
-void findMoversForGame(struct GAME *game){
+void findMoversForGame(PGAME game){
 	
 	if ((*game).turn != 'w' && (*game).turn != 'b'){
 		printf("error: invalid player turn indication, pass 'b' or 'w', you passed %c",(*game).turn);

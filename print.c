@@ -17,7 +17,7 @@
 
 
 
-void printGame (struct GAME *game){
+void printGame (PGAME game){
 
 	printf("\n");
 	int i;

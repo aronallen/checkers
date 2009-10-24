@@ -8,4 +8,4 @@
  */
 
 
-void makeMove(int moveNumber, struct GAME *game);
+void makeMove(int moveNumber, PGAME game);

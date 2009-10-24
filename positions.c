@@ -13,9 +13,9 @@
 #include "positions.h"
 
 
-void piecesInGameForActivePlayer(struct GAME *game){
+void piecesInGameForActivePlayer(PGAME game){
 
-	struct PIECES pieces;
+	PIECES pieces;
 	int i = 0;
 	
 	pieces.piecesCount = 0;
@@ -66,9 +66,9 @@ void piecesInGameForActivePlayer(struct GAME *game){
 	return;
 }
 
-void piecesInGameForPlayer(struct GAME *game, char player){
+void piecesInGameForPlayer(PGAME game, char player){
 	
-	struct PIECES pieces;
+	PIECES pieces;
 	int i = 0;
 	
 	pieces.piecesCount = 0;

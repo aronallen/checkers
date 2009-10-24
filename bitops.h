@@ -23,4 +23,4 @@ int realPositionForBitboard(BITBOARD bitboard);
 
 
 
-char pieceAtPosition (struct GAME *game, BITBOARD position);
+char pieceAtPosition (PGAME game, BITBOARD position);

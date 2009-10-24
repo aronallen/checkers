@@ -15,7 +15,7 @@
 
 
 
-void makeMove(int moveNumber, struct GAME *game){	
+void makeMove(int moveNumber, PGAME game){	
 	if ((*game).moveCount == 0 || moveNumber > (*game).moveCount){
 		printf("error, movecount:%d passedmove%d\n",moveNumber,(*game).moveCount);
 		return;

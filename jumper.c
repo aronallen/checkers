@@ -18,7 +18,7 @@
 #include "positions.h"
 
 
-void jumpNorthWest(struct GAME *game, struct JUMP *jump){
+void jumpNorthWest(PGAME game, PJUMP jump){
 
 	BITBOARD enemy;
 	BITBOARD position;
@@ -52,7 +52,7 @@ void jumpNorthWest(struct GAME *game, struct JUMP *jump){
 
 
 
-void jumpNorthEast(struct GAME *game, struct JUMP *jump){
+void jumpNorthEast(PGAME game, PJUMP jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -85,7 +85,7 @@ void jumpNorthEast(struct GAME *game, struct JUMP *jump){
 
 
 
-void jumpSouthWest(struct GAME *game, struct JUMP *jump){
+void jumpSouthWest(PGAME game, PJUMP jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -116,7 +116,7 @@ void jumpSouthWest(struct GAME *game, struct JUMP *jump){
 }
 
 
-void jumpSouthEast(struct GAME *game, struct JUMP *jump){
+void jumpSouthEast(PGAME game, PJUMP jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -148,15 +148,11 @@ void jumpSouthEast(struct GAME *game, struct JUMP *jump){
 
 
 
-void findJumpersForGame(struct GAME *game){
-
-
-
-
+void findJumpersForGame(PGAME game){
 
 };
 			
 			
-void newJump(struct JUMP *jump){
+void newJump(PJUMP jump){
 	memset(jump, 0, sizeof(*jump));
 }

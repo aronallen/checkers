@@ -8,7 +8,7 @@
  */
 
 
-void printGame (struct GAME *game);
+void printGame (PGAME game);
 
 void printBitboard (BITBOARD bitboard);
 

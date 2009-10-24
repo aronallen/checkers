@@ -69,7 +69,7 @@ typedef struct _MOVE {
 typedef struct _JUMP {
 	BITBOARD origin;
 	BITBOARD intermediates[12];
-	struct JUMP_DIRECTIONS direcetionsForPositions[32];
+	JUMP_DIRECTIONS direcetionsForPositions[32];
 	
 	BITBOARD removePieces;
 	int intermediatePosistions;
@@ -101,16 +101,16 @@ typedef struct _GAME {
 	int jumpCount;
 	
 	//Array of all possible JUMPs
-	struct JUMP jumps[MAX_JUMPS];
+	JUMP jumps[MAX_JUMPS];
 	
 	//Array of all possible MOVEs
-	struct MOVE moves[MAX_MOVES];
+	MOVE moves[MAX_MOVES];
 	
 	//PIECES struct containing more detailed information of white pieces.
-	struct PIECES whitePieces;
+	PIECES whitePieces;
 
 	//PIECES struct containing more detailed information of black pieces.
-	struct PIECES blackPieces;
+	PIECES blackPieces;
 	
 	//a stalemate count indicator.
 	int staleMateCount;

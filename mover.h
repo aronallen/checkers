@@ -12,9 +12,9 @@ static const BITBOARD LEGAL_SOUTH_MOVE = ~(0x00041041);
 static const BITBOARD LEGAL_EAST_MOVE  = ~(0x02020202);
 static const BITBOARD LEGAL_WEST_MOVE  = ~(0x04040404);
 
-BITBOARD moveNorthWest(struct GAME *game, BITBOARD piece);
-BITBOARD moveNorthEast(struct GAME *game, BITBOARD piece);
-BITBOARD moveSouthWest(struct GAME *game, BITBOARD piece);
-BITBOARD moveSouthEast(struct GAME *game, BITBOARD piece);
+BITBOARD moveNorthWest(PGAME game, BITBOARD piece);
+BITBOARD moveNorthEast(PGAME game, BITBOARD piece);
+BITBOARD moveSouthWest(PGAME game, BITBOARD piece);
+BITBOARD moveSouthEast(PGAME game, BITBOARD piece);
 
-void findMoversForGame(struct GAME *game);
+void findMoversForGame(PGAME game);

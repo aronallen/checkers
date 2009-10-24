@@ -90,7 +90,7 @@ int realPositionForBitboard(BITBOARD bitboard){
 	return 32;
 }
 
-char pieceAtPosition(struct GAME *game, BITBOARD position){
+char pieceAtPosition(PGAME game, BITBOARD position){
 	
 	if (bitsInBitboard(position) == 1){
 		

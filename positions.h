@@ -8,6 +8,6 @@
  */
 
 
-void piecesInGameForActivePlayer(struct GAME *game);
-void piecesInGameForPlayer(struct GAME *game, char player);
+void piecesInGameForActivePlayer(PGAME game);
+void piecesInGameForPlayer(PGAME game, char player);
 

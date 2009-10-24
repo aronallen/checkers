@@ -7,11 +7,11 @@
  *
  */
 
-void jumpNorthWest(struct GAME *game, struct JUMP *jump);
-void jumpNorthEast(struct GAME *game, struct JUMP *jump);
-void jumpSouthWest(struct GAME *game, struct JUMP *jump);
-void jumpSouthEast(struct GAME *game, struct JUMP *jump);
+void jumpNorthWest(PGAME game, PJUMP jump);
+void jumpNorthEast(PGAME game, PJUMP jump);
+void jumpSouthWest(PGAME game, PJUMP jump);
+void jumpSouthEast(PGAME game, PJUMP jump);
 
 
-void findJumpersForGame(struct GAME *game);
-void newJump(struct JUMP *jump);
+void findJumpersForGame(PGAME game);
+void newJump(PJUMP jump);
