@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		651CA278102340B6001C558B /* jumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 651CA277102340B6001C558B /* jumper.c */; };
 		65369CA81025A01D005CDDB2 /* positions.c in Sources */ = {isa = PBXBuildFile; fileRef = 65369CA71025A01D005CDDB2 /* positions.c */; };
+		655AA3C21094739E0007AB5A /* commitjump.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA3C11094739E0007AB5A /* commitjump.c */; };
+		655AA58E109507540007AB5A /* ai.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA58D109507540007AB5A /* ai.c */; };
 		65B8A1601021AC7B008BA05A /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A15F1021AC7B008BA05A /* print.c */; };
 		65B8A2941021B956008BA05A /* mover.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A2931021B956008BA05A /* mover.c */; };
 		65B8A2A61021E8B4008BA05A /* bitops.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A2A51021E8B4008BA05A /* bitops.c */; };
@@ -36,6 +38,10 @@
 		651CA277102340B6001C558B /* jumper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jumper.c; sourceTree = "<group>"; };
 		65369CA61025A01D005CDDB2 /* positions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = positions.h; sourceTree = "<group>"; };
 		65369CA71025A01D005CDDB2 /* positions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = positions.c; sourceTree = "<group>"; };
+		655AA3C01094739E0007AB5A /* commitjump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commitjump.h; sourceTree = "<group>"; };
+		655AA3C11094739E0007AB5A /* commitjump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commitjump.c; sourceTree = "<group>"; };
+		655AA58C109507540007AB5A /* ai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai.h; sourceTree = "<group>"; };
+		655AA58D109507540007AB5A /* ai.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai.c; sourceTree = "<group>"; };
 		65B8A15E1021AC7B008BA05A /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
 		65B8A15F1021AC7B008BA05A /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		65B8A22D1021B2AE008BA05A /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				655AA58C109507540007AB5A /* ai.h */,
+				655AA58D109507540007AB5A /* ai.c */,
 				65B8A22D1021B2AE008BA05A /* main.h */,
 				08FB7796FE84155DC02AAC07 /* main.c */,
 				65B8A2921021B956008BA05A /* mover.h */,
@@ -81,6 +89,8 @@
 				65B8A5E410230095008BA05A /* commitmove.c */,
 				65369CA61025A01D005CDDB2 /* positions.h */,
 				65369CA71025A01D005CDDB2 /* positions.c */,
+				655AA3C01094739E0007AB5A /* commitjump.h */,
+				655AA3C11094739E0007AB5A /* commitjump.c */,
 				651CA276102340B6001C558B /* jumper.h */,
 				651CA277102340B6001C558B /* jumper.c */,
 				65B8A2A41021E8B4008BA05A /* bitops.h */,
@@ -157,6 +167,8 @@
 				65B8A5E510230095008BA05A /* commitmove.c in Sources */,
 				651CA278102340B6001C558B /* jumper.c in Sources */,
 				65369CA81025A01D005CDDB2 /* positions.c in Sources */,
+				655AA3C21094739E0007AB5A /* commitjump.c in Sources */,
+				655AA58E109507540007AB5A /* ai.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

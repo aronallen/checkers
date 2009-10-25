@@ -8,6 +8,8 @@
 #include "positions.h"
 #include "commitmove.h"
 #include "jumper.h"
+#include "commitjump.h"
+#include "ai.h"
 
 
 
@@ -31,21 +33,42 @@ int main (int argc, const char * argv[]) {
 		theGame = newGame();
 
 	theTime = time(0);
-	
-	
-	
-	findMoversForGame(&theGame);
-	
-	
-	while (theGame.white && theGame.black && theGame.moveCount) {
-		
-		move = rand() % theGame.moveCount;
-				
+	cleanUp(&theGame);
 
+	printGame(&theGame);
+	
+	
+	findJumpersForGame(&theGame);
+	findMoversForGame(&theGame);
+	printf("found %d moves", theGame.moveCount);
+	printf("found %d jumps", theGame.jumpCount);
+	
+
+	
+	while (theGame.white && theGame.black && (theGame.moveCount || theGame.canJump)) {
 		
-		makeMove(move, &theGame);	
+		
+		if (theGame.canJump) {
+			move = (rand() % (theGame.jumpCount+1))-1;
+			makeJump(move, &theGame);
+		}else {
+			move = rand() % theGame.moveCount;
+			makeMove(move, &theGame);	
+		}
+		cleanUp(&theGame);
+		printf("\n%c turn\n", theGame.turn);
+		printGame(&theGame);
 		changeTurn(&theGame);
-		findMoversForGame(&theGame);
+		findJumpersForGame(&theGame);	
+		
+		if (theGame.canJump) {
+			printf("\n%d jumps found\n", theGame.jumpCount+1);
+		}else{
+			findMoversForGame(&theGame);
+			printf("\n%d moves found\n", theGame.moveCount);
+		}
+		
+		
 		moveCounter++;
 	}
 	
@@ -82,6 +105,8 @@ GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
 	game.notOccupied =~(game.white|game.black);
 	game.turn=turn;
 	game.moveCount=0;
+	game.jumpCount=0;
+	game.canJump = 0;
 	game.blackPieces.piecesCount = 12;
 	game.whitePieces.piecesCount = 12;
 	piecesInGameForPlayer(&game, 'b');
@@ -116,6 +141,7 @@ void cleanUp (PGAME game){
 	(*game).notOccupied =~((*game).white|(*game).black);
 	(*game).moveCount = 0;
 	(*game).jumpCount = 0;
+	(*game).canJump = 0;
 
 	return;
 }

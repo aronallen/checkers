@@ -99,6 +99,9 @@ typedef struct _GAME {
 	
 	//total available jump count
 	int jumpCount;
+
+	//total available jump count
+	int canJump;
 	
 	//Array of all possible JUMPs
 	JUMP jumps[MAX_JUMPS];

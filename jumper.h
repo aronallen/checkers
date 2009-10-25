@@ -12,7 +12,7 @@ int jumpNorthEast(PGAME game, PJUMP jump);
 int jumpSouthWest(PGAME game, PJUMP jump);
 int jumpSouthEast(PGAME game, PJUMP jump);
 
-void findNextJump(PGAME game, PJUMP jump);
+void findJumpsForPiece(PGAME game, BITBOARD piece);
 
 void findJumpersForGame(PGAME game);
 void newJump(PJUMP jump);
