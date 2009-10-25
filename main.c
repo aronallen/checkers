@@ -70,9 +70,9 @@ int main (int argc, const char * argv[]) {
 		
 		
 		moveCounter++;
+		printf("Move %d\n", moveCounter);
 	}
 	
-	printGame(&theGame);
 	
 	theTime = time(0) - theTime;
 	
