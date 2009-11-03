@@ -18,8 +18,6 @@
 #include "positions.h"
 #include "commitjump.h"
 
-int chooseBestJump (PGAME game){
-
-
-
+int scoreJumps (PGAME game){
+	return 0;
 }

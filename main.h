@@ -40,15 +40,6 @@ static const BITBOARD bitboardForRealPosition[32] = {
 };
 
 
-//JUMP_DIRECTIONS struct, used for analyzing jumps
-typedef struct _JUMP_DIRECTIONS {
-
-	int northWest;
-	int northEast;
-	int southWest;
-	int southEast;
-
-}JUMP_DIRECTIONS, * PJUMP_DIRECTIONS;
 
 //PIECES struct, used for containing a count of all pieces for a specific player, including their real and BITBOARD position.
 typedef struct _PIECES {
@@ -56,6 +47,7 @@ typedef struct _PIECES {
 	int piecesCount;
 	int positions[12];
 	BITBOARD positionsBitboard[12];
+	int jumpsForPiece[12];
 
 }PIECES, * PPIECES;
 
@@ -69,11 +61,11 @@ typedef struct _MOVE {
 typedef struct _JUMP {
 	BITBOARD origin;
 	BITBOARD intermediates[12];
-	JUMP_DIRECTIONS direcetionsForPositions[32];
 	
 	BITBOARD removePieces;
 	int intermediatePosistions;
 	int endOfJump;
+	int jumpQuality;
 }JUMP, * PJUMP;
 
 //GAME struct, containing all pieces, BITBOARDS
@@ -100,9 +92,7 @@ typedef struct _GAME {
 	//total available jump count
 	int jumpCount;
 
-	//total available jump count
-	int canJump;
-	
+	//total available jump count	
 	//Array of all possible JUMPs
 	JUMP jumps[MAX_JUMPS];
 	

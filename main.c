@@ -19,64 +19,102 @@ int main (int argc, const char * argv[]) {
 	int theTime;
 	int move;
 	int moveCounter = 0;
-
+	int i;
+	int victoryCount = 0;
+//	long long unsigned deepSearch = 1;
+//	int searchLevel = 6;
+//	int search = 0;
 	
 	srand(time(0));
 	
-	
+	theTime = time(0);	
 	printf("press 1 for new game, press 2 for game to test crowning:");
 	scanf("%d",&select);
 
+	
+	for (i=0;i<10000;i++){
+	
+	
 	if (select == 2)
-		theGame = game(0x22, 0x41, 0, 'w');
+		theGame = game(0x10400000, 0x208000, 0, 'b');
 	else
 		theGame = newGame();
 
-	theTime = time(0);
-	cleanUp(&theGame);
 
-	printGame(&theGame);
 	
+	
+	
+	cleanUp(&theGame);	
 	
 	findJumpersForGame(&theGame);
-	findMoversForGame(&theGame);
-	printf("found %d moves", theGame.moveCount);
-	printf("found %d jumps", theGame.jumpCount);
-	
+	findMoversForGame(&theGame);	
+//	printGame(&theGame);
 
 	
-	while (theGame.white && theGame.black && (theGame.moveCount || theGame.canJump)) {
-		
-		
-		if (theGame.canJump) {
-			move = (rand() % (theGame.jumpCount+1))-1;
+	while (theGame.white && theGame.black && (theGame.moveCount || theGame.jumpCount)) {
+//		printf("\n%c turn\n", theGame.turn);
+//		srand(time(0));
+		if (theGame.jumpCount) {
+//			printf("jumps found: %d\n", theGame.jumpCount);
+			
+//			if (search < searchLevel)
+//				deepSearch = theGame.jumpCount*deepSearch;
+			
+			move = rand() % (theGame.jumpCount);
+//			printf("best jump is %d\n", move+1);
 			makeJump(move, &theGame);
-		}else {
+		}
+		if (theGame.moveCount){
 			move = rand() % theGame.moveCount;
+			
+//			if (search < searchLevel)
+//				deepSearch = theGame.moveCount*deepSearch;
+			
 			makeMove(move, &theGame);	
 		}
 		cleanUp(&theGame);
-		printf("\n%c turn\n", theGame.turn);
-		printGame(&theGame);
 		changeTurn(&theGame);
-		findJumpersForGame(&theGame);	
+		moveCounter++;
+//		printGame(&theGame);
+//		printf("Move %d\n", moveCounter);		
 		
-		if (theGame.canJump) {
-			printf("\n%d jumps found\n", theGame.jumpCount+1);
+		findJumpersForGame(&theGame);
+		
+//		search++;
+
+		if (theGame.jumpCount) {
 		}else{
 			findMoversForGame(&theGame);
-			printf("\n%d moves found\n", theGame.moveCount);
 		}
-		
-		
-		moveCounter++;
-		printf("Move %d\n", moveCounter);
+
+	}
+	
+	if (theGame.white && !theGame.black){
+//		printf("white wins\n");
+	}
+	if (theGame.black && !theGame.white) {
+//		printf("black wins\n");
+	} 
+	if (theGame.moveCount == 0 && theGame.jumpCount == 0){
+	
+	if (theGame.turn == 'w') {
+//			printf("White looses, no more moves\n");
+			victoryCount++;
+		}else {
+//			printf("Black looses, no more moves\n");
+			victoryCount--;
+		}
+
+	
 	}
 	
 	
+//	printGame(&theGame);
+	
+	}
 	theTime = time(0) - theTime;
 	
-	printf("%d, moves in %d seconds\n",moveCounter, theTime );
+	printf("%d, moves in %d seconds, victoryCount is %d\n",moveCounter, theTime, victoryCount);
 	
 	return 0;
 }
@@ -106,7 +144,6 @@ GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
 	game.turn=turn;
 	game.moveCount=0;
 	game.jumpCount=0;
-	game.canJump = 0;
 	game.blackPieces.piecesCount = 12;
 	game.whitePieces.piecesCount = 12;
 	piecesInGameForPlayer(&game, 'b');
@@ -141,7 +178,6 @@ void cleanUp (PGAME game){
 	(*game).notOccupied =~((*game).white|(*game).black);
 	(*game).moveCount = 0;
 	(*game).jumpCount = 0;
-	(*game).canJump = 0;
 
 	return;
 }

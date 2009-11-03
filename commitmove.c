@@ -21,34 +21,31 @@ void makeMove(int moveNumber, PGAME game){
 		return;
 	}
 	
-	int origin = realPositionForBitboard((*game).moves[moveNumber].origin);
+	BITBOARD origin = (*game).moves[moveNumber].origin;
 	
+	BITBOARD move = (*game).moves[moveNumber].origin | (*game).moves[moveNumber].destination;
 	
 		
 
 			
 	if ((*game).turn == 'w'){
 					
-		(*game).white = (*game).white^(*game).moves[moveNumber].origin;
-		(*game).white = (*game).white^(*game).moves[moveNumber].destination;
-					
-		if ((*game).kings & bitboardForRealPosition[origin]){
-						(*game).kings = (*game).kings^(*game).moves[moveNumber].origin;
-						(*game).kings = (*game).kings^(*game).moves[moveNumber].destination;}
-		
-		(*game).moveCount = 0;}
-				
-		if ((*game).turn == 'b'){
-		
-		(*game).black = (*game).black^(*game).moves[moveNumber].origin;
-		(*game).black = (*game).black^(*game).moves[moveNumber].destination;
-					
-		if ((*game).kings & bitboardForRealPosition[origin]){
-						(*game).kings = (*game).kings^(*game).moves[moveNumber].origin;
-						(*game).kings = (*game).kings^(*game).moves[moveNumber].destination;}
-					
-					(*game).moveCount = 0;}
+		if ((*game).kings & origin & (*game).white){
+			(*game).kings = (*game).kings ^ move;
+		}
+		(*game).white = (*game).white ^ move;
 	
+	}
+				
+	if ((*game).turn == 'b'){
+		
+		if ((*game).kings & origin & (*game).black){
+			(*game).kings = (*game).kings ^ move;
+		}
+		(*game).black = (*game).black ^ move;
+	}
+	
+	(*game).moveCount = 0;
 	(*game).notOccupied = ~((*game).black|(*game).white);
 	return;
 }

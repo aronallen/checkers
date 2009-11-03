@@ -9,32 +9,50 @@
 #include "main.h"
 #include "commitjump.h"
 #include "positions.h"
+#include "print.h"
 
 
 void makeJump(int jumpNumber, PGAME game){
 	
-	if (jumpNumber < 0) {
-		jumpNumber = 0;
-	}
+	
+	//Remove Kings	
+
 	
 	if ((*game).turn == 'w'){
 	
+		//Remove Enemy
 		(*game).black = (*game).black & ~(*game).jumps[jumpNumber].removePieces;
+		
+		
+		//Move Kings BITBOARD if piece is king
+		if ((*game).jumps[jumpNumber].intermediates[0] & (*game).kings & (*game).white){
+			(*game).kings = (*game).kings & ~(*game).jumps[jumpNumber].removePieces;
+			(*game).kings = (*game).kings ^ ((*game).jumps[jumpNumber].intermediates[0] | (*game).jumps[jumpNumber].intermediatePosistions[(*game).jumps[jumpNumber].intermediates]);	
+		}
+		
+		//Move Piece
 		(*game).white = (*game).white ^ ((*game).jumps[jumpNumber].intermediates[0] | (*game).jumps[jumpNumber].intermediatePosistions[(*game).jumps[jumpNumber].intermediates]);
-	
+		
+		
 	}
 
 	if ((*game).turn == 'b'){
 	
+		//Remove Enemy
 		(*game).white = (*game).white & ~(*game).jumps[jumpNumber].removePieces;
+		
+		//Move Kings BITBOARD if piece is king
+		if ((*game).jumps[jumpNumber].intermediates[0] & (*game).kings & (*game).black){
+			(*game).kings = (*game).kings & ~(*game).jumps[jumpNumber].removePieces;
+			(*game).kings = (*game).kings ^ ((*game).jumps[jumpNumber].intermediates[0] | (*game).jumps[jumpNumber].intermediatePosistions[(*game).jumps[jumpNumber].intermediates]);	
+		}
+		//Move Piece		
 		(*game).black = (*game).black ^ ((*game).jumps[jumpNumber].intermediates[0] | (*game).jumps[jumpNumber].intermediatePosistions[(*game).jumps[jumpNumber].intermediates]);	
+		
+		
+		}
 	
-	}
-	(*game).kings = (*game).kings & ~(*game).jumps[jumpNumber].removePieces;
 	
-	if (((*game).jumps[jumpNumber].intermediates[0] & (*game).white) || ((*game).jumps[jumpNumber].intermediates[0] & (*game).black) ) {
-		(*game).kings = (*game).kings ^ ((*game).jumps[jumpNumber].intermediates[0] | (*game).jumps[jumpNumber].intermediatePosistions[(*game).jumps[jumpNumber].intermediates]);	
-	}
 	
 
 

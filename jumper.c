@@ -41,7 +41,7 @@ int jumpNorthWest(PGAME game, PJUMP jump){
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   northWestRotate(position) & enemy & legalMove &&    northWestRotate(northWestRotate(position)) & (*game).notOccupied){
 
-			printf("piece can jump NW \n");					
+//			printf("piece can jump NW \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = northWestRotate(northWestRotate(position));
 			(*jump).removePieces = (*jump).removePieces | northWestRotate(position);
@@ -74,7 +74,7 @@ int jumpNorthEast(PGAME game, PJUMP jump){
 		
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   northEastRotate(position) & enemy & legalMove &&    northEastRotate(northEastRotate(position)) & (*game).notOccupied){
-			printf("piece can jump NE \n");					
+//			printf("piece can jump NE \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = northEastRotate(northEastRotate(position));
 			(*jump).removePieces = (*jump).removePieces | northEastRotate(position);
@@ -105,7 +105,7 @@ int jumpSouthWest(PGAME game, PJUMP jump){
 		
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   southWestRotate(position) & enemy & legalMove &&    southWestRotate(southWestRotate(position)) & (*game).notOccupied){
-			printf("piece can jump SW \n");					
+//			printf("piece can jump SW \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = southWestRotate(southWestRotate(position));
 			(*jump).removePieces = (*jump).removePieces | southWestRotate(position);
@@ -136,7 +136,7 @@ int jumpSouthEast(PGAME game, PJUMP jump){
 	if (((*game).black & (*jump).origin) || ((*game).white&(*game).kings&(*jump).origin)){
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   southEastRotate(position) & enemy & legalMove &&  southEastRotate(southEastRotate(position)) & (*game).notOccupied){
-			printf("piece can jump SE \n");					
+//			printf("piece can jump SE \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = southEastRotate(southEastRotate(position));
 			(*jump).removePieces = (*jump).removePieces | southEastRotate(position);
@@ -154,110 +154,109 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 	
 
 
-	int jumpsFound;
 	int jumpLoop;
+	int jumpLoopEnd;
+	int jumpGood;
+	int jumpFound = 0;
+
 	
-	jumpsFound = (*game).jumpCount;
-	jumpLoop = jumpsFound;
+	jumpLoop = (*game).jumpCount;
+	jumpLoopEnd = (*game).jumpCount;
 	
 	JUMP jumpOriginal;
 	JUMP jumpAnalyze;
 	
 	newJump(&jumpOriginal);
 	jumpOriginal.intermediates[0]=piece;
+	jumpOriginal.origin = piece;
 	jumpAnalyze = jumpOriginal;
 	
-	int jumpGood = 0;
 		
 	
-	for (jumpLoop;jumpLoop <= jumpsFound; jumpLoop++) {
+	for (jumpLoop;jumpLoop <= jumpLoopEnd; jumpLoop++) {
 		
 		(*game).jumps[jumpLoop].endOfJump = 0;
 		
 		while (!(*game).jumps[jumpLoop].endOfJump) {
 			
-			jumpGood = 0;
+		jumpGood = 0;
 			
 		if (jumpNorthWest(game, &jumpAnalyze)){
 			
-			(*game).canJump++;
 			
 			if (jumpGood){
-				jumpsFound++;
-				(*game).jumps[jumpsFound-1] = jumpAnalyze;
+				jumpLoopEnd++;
+				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
 
 			}else{
 				(*game).jumps[jumpLoop] = jumpAnalyze;
 			}
-			printf("jump found %d\n",jumpsFound + 1);
+			jumpFound++;
 			jumpGood++;
 			jumpAnalyze = jumpOriginal;
 		}
 		if (jumpNorthEast(game, &jumpAnalyze)){
-
-			(*game).canJump++;
+			
 			
 			if (jumpGood){
-				jumpsFound++;
-				(*game).jumps[jumpsFound-1] = jumpAnalyze;
+				jumpLoopEnd++;
+				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
 				
 			}else{
 				(*game).jumps[jumpLoop] = jumpAnalyze;
 			}
-			printf("jump found %d\n",jumpsFound + 1);
+			jumpFound++;
 			jumpGood++;
 			jumpAnalyze = jumpOriginal;
 		}
 		if (jumpSouthWest(game, &jumpAnalyze)){
-
-			(*game).canJump++;
-			
+									
 			if (jumpGood){
-				jumpsFound++;
-				(*game).jumps[jumpsFound-1] = jumpAnalyze;
+				jumpLoopEnd++;
+				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
 				
 			}else{
 				(*game).jumps[jumpLoop] = jumpAnalyze;
 			
 			}
-			printf("jump found %d\n",jumpsFound + 1);
+			jumpFound++;
 			jumpGood++;
 			jumpAnalyze = jumpOriginal;
 		}
-		if (jumpSouthEast(game, &jumpAnalyze)){
-
-			(*game).canJump++;			
+		if (jumpSouthEast(game, &jumpAnalyze)){				
 			
 			if (jumpGood){
-				jumpsFound++;
-				(*game).jumps[jumpsFound-1] = jumpAnalyze;
+				jumpLoopEnd++;
+				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
 				
 			}else{
 				(*game).jumps[jumpLoop] = jumpAnalyze;
 			}
-			printf("jump found %d\n",jumpsFound + 1);
+			jumpFound++;
 			jumpGood++;
 			jumpAnalyze = jumpOriginal;
 		}
 			
-		if (!jumpGood){
-		
+		if (jumpGood == 0){
+			if (jumpFound) {
+				(*game).jumpCount++;
+			}
 			(*game).jumps[jumpLoop].endOfJump = 1;
-			
+
+
+						
 		}else {
 			jumpOriginal = (*game).jumps[jumpLoop];
 			jumpAnalyze = jumpOriginal;
 		}
-
 			
+
 			
 			
 		}
+		
 	}
-
-	(*game).jumpCount = (*game).jumpCount+jumpsFound;
 	
-
 
 };
 

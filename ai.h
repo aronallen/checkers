@@ -7,4 +7,4 @@
  *
  */
 
-int chooseBestJump(PGAME game);
+int scoreJumps(PGAME game);
