@@ -9,12 +9,14 @@
 #include "main.h"
 #include "commitjump.h"
 #include "positions.h"
-#include "print.h"
 
 
 void makeJump(int jumpNumber, PGAME game){
 	
-	
+	if ((*game).mjCount == 0 || jumpNumber > (*game).mjCount){
+		printf("error, jumpCount:%d passedJump%d, making random jump instead\n",(*game).mjCount,jumpNumber);
+		jumpNumber = rand()%(*game).mjCount;
+	}
 	//Remove Kings	
 
 	

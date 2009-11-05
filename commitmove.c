@@ -16,9 +16,9 @@
 
 
 void makeMove(int moveNumber, PGAME game){	
-	if ((*game).moveCount == 0 || moveNumber > (*game).moveCount){
-		printf("error, movecount:%d passedmove%d\n",moveNumber,(*game).moveCount);
-		return;
+	if ((*game).mjCount == 0 || moveNumber > (*game).mjCount){
+		printf("error, movecount:%d passedmove%d, making random move instead\n",(*game).mjCount,moveNumber);
+		moveNumber = rand()%(*game).mjCount;
 	}
 	
 	BITBOARD origin = (*game).moves[moveNumber].origin;
@@ -45,7 +45,6 @@ void makeMove(int moveNumber, PGAME game){
 		(*game).black = (*game).black ^ move;
 	}
 	
-	(*game).moveCount = 0;
 	(*game).notOccupied = ~((*game).black|(*game).white);
 	return;
 }

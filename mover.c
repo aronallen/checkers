@@ -191,6 +191,6 @@ void findMoversForGame(PGAME game){
 		}
 		}
 	
-	(*game).moveCount = a;
+	(*game).mjCount = a;
 	return;
 	}

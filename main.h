@@ -41,6 +41,8 @@ static const BITBOARD bitboardForRealPosition[32] = {
 
 
 
+
+
 //PIECES struct, used for containing a count of all pieces for a specific player, including their real and BITBOARD position.
 typedef struct _PIECES {
 
@@ -86,15 +88,15 @@ typedef struct _GAME {
 	//Turn indicator, b for black, w for white.
 	char turn;
 	
-	//total available move count
-	int moveCount;
+	//total available move count or jump count
+	int mjCount;
 	
-	//total available jump count
-	int jumpCount;
+	int canJ;
+		
 
 	//total available jump count	
 	//Array of all possible JUMPs
-	JUMP jumps[MAX_JUMPS];
+	JUMP jumps[5];
 	
 	//Array of all possible MOVEs
 	MOVE moves[MAX_MOVES];
@@ -104,10 +106,32 @@ typedef struct _GAME {
 
 	//PIECES struct containing more detailed information of black pieces.
 	PIECES blackPieces;
-	
-	//a stalemate count indicator.
-	int staleMateCount;
+
 }GAME, *PGAME;
+
+typedef struct _LIGHTGAME {
+	
+	//a BITBOARD containing all black pieces.
+	BITBOARD black;
+	
+	//a BITBOARD containing all white pieces.	
+	BITBOARD white;
+
+	//a BITBOARD containing all kings.	
+	BITBOARD kings;
+	
+		
+}LIGHTGAME, *PLIGHTGAME;
+
+typedef struct _GAMESESSION {
+	
+	int moveCount;
+	char winner;
+	LIGHTGAME moves[480];
+	
+	
+}GAMESESSION, * PGAMESESSION;
+
 
 //Game Functions
 

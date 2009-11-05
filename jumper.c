@@ -160,8 +160,8 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 	int jumpFound = 0;
 
 	
-	jumpLoop = (*game).jumpCount;
-	jumpLoopEnd = (*game).jumpCount;
+	jumpLoop = (*game).mjCount;
+	jumpLoopEnd = (*game).mjCount;
 	
 	JUMP jumpOriginal;
 	JUMP jumpAnalyze;
@@ -239,7 +239,8 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 			
 		if (jumpGood == 0){
 			if (jumpFound) {
-				(*game).jumpCount++;
+				(*game).mjCount++;
+				(*game).canJ = 1;
 			}
 			(*game).jumps[jumpLoop].endOfJump = 1;
 

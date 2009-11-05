@@ -7,4 +7,8 @@
  *
  */
 
-int scoreJumps(PGAME game);
+
+
+
+int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter, int ply);
+
