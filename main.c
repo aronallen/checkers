@@ -16,10 +16,10 @@
 int main (int argc, const char * argv[]) {
 	
 	
-	int gamesToStore = 1000;
+	int gamesToStore = 2000;
 	
 	//How Deep to search
-	int ply = 2;
+	int ply = 1;
 
 	GAMESESSION *endGameDatabase = malloc (sizeof (GAMESESSION) * gamesToStore);
 	int i;
@@ -177,9 +177,11 @@ int main (int argc, const char * argv[]) {
 		endGameDatabase[i].winner = 'n';
 		staleWins++;
 	}
+		
+	if (i%20 == 0) {
 	printf("game over, %c wins, %d moves, gameCount %d VV-RESULT-VV\n",theGame.turn, moveCounter, i);
 	printGame(&theGame);
-	
+	}
 //	printGame(&theGame);
 	
 	}

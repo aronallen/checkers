@@ -80,9 +80,11 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 
 						moveScore[h]++;
 						moveScore[h]++;
+						moveScore[h]++;
 					}
 				
 					if (winsDatabase[i].winner == 'n') {
+						moveScore[h]--;
 						moveScore[h]--;
 					}
 
@@ -91,6 +93,7 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 					
 					if (winsDatabase[i].winner == (*game).turn) {
 						
+						moveScore[h]--;
 						moveScore[h]--;
 						moveScore[h]--;
 					
