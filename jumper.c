@@ -18,7 +18,7 @@
 #include "positions.h"
 
 
-int jumpNorthWest(PGAME game, PJUMP jump){
+int jumpNorthWest(PGAME game, PMJ jump){
 
 	BITBOARD me;
 	BITBOARD enemy;
@@ -58,7 +58,7 @@ int jumpNorthWest(PGAME game, PJUMP jump){
 
 
 
-int jumpNorthEast(PGAME game, PJUMP jump){
+int jumpNorthEast(PGAME game, PMJ jump){
 
 	BITBOARD enemy;
 	BITBOARD position;
@@ -89,7 +89,7 @@ int jumpNorthEast(PGAME game, PJUMP jump){
 
 
 
-int jumpSouthWest(PGAME game, PJUMP jump){
+int jumpSouthWest(PGAME game, PMJ jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
@@ -119,7 +119,7 @@ int jumpSouthWest(PGAME game, PJUMP jump){
 }
 
 
-int jumpSouthEast(PGAME game, PJUMP jump){
+int jumpSouthEast(PGAME game, PMJ jump){
 
 
 
@@ -163,11 +163,11 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 	jumpLoop = (*game).mjCount;
 	jumpLoopEnd = (*game).mjCount;
 	
-	JUMP jumpOriginal;
-	JUMP jumpAnalyze;
+	MJ jumpOriginal;
+	MJ jumpAnalyze;
 	
-	newJump(&jumpOriginal);
-	jumpOriginal.intermediates[0]=piece;
+	newMJ(&jumpOriginal);
+	jumpOriginal.intermediates[0] = piece;
 	jumpOriginal.origin = piece;
 	jumpAnalyze = jumpOriginal;
 	
@@ -175,9 +175,9 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 	
 	for (jumpLoop;jumpLoop <= jumpLoopEnd; jumpLoop++) {
 		
-		(*game).jumps[jumpLoop].endOfJump = 0;
+		(*game).mjs[jumpLoop].endOfJump = 0;
 		
-		while (!(*game).jumps[jumpLoop].endOfJump) {
+		while (!(*game).mjs[jumpLoop].endOfJump) {
 			
 		jumpGood = 0;
 			
@@ -186,10 +186,10 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 			
 			if (jumpGood){
 				jumpLoopEnd++;
-				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
+				(*game).mjs[jumpLoopEnd] = jumpAnalyze;
 
 			}else{
-				(*game).jumps[jumpLoop] = jumpAnalyze;
+				(*game).mjs[jumpLoop] = jumpAnalyze;
 			}
 			jumpFound++;
 			jumpGood++;
@@ -200,10 +200,10 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 			
 			if (jumpGood){
 				jumpLoopEnd++;
-				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
+				(*game).mjs[jumpLoopEnd] = jumpAnalyze;
 				
 			}else{
-				(*game).jumps[jumpLoop] = jumpAnalyze;
+				(*game).mjs[jumpLoop] = jumpAnalyze;
 			}
 			jumpFound++;
 			jumpGood++;
@@ -213,10 +213,10 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 									
 			if (jumpGood){
 				jumpLoopEnd++;
-				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
+				(*game).mjs[jumpLoopEnd] = jumpAnalyze;
 				
 			}else{
-				(*game).jumps[jumpLoop] = jumpAnalyze;
+				(*game).mjs[jumpLoop] = jumpAnalyze;
 			
 			}
 			jumpFound++;
@@ -227,10 +227,10 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 			
 			if (jumpGood){
 				jumpLoopEnd++;
-				(*game).jumps[jumpLoopEnd] = jumpAnalyze;
+				(*game).mjs[jumpLoopEnd] = jumpAnalyze;
 				
 			}else{
-				(*game).jumps[jumpLoop] = jumpAnalyze;
+				(*game).mjs[jumpLoop] = jumpAnalyze;
 			}
 			jumpFound++;
 			jumpGood++;
@@ -241,13 +241,16 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 			if (jumpFound) {
 				(*game).mjCount++;
 				(*game).canJ = 1;
+				if ((*game).mjs[jumpLoop].intermediatePosistions <= MAX_INTERMEDIATES) {
+					printf("More intermediates found than jumpstack allows\n");
+				}
 			}
-			(*game).jumps[jumpLoop].endOfJump = 1;
+			(*game).mjs[jumpLoop].endOfJump = 1;
 
 
 						
 		}else {
-			jumpOriginal = (*game).jumps[jumpLoop];
+			jumpOriginal = (*game).mjs[jumpLoop];
 			jumpAnalyze = jumpOriginal;
 		}
 			
@@ -300,6 +303,6 @@ void findJumpersForGame(PGAME game){
 };
 			
 			
-void newJump(PJUMP jump){
+void newMJ(PMJ jump){
 	memset(jump, 0, sizeof(*jump));
 }

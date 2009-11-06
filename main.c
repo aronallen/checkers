@@ -16,7 +16,7 @@
 int main (int argc, const char * argv[]) {
 	
 	
-	int gamesToStore = 2000;
+	int gamesToStore = 1;
 	
 	//How Deep to search
 	int ply = 1;

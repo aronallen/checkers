@@ -112,15 +112,15 @@ void findMoversForGame(PGAME game){
 		for (i=0;i<(*game).whitePieces.piecesCount;i++){
 			if ((*game).white&(*game).whitePieces.positionsBitboard[i]){
 				if (moveNorthWest(game, (*game).whitePieces.positionsBitboard[i])){
-					(*game).moves[a].destination = (moveNorthWest(game, (*game).whitePieces.positionsBitboard[i]));
-					(*game).moves[a].origin = (*game).whitePieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1] = (moveNorthWest(game, (*game).whitePieces.positionsBitboard[i]));
+					(*game).mjs[a].intermediates[0] = (*game).whitePieces.positionsBitboard[i];
 					a++;
 				}
 				
 				if (moveNorthEast(game, (*game).whitePieces.positionsBitboard[i])){
 					
-					(*game).moves[a].destination = (moveNorthEast(game, (*game).whitePieces.positionsBitboard[i]));
-					(*game).moves[a].origin = (*game).whitePieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1] = (moveNorthEast(game, (*game).whitePieces.positionsBitboard[i]));
+					(*game).mjs[a].intermediates[0] = (*game).whitePieces.positionsBitboard[i];
 					a++;
 				}
 			
@@ -129,14 +129,14 @@ void findMoversForGame(PGAME game){
 			if ((*game).white&(*game).kings&(*game).whitePieces.positionsBitboard[i]){
 			
 				if(moveSouthWest(game, (*game).whitePieces.positionsBitboard[i])){
-					(*game).moves[a].destination = moveSouthWest(game, (*game).whitePieces.positionsBitboard[i]);
-					(*game).moves[a].origin = (*game).whitePieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1] = moveSouthWest(game, (*game).whitePieces.positionsBitboard[i]);
+					(*game).mjs[a].intermediates[0] = (*game).whitePieces.positionsBitboard[i];
 					a++;
 					
 				}
 				if(moveSouthEast(game,(*game).whitePieces.positionsBitboard[i])){
-					(*game).moves[a].destination= moveSouthEast(game,(*game).whitePieces.positionsBitboard[i]);
-					(*game).moves[a].origin = (*game).whitePieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1]= moveSouthEast(game,(*game).whitePieces.positionsBitboard[i]);
+					(*game).mjs[a].intermediates[0] = (*game).whitePieces.positionsBitboard[i];
 					a++;
 				}
 			
@@ -158,14 +158,14 @@ void findMoversForGame(PGAME game){
 		
 			if ((*game).black&(*game).kings&(*game).blackPieces.positionsBitboard[i]){
 				if (moveNorthWest(game,(*game).blackPieces.positionsBitboard[i])){
-					(*game).moves[a].destination = (moveNorthWest(game,(*game).blackPieces.positionsBitboard[i]));
-					(*game).moves[a].origin = (*game).blackPieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1] = (moveNorthWest(game,(*game).blackPieces.positionsBitboard[i]));
+					(*game).mjs[a].intermediates[0] = (*game).blackPieces.positionsBitboard[i];
 					a++;
 				}
 				
 				if (moveNorthEast(game,(*game).blackPieces.positionsBitboard[i])){
-					(*game).moves[a].destination = (moveNorthEast(game,(*game).blackPieces.positionsBitboard[i]));
-					(*game).moves[a].origin = (*game).blackPieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1] = (moveNorthEast(game,(*game).blackPieces.positionsBitboard[i]));
+					(*game).mjs[a].intermediates[0] = (*game).blackPieces.positionsBitboard[i];
 					a++;
 				}
 				
@@ -174,13 +174,13 @@ void findMoversForGame(PGAME game){
 			if ((*game).black&(*game).blackPieces.positionsBitboard[i]){
 				
 				if(moveSouthWest(game,(*game).blackPieces.positionsBitboard[i])){
-					(*game).moves[a].destination = moveSouthWest(game,(*game).blackPieces.positionsBitboard[i]);
-					(*game).moves[a].origin = (*game).blackPieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1] = moveSouthWest(game,(*game).blackPieces.positionsBitboard[i]);
+					(*game).mjs[a].intermediates[0] = (*game).blackPieces.positionsBitboard[i];
 					a++;
 				}	
 				if(moveSouthEast(game,(*game).blackPieces.positionsBitboard[i])){
-					(*game).moves[a].destination= moveSouthEast(game,(*game).blackPieces.positionsBitboard[i]);
-					(*game).moves[a].origin = (*game).blackPieces.positionsBitboard[i];
+					(*game).mjs[a].intermediates[1]= moveSouthEast(game,(*game).blackPieces.positionsBitboard[i]);
+					(*game).mjs[a].intermediates[0] = (*game).blackPieces.positionsBitboard[i];
 					a++;
 				}
 				
@@ -190,6 +190,10 @@ void findMoversForGame(PGAME game){
 			
 		}
 		}
+	
+	if (a >= MAX_MOVES) {
+		printf("move stack exceeded, quiting\n");
+	}
 	
 	(*game).mjCount = a;
 	return;

@@ -21,9 +21,10 @@ void makeMove(int moveNumber, PGAME game){
 		moveNumber = rand()%(*game).mjCount;
 	}
 	
-	BITBOARD origin = (*game).moves[moveNumber].origin;
+	BITBOARD origin = (*game).mjs[moveNumber].intermediates[0];
+	BITBOARD destination = (*game).mjs[moveNumber].intermediates[1];
 	
-	BITBOARD move = (*game).moves[moveNumber].origin | (*game).moves[moveNumber].destination;
+	BITBOARD move = origin | destination;
 	
 		
 
