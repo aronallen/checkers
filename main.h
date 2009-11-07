@@ -24,8 +24,9 @@
 
 //DEFINES
 #define BITBOARD unsigned
-#define MAX_MOVES 20
-#define MAX_INTERMEDIATES 5
+#define MAX_MOVES 42
+#define MAX_MOVES_GAME 300
+#define MAX_INTERMEDIATES 7
 
 //BitMaskArray used for locating bits on BITBOARD
 static const BITBOARD bitboardForRealPosition[32] = {
@@ -56,12 +57,10 @@ typedef struct _PIECES {
 
 //MJ struct, used for storing jumps and moves.
 typedef struct _MJ {
-	BITBOARD origin;
 	BITBOARD intermediates[MAX_INTERMEDIATES];
 	BITBOARD removePieces;
 	int intermediatePosistions;
 	int endOfJump;
-	int jumpQuality;
 }MJ, * PMJ;
 
 //GAME struct, containing all pieces, BITBOARDS
@@ -113,6 +112,8 @@ typedef struct _LIGHTGAME {
 	//a BITBOARD containing all kings.	
 	BITBOARD kings;
 	
+	int relevance;
+	
 		
 }LIGHTGAME, *PLIGHTGAME;
 
@@ -120,7 +121,7 @@ typedef struct _GAMESESSION {
 	
 	int moveCount;
 	char winner;
-	LIGHTGAME moves[480];
+	LIGHTGAME moves[MAX_MOVES_GAME];
 	
 	
 }GAMESESSION, * PGAMESESSION;

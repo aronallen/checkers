@@ -24,7 +24,7 @@ int jumpNorthWest(PGAME game, PMJ jump){
 	BITBOARD enemy;
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_WEST_MOVE;
-	(*jump).origin = (*jump).intermediates[0];
+	BITBOARD origin = (*jump).intermediates[0];
 	
 	me = ((*game).turn == 'b') ?(*game).black :(*game).white;
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
@@ -36,7 +36,7 @@ int jumpNorthWest(PGAME game, PMJ jump){
 	
 	
 	//checks if the piece we are moving is either a black king, or white soldier.
-	if (((*game).white & (*jump).origin) || ((*game).black&(*game).kings&(*jump).origin)){
+	if (((*game).white & origin) || ((*game).black&(*game).kings&origin)){
 				
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   northWestRotate(position) & enemy & legalMove &&    northWestRotate(northWestRotate(position)) & (*game).notOccupied){
@@ -63,14 +63,14 @@ int jumpNorthEast(PGAME game, PMJ jump){
 	BITBOARD enemy;
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_EAST_MOVE;
-	(*jump).origin = (*jump).intermediates[0];
+	BITBOARD origin = (*jump).intermediates[0];
 	
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
 	position = (*jump).intermediates[(*jump).intermediatePosistions];
 	enemy = enemy&~(*jump).removePieces;
 	
 	//checks if the piece we are moving is either a black king, or white soldier.
-	if (((*game).white & (*jump).origin) || ((*game).black&(*game).kings&(*jump).origin)){
+	if (((*game).white & origin) || ((*game).black&(*game).kings&origin)){
 		
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   northEastRotate(position) & enemy & legalMove &&    northEastRotate(northEastRotate(position)) & (*game).notOccupied){
@@ -94,14 +94,14 @@ int jumpSouthWest(PGAME game, PMJ jump){
 	BITBOARD enemy;
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_SOUTH_MOVE & LEGAL_WEST_MOVE;
-	(*jump).origin = (*jump).intermediates[0];
+	BITBOARD origin = (*jump).intermediates[0];
 	
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
 	position = (*jump).intermediates[(*jump).intermediatePosistions];
 	enemy = enemy&~(*jump).removePieces;
 	
 	
-	if (((*game).black & (*jump).origin) || ((*game).white&(*game).kings&(*jump).origin)){
+	if (((*game).black & origin || ((*game).white&(*game).kings & origin))){
 		
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   southWestRotate(position) & enemy & legalMove &&    southWestRotate(southWestRotate(position)) & (*game).notOccupied){
@@ -126,14 +126,13 @@ int jumpSouthEast(PGAME game, PMJ jump){
 	BITBOARD enemy;
 	BITBOARD position;
 	BITBOARD legalMove = LEGAL_SOUTH_MOVE & LEGAL_EAST_MOVE;
-	
-	(*jump).origin = (*jump).intermediates[0];
+	BITBOARD origin = (*jump).intermediates[0];
 	
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
 	position = (*jump).intermediates[(*jump).intermediatePosistions];
 	enemy = enemy&~(*jump).removePieces;
 	
-	if (((*game).black & (*jump).origin) || ((*game).white&(*game).kings&(*jump).origin)){
+	if (((*game).black & origin) || ((*game).white&(*game).kings&origin)){
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
 		if (position & legalMove   &&   southEastRotate(position) & enemy & legalMove &&  southEastRotate(southEastRotate(position)) & (*game).notOccupied){
 //			printf("piece can jump SE \n");					
@@ -168,7 +167,6 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 	
 	newMJ(&jumpOriginal);
 	jumpOriginal.intermediates[0] = piece;
-	jumpOriginal.origin = piece;
 	jumpAnalyze = jumpOriginal;
 	
 		
@@ -241,8 +239,8 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 			if (jumpFound) {
 				(*game).mjCount++;
 				(*game).canJ = 1;
-				if ((*game).mjs[jumpLoop].intermediatePosistions <= MAX_INTERMEDIATES) {
-					printf("More intermediates found than jumpstack allows\n");
+				if ((*game).mjs[jumpLoop].intermediatePosistions >= MAX_INTERMEDIATES) {
+					printf("More intermediates found than jumpstack allows, PANIC!\n");
 				}
 			}
 			(*game).mjs[jumpLoop].endOfJump = 1;
@@ -298,6 +296,10 @@ void findJumpersForGame(PGAME game){
 				
 		};
 			
+	}
+	
+	if ((*game).mjCount >= MAX_MOVES) {
+		printf("jump stack exceeded, panic!\n");
 	}
 	
 };

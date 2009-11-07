@@ -192,7 +192,7 @@ void findMoversForGame(PGAME game){
 		}
 	
 	if (a >= MAX_MOVES) {
-		printf("move stack exceeded, quiting\n");
+		printf("move stack exceeded, panic!\n");
 	}
 	
 	(*game).mjCount = a;

@@ -25,16 +25,23 @@
 
 
 
-int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter, int ply){
+int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter){
 	
 	
 	
 	
-	int *moveScore = malloc (sizeof (GAMESESSION) * (*game).mjCount);
+	long long unsigned *moveScore = malloc (sizeof (GAMESESSION) * (*game).mjCount);
 	int i;
 	
 	for (i = 0; i < (*game).mjCount; i++)
 		moveScore[i] = 0;
+	
+	
+	int *bestMJs = malloc (sizeof (GAMESESSION) * (*game).mjCount);
+	
+	for (i = 0; i < (*game).mjCount; i++)
+		bestMJs[i] = 0;
+	
 	
 	int h;
 	int j;
@@ -48,21 +55,21 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 
 	char enemy;
 	
-	if ((*game).turn == 'w') {
+	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
+	
+	if (enemy == 'b') {
 		enemyPiecesCount = bitsInBitboard((*game).black);
 		friendlyPiecesCount = bitsInBitboard((*game).white);
 
-		enemy = 'b';
 	}
-	if ((*game).turn == 'b') {
+	if (enemy == 'w') {
 		enemyPiecesCount = bitsInBitboard((*game).white);
 		friendlyPiecesCount = bitsInBitboard((*game).black);
-		enemy = 'w';
 	}	
 	
 	srand(time(0));
 	
-	bestmj = rand()%(*game).mjCount;
+	bestmj = (*game).mjCount%rand();
 	
 	for (h=0; h < (*game).mjCount; h++){
 	
@@ -83,50 +90,39 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 				
 					if (winsDatabase[i].winner == (*game).turn) {
 
-						moveScore[h]++;
-						moveScore[h]++;
-						moveScore[h]++;
+						moveScore[h]+=3;
+
 					}
 				
 					if (winsDatabase[i].winner == 'n') {
-						moveScore[h]--;
-						moveScore[h]--;
+						moveScore[h]-=2;
+
 					}
 
 					changeTurn(&testGame);
 					cleanUp(&testGame);
 					
+					findJumpersForGame(&testGame);
+					
+					
 					if (winsDatabase[i].winner == (*game).turn) {
 						
-						moveScore[h]--;
-						moveScore[h]--;
-						moveScore[h]--;
+						moveScore[h]-=3;
 					
 					}
 					
-					if (ply) {
-						ply--;
-						findJumpersForGame(&testGame);
-						if (testGame.canJ) {
-							makeJump( bestMJ(&testGame, winsDatabase, winsDatabaseSessionCounter, ply), &testGame);
-						}else if (testGame.mjCount) {
-							makeMove( bestMJ(&testGame, winsDatabase, winsDatabaseSessionCounter, ply), &testGame);
-						}
-					}
-					if (testGame.canJ) {
-						moveScore[h]--;
-					}
 					
 					if (enemy == 'w') {
 						moveScore[h] = moveScore[h] + (2*(enemyPiecesCount - bitsInBitboard(testGame.white)));
-						moveScore[h] = moveScore[h] - (2*(friendlyPiecesCount - bitsInBitboard(testGame.black)));
 
 					}
 					if (enemy == 'b') {
 						moveScore[h] = moveScore[h] + (2*(enemyPiecesCount - bitsInBitboard(testGame.black)));
-						moveScore[h] = moveScore[h] - (2*(friendlyPiecesCount - bitsInBitboard(testGame.white)));
 
 					}
+					
+					moveScore[h]+= winsDatabase[i].moves[j].relevance;
+					
 			
 				}
 			}
@@ -139,16 +135,25 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 	h = 0;
 	
 	for (i=0; i < (*game).mjCount; i++) {
-	
+		
 		if (moveScore[i] > moveScore[bestmj]) {
 			bestmj = i;
+			h = 0;
 		}
+		
+		if (moveScore[i] == moveScore[bestmj]) {
+			h++;
+			bestMJs[h] = i;
+		}
+		
 	}
 	
 	
-
-	
-	
+	bestmj = bestMJs[h%rand()];
+		
+	free(bestMJs);
+	free(moveScore);
+		
 	return bestmj;
 
 }
