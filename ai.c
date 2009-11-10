@@ -54,15 +54,14 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 	int friendlyPiecesCount;
 
 	char enemy;
-	
-	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
-	
-	if (enemy == 'b') {
+		
+	if ((*game).turn == 'w') {
+		enemy = 'b';
 		enemyPiecesCount = bitsInBitboard((*game).black);
 		friendlyPiecesCount = bitsInBitboard((*game).white);
 
-	}
-	if (enemy == 'w') {
+	}else{
+		enemy = 'w';
 		enemyPiecesCount = bitsInBitboard((*game).white);
 		friendlyPiecesCount = bitsInBitboard((*game).black);
 	}	
@@ -78,8 +77,7 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 	}else {
 		makeMove(h, &testGame);
 	}
-	winsDatabaseSessionCounter = winsDatabaseSessionCounter - 1;
-	
+		
 	for (i=0;i < winsDatabaseSessionCounter;i++){
 	
 			
@@ -121,7 +119,7 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 
 					}
 					
-					moveScore[h]+= winsDatabase[i].moves[j].relevance;
+					moveScore[h]*= winsDatabase[i].moves[j].relevance;
 					
 			
 				}
@@ -150,7 +148,10 @@ int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter
 	
 	
 	bestmj = bestMJs[h%rand()];
-		
+	
+//	printf("moveScore: %d", moveScore[bestmj]);
+	
+	
 	free(bestMJs);
 	free(moveScore);
 		
