@@ -7,15 +7,8 @@
  *
  */
 
-#include <stdio.h>
-#include <memory.h>
 #include "main.h"
-#include "mover.h"
-#include "print.h"
-#include "bitops.h"
-#include "jumper.h"
-#include "print.h"
-#include "positions.h"
+
 
 
 int jumpNorthWest(PGAME game, PMJ jump){

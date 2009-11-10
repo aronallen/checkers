@@ -8,10 +8,6 @@
  */
 #include <stdio.h>
 #include "main.h"
-#include "print.h"
-#include "mover.h"
-#include "bitops.h"
-#include "commitmove.h"
 
 
 

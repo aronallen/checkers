@@ -7,8 +7,6 @@
  *
  */
 #include "main.h"
-#include "commitjump.h"
-#include "positions.h"
 
 
 void makeJump(int jumpNumber, PGAME game){

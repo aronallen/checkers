@@ -28,6 +28,11 @@
 #define MAX_MOVES_GAME 300
 #define MAX_INTERMEDIATES 7
 
+static const BITBOARD LEGAL_NORTH_MOVE = ~(0x82000820);
+static const BITBOARD LEGAL_SOUTH_MOVE = ~(0x00041041);
+static const BITBOARD LEGAL_EAST_MOVE  = ~(0x02020202);
+static const BITBOARD LEGAL_WEST_MOVE  = ~(0x04040404);
+
 //BitMaskArray used for locating bits on BITBOARD
 static const BITBOARD bitboardForRealPosition[32] = {
 0x00000800,0x00000020,0x80000000,0x02000000,
@@ -121,7 +126,10 @@ typedef struct _GAMESESSION {
 	
 	int moveCount;
 	char winner;
-	LIGHTGAME moves[MAX_MOVES_GAME];
+	
+	int movesAllocated;
+	
+	PLIGHTGAME moves;
 	
 	
 }GAMESESSION, * PGAMESESSION;
@@ -143,3 +151,5 @@ void cleanUp (PGAME game);
 
 //returns 0 or 1 depending on selection.
 int isPieceFriendly (GAME game, BITBOARD position);
+
+void addMoveToEndGameDatabase (PGAMESESSION db, PGAME theGame, int gameNumber);

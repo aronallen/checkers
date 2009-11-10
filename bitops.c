@@ -6,9 +6,7 @@
  *  Copyright 2009 __MyCompanyName__. All rights reserved.
  *
  */
-#include <stdio.h>
 #include "main.h"
-#include "bitops.h"
 
 //Bit Rotations, single bits only!
 BITBOARD northWestRotate(BITBOARD bitboard){

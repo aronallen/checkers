@@ -8,9 +8,6 @@
  */
 
 #include "main.h"
-#include "print.h"
-#include "mover.h"
-#include "positions.h"
 
 
 void piecesInGameForActivePlayer(PGAME game){

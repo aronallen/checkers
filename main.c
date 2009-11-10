@@ -16,7 +16,7 @@
 int main (int argc, const char * argv[]) {
 	
 	int gamesToPlay = 200000;
-	int randomGamesToPlay = 1000;
+	int randomGamesToPlay = 199997;
 	int lastGamesToShow = 3;
 	
 	//Size of end game database.
@@ -27,14 +27,18 @@ int main (int argc, const char * argv[]) {
 	
 	int gameNumber = 0;
 	
-	
 
-	GAMESESSION *endGameDatabase = malloc (sizeof (GAMESESSION) * gamesToStore);
+	PGAMESESSION endGameDatabase = (PGAMESESSION) malloc (sizeof (GAMESESSION) * gamesToStore);
 	int i;
 	
-	for (i = 0; i < gamesToPlay; i++)
+	for (i = 0; i < gamesToPlay; i++){
+
+		endGameDatabase[i].moveCount = 0;
+		endGameDatabase[i].movesAllocated = 10;
+		endGameDatabase[i].moves = (PLIGHTGAME)malloc(sizeof (LIGHTGAME) * endGameDatabase[gameNumber].movesAllocated);
 	
-	endGameDatabase[gameNumber].moveCount = 0;
+	
+	}
 	
 	GAME theGame;
 	int theTime;
@@ -56,7 +60,8 @@ int main (int argc, const char * argv[]) {
 
 	
 	for (i=0;i<gamesToPlay;i++){
-	
+		
+		
 		//Set pieces count
 		totalBlackPieces = 12;
 		totalWhitePieces = 12;
@@ -92,15 +97,14 @@ int main (int argc, const char * argv[]) {
 		
 		
 			//Store our game in the endgame database,
-			endGameDatabase[gameNumber].moves[moveCounter].black = theGame.black;
-			endGameDatabase[gameNumber].moves[moveCounter].white = theGame.white;
-			endGameDatabase[gameNumber].moves[moveCounter].kings = theGame.kings;
-			
+			addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
 			//Random games are lest relevant than analyzed games, this int is multplied with the total score, in the analyzing routine (ai.c)
 			endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
 
 			//Increment our move counter
 			moveCounter++;
+			endGameDatabase[gameNumber].moveCount = moveCounter;
+
 		
 			//Choose random jump
 			move = rand()%theGame.mjCount;
@@ -181,16 +185,20 @@ int main (int argc, const char * argv[]) {
 //				printf("no mj's found\n");
 			}
 			
+
 			
 		}
 		
 		//End of game reached, analyzing who won.
 		
-		//Store the last move in the endgame database,
-		endGameDatabase[gameNumber].moves[moveCounter].black = theGame.black;
-		endGameDatabase[gameNumber].moves[moveCounter].white = theGame.white;
-		endGameDatabase[gameNumber].moves[moveCounter].kings = theGame.kings;
+		//Store our game in the endgame database,
+		addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
+		//Random games are lest relevant than analyzed games, this int is multplied with the total score, in the analyzing routine (ai.c)
+		endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
+		
+		//Increment our move counter
 		moveCounter++;
+		endGameDatabase[gameNumber].moveCount = moveCounter;
 		
 		//If stalemate count is reached, no one wins	
 		if (staleMateCount <= 0) {
@@ -247,10 +255,6 @@ int main (int argc, const char * argv[]) {
 	
 		
 		
-		if (endGameDatabase[gameNumber].moveCount > MAX_MOVES_GAME) {
-				printf("PANIC! more moves than can be stored in the game session!\n");
-		}
-		
 		//Move game database counter.
 		if (gameNumber >= gamesToStore-1) {
 			gameNumber = 0;
@@ -263,7 +267,10 @@ int main (int argc, const char * argv[]) {
 		}else {
 			gamesToSearch++;
 		}
-		printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins, gamesToSearch);
+
+		if (gameNumber%1000 == 0) {
+			printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins, gamesToSearch);
+		}
 
 		
 	
@@ -351,5 +358,33 @@ int isPieceFriendly (GAME game, BITBOARD position){
 			return 1;
 		}
 	return 0;
+}
+
+
+void addMoveToEndGameDatabase (PGAMESESSION db, PGAME theGame, int gameNumber){
+	
+	
+	if (db[gameNumber].movesAllocated == db[gameNumber].moveCount){
+	
+		if (db[gameNumber].movesAllocated == 0){
+			db[gameNumber].movesAllocated == 10;
+		}else {
+			db[gameNumber].movesAllocated += 10;
+		}
+	
+	PLIGHTGAME tmp;
+	tmp = (PLIGHTGAME) realloc(db[gameNumber].moves, sizeof(LIGHTGAME) * db[gameNumber].movesAllocated);
+
+	if (!tmp) {
+		printf("error! panic!\n");
+	}
+	else {
+		db[gameNumber].moves = tmp;
+	}
+	}
+	db[gameNumber].moves[db[gameNumber].moveCount].black = (*theGame).black;
+	db[gameNumber].moves[db[gameNumber].moveCount].white = (*theGame).white;
+	db[gameNumber].moves[db[gameNumber].moveCount].kings = (*theGame).kings;	
+	
 }
 

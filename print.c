@@ -6,12 +6,7 @@
  *  Copyright 2009 __MyCompanyName__. All rights reserved.
  *
  */
-#include <stdio.h>
 #include "main.h"
-#include "print.h"
-#include "bitops.h"
-#include "definitions.h"
-
 
 
 
