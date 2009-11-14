@@ -10,7 +10,8 @@
 		651CA278102340B6001C558B /* jumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 651CA277102340B6001C558B /* jumper.c */; };
 		65369CA81025A01D005CDDB2 /* positions.c in Sources */ = {isa = PBXBuildFile; fileRef = 65369CA71025A01D005CDDB2 /* positions.c */; };
 		655AA3C21094739E0007AB5A /* commitjump.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA3C11094739E0007AB5A /* commitjump.c */; };
-		655AA58E109507540007AB5A /* ai.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA58D109507540007AB5A /* ai.c */; };
+		655AA58E109507540007AB5A /* aisearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA58D109507540007AB5A /* aisearch.c */; };
+		65ABBD5610AA9F1F004B10BD /* aialpabeta.c in Sources */ = {isa = PBXBuildFile; fileRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */; };
 		65B8A1601021AC7B008BA05A /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A15F1021AC7B008BA05A /* print.c */; };
 		65B8A2941021B956008BA05A /* mover.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A2931021B956008BA05A /* mover.c */; };
 		65B8A2A61021E8B4008BA05A /* bitops.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A2A51021E8B4008BA05A /* bitops.c */; };
@@ -40,8 +41,10 @@
 		65369CA71025A01D005CDDB2 /* positions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = positions.c; sourceTree = "<group>"; };
 		655AA3C01094739E0007AB5A /* commitjump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commitjump.h; sourceTree = "<group>"; };
 		655AA3C11094739E0007AB5A /* commitjump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commitjump.c; sourceTree = "<group>"; };
-		655AA58C109507540007AB5A /* ai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai.h; sourceTree = "<group>"; };
-		655AA58D109507540007AB5A /* ai.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ai.c; sourceTree = "<group>"; };
+		655AA58C109507540007AB5A /* aisearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aisearch.h; sourceTree = "<group>"; };
+		655AA58D109507540007AB5A /* aisearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aisearch.c; sourceTree = "<group>"; };
+		65ABBD5410AA9F1F004B10BD /* aialpabeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aialpabeta.h; sourceTree = "<group>"; };
+		65ABBD5510AA9F1F004B10BD /* aialpabeta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aialpabeta.c; sourceTree = "<group>"; };
 		65B8A15E1021AC7B008BA05A /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
 		65B8A15F1021AC7B008BA05A /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
 		65B8A22D1021B2AE008BA05A /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
@@ -79,24 +82,13 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				655AA58C109507540007AB5A /* ai.h */,
-				655AA58D109507540007AB5A /* ai.c */,
 				65B8A22D1021B2AE008BA05A /* main.h */,
 				08FB7796FE84155DC02AAC07 /* main.c */,
-				65B8A2921021B956008BA05A /* mover.h */,
-				65B8A2931021B956008BA05A /* mover.c */,
-				65B8A5E310230095008BA05A /* commitmove.h */,
-				65B8A5E410230095008BA05A /* commitmove.c */,
-				65369CA61025A01D005CDDB2 /* positions.h */,
-				65369CA71025A01D005CDDB2 /* positions.c */,
-				655AA3C01094739E0007AB5A /* commitjump.h */,
-				655AA3C11094739E0007AB5A /* commitjump.c */,
-				651CA276102340B6001C558B /* jumper.h */,
-				651CA277102340B6001C558B /* jumper.c */,
-				65B8A2A41021E8B4008BA05A /* bitops.h */,
-				65B8A2A51021E8B4008BA05A /* bitops.c */,
-				65B8A15E1021AC7B008BA05A /* print.h */,
-				65B8A15F1021AC7B008BA05A /* print.c */,
+				65ABBD5B10AA9F86004B10BD /* AI */,
+				65ABBD5910AA9F6A004B10BD /* Find Moves */,
+				65ABBD5710AA9F48004B10BD /* Make Moves */,
+				65ABBD5810AA9F5A004B10BD /* Bitops */,
+				65ABBD5A10AA9F76004B10BD /* Output */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -107,6 +99,59 @@
 				8DD76FB20486AB0100D96B5E /* hello */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		65ABBD5710AA9F48004B10BD /* Make Moves */ = {
+			isa = PBXGroup;
+			children = (
+				65B8A5E310230095008BA05A /* commitmove.h */,
+				65B8A5E410230095008BA05A /* commitmove.c */,
+				655AA3C01094739E0007AB5A /* commitjump.h */,
+				655AA3C11094739E0007AB5A /* commitjump.c */,
+			);
+			name = "Make Moves";
+			sourceTree = "<group>";
+		};
+		65ABBD5810AA9F5A004B10BD /* Bitops */ = {
+			isa = PBXGroup;
+			children = (
+				65369CA61025A01D005CDDB2 /* positions.h */,
+				65369CA71025A01D005CDDB2 /* positions.c */,
+				65B8A2A41021E8B4008BA05A /* bitops.h */,
+				65B8A2A51021E8B4008BA05A /* bitops.c */,
+			);
+			name = Bitops;
+			sourceTree = "<group>";
+		};
+		65ABBD5910AA9F6A004B10BD /* Find Moves */ = {
+			isa = PBXGroup;
+			children = (
+				65B8A2921021B956008BA05A /* mover.h */,
+				65B8A2931021B956008BA05A /* mover.c */,
+				651CA276102340B6001C558B /* jumper.h */,
+				651CA277102340B6001C558B /* jumper.c */,
+			);
+			name = "Find Moves";
+			sourceTree = "<group>";
+		};
+		65ABBD5A10AA9F76004B10BD /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				65B8A15E1021AC7B008BA05A /* print.h */,
+				65B8A15F1021AC7B008BA05A /* print.c */,
+			);
+			name = Output;
+			sourceTree = "<group>";
+		};
+		65ABBD5B10AA9F86004B10BD /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				655AA58C109507540007AB5A /* aisearch.h */,
+				655AA58D109507540007AB5A /* aisearch.c */,
+				65ABBD5410AA9F1F004B10BD /* aialpabeta.h */,
+				65ABBD5510AA9F1F004B10BD /* aialpabeta.c */,
+			);
+			name = AI;
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
@@ -168,7 +213,8 @@
 				651CA278102340B6001C558B /* jumper.c in Sources */,
 				65369CA81025A01D005CDDB2 /* positions.c in Sources */,
 				655AA3C21094739E0007AB5A /* commitjump.c in Sources */,
-				655AA58E109507540007AB5A /* ai.c in Sources */,
+				655AA58E109507540007AB5A /* aisearch.c in Sources */,
+				65ABBD5610AA9F1F004B10BD /* aialpabeta.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

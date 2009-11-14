@@ -9,5 +9,4 @@
 
 
 void piecesInGameForActivePlayer(PGAME game);
-void piecesInGameForPlayer(PGAME game, char player);
 

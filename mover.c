@@ -98,8 +98,6 @@ void findMoversForGame(PGAME game){
 	int i;
 	int a = 0;
 	
-	
-	
 	//find all movers for white
 	if ((*game).turn=='w'){
 		
@@ -189,6 +187,10 @@ void findMoversForGame(PGAME game){
 	
 	if (a >= MAX_MOVES) {
 		printf("move stack exceeded, panic!\n");
+	}
+	
+	if ((*game).turn != 'w' && (*game).turn !='b') {
+		printf("ERROR ERROR ERROR wrong player, %c\n", (*game).turn );
 	}
 	
 	(*game).mjCount = a;

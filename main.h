@@ -90,6 +90,8 @@ typedef struct _GAME {
 	int mjCount;
 	
 	int canJ;
+	
+	float score;
 		
 
 	//total available jump count	
@@ -103,8 +105,12 @@ typedef struct _GAME {
 
 	//PIECES struct containing more detailed information of black pieces.
 	PIECES blackPieces;
+	
+	int parrentGame;
 
 }GAME, *PGAME;
+
+
 
 typedef struct _LIGHTGAME {
 	
@@ -116,9 +122,13 @@ typedef struct _LIGHTGAME {
 
 	//a BITBOARD containing all kings.	
 	BITBOARD kings;
+		
+	char turn;
 	
-	int relevance;
+	float score;
 	
+	int parrentGame;
+
 		
 }LIGHTGAME, *PLIGHTGAME;
 
@@ -134,7 +144,15 @@ typedef struct _GAMESESSION {
 	
 }GAMESESSION, * PGAMESESSION;
 
-
+typedef struct _ALPHABETA{
+	
+	PLIGHTGAME moves;
+	
+	int allocMove;
+	int moveCount;
+	
+	
+}ALPHABETA, *PALPHABETA;
 //Game Functions
 
 //Creates a new game, with a default setup.

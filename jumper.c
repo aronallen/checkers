@@ -19,6 +19,7 @@ int jumpNorthWest(PGAME game, PMJ jump){
 	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_WEST_MOVE;
 	BITBOARD origin = (*jump).intermediates[0];
 	
+	
 	me = ((*game).turn == 'b') ?(*game).black :(*game).white;
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
 	position = (*jump).intermediates[(*jump).intermediatePosistions];
@@ -261,6 +262,11 @@ void findJumpsForPiece(PGAME game, BITBOARD piece){
 void findJumpersForGame(PGAME game){
 	
 	int i;
+
+	
+	if ((*game).turn != 'w' && (*game).turn !='b') {
+		printf("ERROR ERROR ERROR wrong player, %c\n", (*game).turn );
+	}
 	
 	if ((*game).turn=='w'){
 

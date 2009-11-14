@@ -9,18 +9,19 @@
 #include "commitmove.h"
 #include "jumper.h"
 #include "commitjump.h"
-#include "ai.h"
+#include "aialpabeta.h"
 
 
 
 int main (int argc, const char * argv[]) {
 	
-	int gamesToPlay = 200000;
-	int randomGamesToPlay = 199997;
-	int lastGamesToShow = 3;
-	
+	int gamesToPlay = 100;
+	int lastGamesToShow = 100;
+
+	int randomGamesToPlay = 0;
+
 	//Size of end game database.
-	int gamesToStore = 200000;
+	int gamesToStore = 1000000;
 	
 	//Must be zero
 	int gamesToSearch = 0;
@@ -31,7 +32,7 @@ int main (int argc, const char * argv[]) {
 	PGAMESESSION endGameDatabase = (PGAMESESSION) malloc (sizeof (GAMESESSION) * gamesToStore);
 	int i;
 	
-	for (i = 0; i < gamesToPlay; i++){
+	for (i = 0; i < gamesToStore; i++){
 
 		endGameDatabase[i].moveCount = 0;
 		endGameDatabase[i].movesAllocated = 10;
@@ -82,7 +83,6 @@ int main (int argc, const char * argv[]) {
 		//If there were no jumps, then find movers instead.
 		if (!theGame.canJ) {
 			findMoversForGame(&theGame);
-		}else {
 		}
 
 		
@@ -97,16 +97,16 @@ int main (int argc, const char * argv[]) {
 		
 		
 			//Store our game in the endgame database,
-			addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
+			//addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
 			//Random games are lest relevant than analyzed games, this int is multplied with the total score, in the analyzing routine (ai.c)
-			endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
+			//endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
 
 			//Increment our move counter
 			moveCounter++;
-			endGameDatabase[gameNumber].moveCount = moveCounter;
+			//endGameDatabase[gameNumber].moveCount = moveCounter;
 
 		
-			//Choose random jump
+			//Choose random mjump
 			move = rand()%theGame.mjCount;
 			
 		
@@ -120,7 +120,7 @@ int main (int argc, const char * argv[]) {
 
 					}
 					else{
-						move = bestMJ(&theGame, endGameDatabase, gamesToSearch);
+						move = bestMJab(theGame);
 					}
 				}
 				
@@ -132,7 +132,7 @@ int main (int argc, const char * argv[]) {
 								move = 0;
 						}
 						else{
-							move = bestMJ(&theGame, endGameDatabase, gamesToSearch);
+							move = bestMJab(theGame);
 						}
 				}
 				
@@ -155,7 +155,7 @@ int main (int argc, const char * argv[]) {
 			
 		
 		
-			//Change the turn.
+			//Change the turn and crown pieces.
 			changeTurn(&theGame);
 			cleanUp(&theGame);
 
@@ -192,13 +192,13 @@ int main (int argc, const char * argv[]) {
 		//End of game reached, analyzing who won.
 		
 		//Store our game in the endgame database,
-		addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
+		//addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
 		//Random games are lest relevant than analyzed games, this int is multplied with the total score, in the analyzing routine (ai.c)
-		endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
+		//endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
 		
 		//Increment our move counter
 		moveCounter++;
-		endGameDatabase[gameNumber].moveCount = moveCounter;
+		//endGameDatabase[gameNumber].moveCount = moveCounter;
 		
 		//If stalemate count is reached, no one wins	
 		if (staleMateCount <= 0) {
@@ -268,10 +268,8 @@ int main (int argc, const char * argv[]) {
 			gamesToSearch++;
 		}
 
-		if (gameNumber%1000 == 0) {
-			printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins, gamesToSearch);
-		}
-
+		printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins, gamesToSearch);
+		
 		
 	
 
@@ -310,10 +308,11 @@ GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
 	game.turn=turn;
 	game.mjCount=0;
 	game.canJ = 0;
+	game.score = 0;
+	game.parrentGame = 0;
 	game.blackPieces.piecesCount = 12;
 	game.whitePieces.piecesCount = 12;
-	piecesInGameForPlayer(&game, 'b');
-	piecesInGameForPlayer(&game, 'w');
+	piecesInGameForActivePlayer(&game);
 
 	
 	return game;
@@ -363,7 +362,7 @@ int isPieceFriendly (GAME game, BITBOARD position){
 
 void addMoveToEndGameDatabase (PGAMESESSION db, PGAME theGame, int gameNumber){
 	
-	
+	//Expand Array if full.
 	if (db[gameNumber].movesAllocated == db[gameNumber].moveCount){
 	
 		if (db[gameNumber].movesAllocated == 0){
@@ -382,9 +381,13 @@ void addMoveToEndGameDatabase (PGAMESESSION db, PGAME theGame, int gameNumber){
 		db[gameNumber].moves = tmp;
 	}
 	}
+	
+	
+	//Add current game-state to egDB
 	db[gameNumber].moves[db[gameNumber].moveCount].black = (*theGame).black;
 	db[gameNumber].moves[db[gameNumber].moveCount].white = (*theGame).white;
 	db[gameNumber].moves[db[gameNumber].moveCount].kings = (*theGame).kings;	
+	db[gameNumber].moves[db[gameNumber].moveCount].turn = (*theGame).turn;	
 	
 }
 
