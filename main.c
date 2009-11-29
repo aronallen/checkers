@@ -29,7 +29,7 @@ int main (int argc, const char * argv[]) {
 	int whiteWins = 0;
 	int blackWins = 0;
 	int staleWins = 0;
-	int timeToSearch;
+	int timeToSearch = 3;
 
 	
 	int totalBlackPieces = 12;
@@ -76,12 +76,6 @@ int main (int argc, const char * argv[]) {
 		while (theGame.white && theGame.black && (theGame.mjCount) && staleMateCount > 0) {
 		
 		
-			
-			if (theGame.turn == 'w') {
-				timeToSearch = 10;
-			}else {
-				timeToSearch = 1;
-			}
 
 			
 			
