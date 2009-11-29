@@ -10,36 +10,15 @@
 #include "jumper.h"
 #include "commitjump.h"
 #include "aialpabeta.h"
+#include "aisearch.h"
 
 
 
 int main (int argc, const char * argv[]) {
 	
-	int gamesToPlay = 100;
-	int lastGamesToShow = 100;
 
-	int randomGamesToPlay = 0;
-
-	//Size of end game database.
-	int gamesToStore = 1000000;
-	
-	//Must be zero
-	int gamesToSearch = 0;
-	
-	int gameNumber = 0;
-	
-
-	PGAMESESSION endGameDatabase = (PGAMESESSION) malloc (sizeof (GAMESESSION) * gamesToStore);
 	int i;
-	
-	for (i = 0; i < gamesToStore; i++){
-
-		endGameDatabase[i].moveCount = 0;
-		endGameDatabase[i].movesAllocated = 10;
-		endGameDatabase[i].moves = (PLIGHTGAME)malloc(sizeof (LIGHTGAME) * endGameDatabase[gameNumber].movesAllocated);
-	
-	
-	}
+	int gamesToPlay = 100;
 	
 	GAME theGame;
 	int theTime;
@@ -50,6 +29,7 @@ int main (int argc, const char * argv[]) {
 	int whiteWins = 0;
 	int blackWins = 0;
 	int staleWins = 0;
+	int timeToSearch;
 
 	
 	int totalBlackPieces = 12;
@@ -96,14 +76,17 @@ int main (int argc, const char * argv[]) {
 		while (theGame.white && theGame.black && (theGame.mjCount) && staleMateCount > 0) {
 		
 		
-			//Store our game in the endgame database,
-			//addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
-			//Random games are lest relevant than analyzed games, this int is multplied with the total score, in the analyzing routine (ai.c)
-			//endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
+			
+			if (theGame.turn == 'w') {
+				timeToSearch = 10;
+			}else {
+				timeToSearch = 1;
+			}
 
+			
+			
 			//Increment our move counter
 			moveCounter++;
-			//endGameDatabase[gameNumber].moveCount = moveCounter;
 
 		
 			//Choose random mjump
@@ -111,33 +94,26 @@ int main (int argc, const char * argv[]) {
 			
 		
 			//Find best jump, and preform it.		
-			if (theGame.canJ) {
-				if (i >= randomGamesToPlay) {
 			
 				
-					if (theGame.mjCount == 1) {
-						move = 0;
+			if (theGame.mjCount == 1 && staleMateCount > 30) {
+					
+					move = 0;
 
-					}
-					else{
-						move = bestMJab(theGame);
-					}
-				}
+			}else if (staleMateCount > 0) {
 				
+					
+				move = bestMJab(theGame, timeToSearch);
+					
+					
+
+			}
+				
+			
+			if (theGame.canJ) {
 				makeJump(move, &theGame);
-		
 			}else{
-				if (i >= randomGamesToPlay) {			
-						if (theGame.mjCount == 1) {
-								move = 0;
-						}
-						else{
-							move = bestMJab(theGame);
-						}
-				}
-				
 				makeMove(move, &theGame);
-				
 			}
 
 
@@ -162,9 +138,7 @@ int main (int argc, const char * argv[]) {
 		
 		
 			//Print all moves, if we are at the last game
-			if (i >=  gamesToPlay-lastGamesToShow) {
-				printGame(&theGame);
-			}
+			printGame(&theGame);
 		
 			//Find all jumps for the current player
 			findJumpersForGame(&theGame);
@@ -189,16 +163,9 @@ int main (int argc, const char * argv[]) {
 			
 		}
 		
-		//End of game reached, analyzing who won.
-		
-		//Store our game in the endgame database,
-		//addMoveToEndGameDatabase(endGameDatabase, &theGame, gameNumber);
-		//Random games are lest relevant than analyzed games, this int is multplied with the total score, in the analyzing routine (ai.c)
-		//endGameDatabase[gameNumber].moves[moveCounter].relevance = (i >= randomGamesToPlay) ?100 :1;
 		
 		//Increment our move counter
 		moveCounter++;
-		//endGameDatabase[gameNumber].moveCount = moveCounter;
 		
 		//If stalemate count is reached, no one wins	
 		if (staleMateCount <= 0) {
@@ -207,8 +174,6 @@ int main (int argc, const char * argv[]) {
 		
 		//If black is eliminated, White wins.
 		if (theGame.black == 0) {
-			endGameDatabase[gameNumber].moveCount = moveCounter;
-			endGameDatabase[gameNumber].winner = 'w';
 			whiteWins++;
 			victoryCount++;
 			theGame.turn = 'W';
@@ -216,8 +181,6 @@ int main (int argc, const char * argv[]) {
 		} 
 		//If white is eliminated, Black wins	
 		if (theGame.white == 0) {
-			endGameDatabase[gameNumber].moveCount = moveCounter;
-			endGameDatabase[gameNumber].winner = 'b';
 			blackWins++;
 			victoryCount--;
 			theGame.turn = 'B';
@@ -228,16 +191,12 @@ int main (int argc, const char * argv[]) {
 	
 		//If black has no more moves, white wins
 		if (theGame.turn == 'w' ){
-			endGameDatabase[gameNumber].moveCount = moveCounter;
-			endGameDatabase[gameNumber].winner = 'w';
 			whiteWins++;
 			victoryCount++;
 		}
 	
 		//If white has no more moves, black wins
 		if (theGame.turn == 'b' ){
-			endGameDatabase[gameNumber].moveCount = moveCounter;
-			endGameDatabase[gameNumber].winner = 'b';
 			blackWins++;
 			victoryCount--;
 
@@ -246,8 +205,6 @@ int main (int argc, const char * argv[]) {
 		
 		//No winner.
 		if (theGame.turn == 'n'){
-			endGameDatabase[gameNumber].moveCount = moveCounter;
-			endGameDatabase[gameNumber].winner = 'n';
 			staleWins++;
 	
 	
@@ -255,20 +212,10 @@ int main (int argc, const char * argv[]) {
 	
 		
 		
-		//Move game database counter.
-		if (gameNumber >= gamesToStore-1) {
-			gameNumber = 0;
-		}else {
-			gameNumber++;
-		}
 		
-		if (gamesToSearch >= gamesToStore) {
-			gamesToSearch = gamesToStore;
-		}else {
-			gamesToSearch++;
-		}
+		
 
-		printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins, gamesToSearch);
+		printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins);
 		
 		
 	
@@ -276,7 +223,6 @@ int main (int argc, const char * argv[]) {
 	}
 	theTime = time(0) - theTime;
 	
-	free(endGameDatabase);
 	
 	printf("%d, games in %d seconds, whiteWins is %d, blackWins is %d, staleWins is: %d\n",i-1, theTime, whiteWins, blackWins, staleWins);
 	
@@ -300,6 +246,7 @@ GAME game(BITBOARD black, BITBOARD white, BITBOARD kings, char turn){
 	
 	if (turn != 'w' && turn !='b')
 		turn = 'b';
+	
 	
 	game.black=black;
 	game.white=white;

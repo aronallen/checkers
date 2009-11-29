@@ -105,6 +105,7 @@ typedef struct _GAME {
 
 	//PIECES struct containing more detailed information of black pieces.
 	PIECES blackPieces;
+
 	
 	int parrentGame;
 
@@ -126,7 +127,7 @@ typedef struct _LIGHTGAME {
 	char turn;
 	
 	float score;
-	
+		
 	int parrentGame;
 
 		
