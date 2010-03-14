@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>651D5E3B114D3A62001D841F</string>
+						<string>651D5E60114D3EA5001D841F</string>
 						<key>history</key>
 						<array>
 							<string>65DB6FF310AED08400BF0C4B</string>
@@ -237,47 +237,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>3 188 1437 690 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>65ABC0F110ADDDF9004B10BD</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>aialpabeta.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>65ABC0F210ADDDF9004B10BD</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>aialpabeta.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>651D5E3C114D3A62001D841F</string>
-						<key>history</key>
-						<array>
-							<string>65AC0DA410C0880F00E252A8</string>
-							<string>653D7472112C5F8F00B11638</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1437, 649}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>0 60 1437 690 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -414,7 +373,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>651D5E3A114D3A62001D841F</string>
+										<string>651D5E5F114D3EA5001D841F</string>
 										<key>history</key>
 										<array>
 											<string>65B8A1811021AD5A008BA05A</string>
@@ -437,7 +396,7 @@
 											<string>651D5E25114D3620001D841F</string>
 											<string>651D5E26114D3620001D841F</string>
 											<string>651D5E27114D3620001D841F</string>
-											<string>651D5E28114D3620001D841F</string>
+											<string>651D5E4A114D3C84001D841F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -633,14 +592,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>651D5E3D114D3A62001D841F</string>
 		<string>651D5E20114D348A001D841F</string>
 		<string>651D5E21114D348A001D841F</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>65B8A1491021AAAB008BA05A</string>
-		<string>65ABC0F110ADDDF9004B10BD</string>
 		<string>65ABC32110AE1627004B10BD</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/aronallen/Xcode Projects/Checkers GIT/hello.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -1015,7 +972,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

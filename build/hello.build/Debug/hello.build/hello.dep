@@ -1,5 +1,5 @@
-8368a72f902ed1faef66b7ab92f2b5e4 ebf08a38df0adfea720855b76063af3c ffffffffffffffffffffffffffffffff 40912 /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
-000000000175c2530000000000002c38 06b6445fc838b25f582593e7566fc71f ffffffffffffffffffffffffffffffff 13296 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
+8368a72f902ed447ef66b7ab92f2b2de ebf08a38df0adfea720855b76063af3c ffffffffffffffffffffffffffffffff 40912 /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
+0000000001fe5b930000000000002b01 06b6445fc838b25f582593e7566fc71f ffffffffffffffffffffffffffffffff 13112 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
 0000000001e838880000000000000512 39b6e85495fe3ac3deec77f7b07fba15 ffffffffffffffffffffffffffffffff 6436 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o
 0000000001ef191600000000000008a8 9cfaedf9adda4c2feedace8609ffd9c3 ffffffffffffffffffffffffffffffff 5268 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o
 0000000001eb715a0000000000000bfe 32456893746561004fa2c4dcbf65e19b ffffffffffffffffffffffffffffffff 4832 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
@@ -8,7 +8,7 @@
 0000000001ef18c50000000000000520 de72f69ead48c4394576e617491bb2cb ffffffffffffffffffffffffffffffff 7156 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
 0000000001eb76130000000000001bb5 7709d658d56afd46b5ea7bf8312913ff ffffffffffffffffffffffffffffffff 9472 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
 0000000001ef18d30000000000000bdf 70ddc506e21d2483fa8ecaf2a7885262 ffffffffffffffffffffffffffffffff 6240 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
-000000000ca1651500000000000015e1 d65b7bfa3500286597205631e8b25f8d ffffffffffffffffffffffffffffffff 10568 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
+000000000c2af96800000000000015e2 d65b7bfa3500286597205631e8b25f8d ffffffffffffffffffffffffffffffff 10568 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
 ffffffffffffffffffffffffffffffff c12726649db0436a8c034bb9419f7384 ffffffffffffffffffffffffffffffff 6540 /Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/ai.o
 ffffffffffffffffffffffffffffffff 47bb12fdf5ed2f7921986770c6d8ee29 ffffffffffffffffffffffffffffffff 8392 /Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
 ffffffffffffffffffffffffffffffff c98e2b1289c850320e527ae722ab58c8 ffffffffffffffffffffffffffffffff 28752 /Users/aronallen/checkers copy/build/Debug/hello
