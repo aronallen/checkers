@@ -10,7 +10,7 @@
 		breakpoints = (
 			65ABC2EA10AE1042004B10BD /* mover.c:193 */,
 			65ABC2EC10AE104A004B10BD /* jumper.c:268 */,
-			651D5E46114D3C5D001D841F /* aialpabeta.c:248 */,
+			651D5E46114D3C5D001D841F /* aialpabeta.c:246 */,
 		);
 		codeSenseManager = 65B8A10D1021A04C008BA05A /* Code sense */;
 		executables = (
@@ -114,6 +114,8 @@
 			651D5E5D114D3E84001D841F /* PBXTextBookmark */ = 651D5E5D114D3E84001D841F /* PBXTextBookmark */;
 			651D5E5F114D3EA5001D841F /* PBXTextBookmark */ = 651D5E5F114D3EA5001D841F /* PBXTextBookmark */;
 			651D5E60114D3EA5001D841F /* PBXTextBookmark */ = 651D5E60114D3EA5001D841F /* PBXTextBookmark */;
+			651D5E65114D40DF001D841F /* PBXTextBookmark */ = 651D5E65114D40DF001D841F /* PBXTextBookmark */;
+			651D5E66114D40DF001D841F /* PBXTextBookmark */ = 651D5E66114D40DF001D841F /* PBXTextBookmark */;
 			653D746E112C5F8F00B11638 = 653D746E112C5F8F00B11638 /* PBXTextBookmark */;
 			653D7471112C5F8F00B11638 = 653D7471112C5F8F00B11638 /* PBXTextBookmark */;
 			653D7472112C5F8F00B11638 = 653D7472112C5F8F00B11638 /* PBXTextBookmark */;
@@ -149,9 +151,9 @@
 	};
 	08FB7796FE84155DC02AAC07 /* main.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 4706}}";
-			sepNavSelRange = "{1549, 0}";
-			sepNavVisRange = "{1258, 584}";
+			sepNavIntBoundsRect = "{{0, 0}, {1076, 5239}}";
+			sepNavSelRange = "{1851, 0}";
+			sepNavVisRange = "{1477, 782}";
 			sepNavWindowFrame = "{{61, 270}, {1084, 561}}";
 		};
 	};
@@ -165,9 +167,9 @@
 	};
 	651CA277102340B6001C558B /* jumper.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1419, 4446}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1419, 4433}}";
 			sepNavSelRange = "{6773, 0}";
-			sepNavVisRange = "{744, 1815}";
+			sepNavVisRange = "{744, 1813}";
 			sepNavWindowFrame = "{{3, 4}, {1437, 874}}";
 		};
 	};
@@ -176,7 +178,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 330";
 		rLen = 0;
-		rLoc = 5933;
+		rLoc = 5782;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 5391;
@@ -196,7 +198,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -226,7 +228,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 16";
 		rLen = 0;
-		rLoc = 357;
+		rLoc = 413;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -236,7 +238,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 330";
 		rLen = 0;
-		rLoc = 5933;
+		rLoc = 5782;
 		rType = 0;
 		vrLen = 625;
 		vrLoc = 3995;
@@ -266,7 +268,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -296,7 +298,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -326,7 +328,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -356,7 +358,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -366,7 +368,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 283";
 		rLen = 0;
-		rLoc = 5231;
+		rLoc = 5258;
 		rType = 0;
 		vrLen = 705;
 		vrLoc = 4667;
@@ -386,12 +388,12 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
 	};
-	651D5E46114D3C5D001D841F /* aialpabeta.c:248 */ = {
+	651D5E46114D3C5D001D841F /* aialpabeta.c:246 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -403,7 +405,7 @@
 		functionName = "bestMJab()";
 		hitCount = 33;
 		ignoreCount = 0;
-		lineNumber = 248;
+		lineNumber = 246;
 		location = hello;
 		modificationTime = 290274498.315751;
 		originalNumberOfMultipleMatches = 1;
@@ -424,7 +426,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 247";
 		rLen = 0;
-		rLoc = 4894;
+		rLoc = 4882;
 		rType = 0;
 		vrLen = 3002;
 		vrLoc = 2042;
@@ -444,7 +446,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -454,7 +456,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 247";
 		rLen = 0;
-		rLoc = 4894;
+		rLoc = 4882;
 		rType = 0;
 		vrLen = 3002;
 		vrLoc = 2042;
@@ -474,7 +476,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -484,7 +486,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 257";
 		rLen = 0;
-		rLoc = 4941;
+		rLoc = 4908;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 4600;
@@ -504,7 +506,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 246";
 		rLen = 0;
-		rLoc = 4878;
+		rLoc = 4877;
 		rType = 0;
 		vrLen = 809;
 		vrLoc = 4597;
@@ -524,7 +526,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 246";
 		rLen = 0;
-		rLoc = 4853;
+		rLoc = 4877;
 		rType = 0;
 		vrLen = 813;
 		vrLoc = 4597;
@@ -537,6 +539,26 @@
 		rLoc = 6773;
 		rType = 0;
 		vrLen = 1815;
+		vrLoc = 744;
+	};
+	651D5E65114D40DF001D841F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
+		name = "aialpabeta.c: 249";
+		rLen = 0;
+		rLoc = 4855;
+		rType = 0;
+		vrLen = 877;
+		vrLoc = 4607;
+	};
+	651D5E66114D40DF001D841F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 651CA277102340B6001C558B /* jumper.c */;
+		name = "jumper.c: 268";
+		rLen = 0;
+		rLoc = 6773;
+		rType = 0;
+		vrLen = 1813;
 		vrLoc = 744;
 	};
 	65369CA61025A01D005CDDB2 /* positions.h */ = {
@@ -558,7 +580,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 330";
 		rLen = 0;
-		rLoc = 5933;
+		rLoc = 5782;
 		rType = 0;
 		vrLen = 901;
 		vrLoc = 5391;
@@ -578,7 +600,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -608,9 +630,9 @@
 	};
 	655AA58D109507540007AB5A /* aisearch.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1244, 2184}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1244, 2119}}";
 			sepNavSelRange = "{2213, 0}";
-			sepNavVisRange = "{0, 809}";
+			sepNavVisRange = "{639, 1028}";
 			sepNavWindowFrame = "{{38, 291}, {1084, 561}}";
 		};
 	};
@@ -626,18 +648,17 @@
 	};
 	65ABBD5410AA9F1F004B10BD /* aialpabeta.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1378, 618}}";
-			sepNavSelRange = "{408, 0}";
-			sepNavVisRange = "{0, 410}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 632}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 466}";
 			sepNavWindowFrame = "{{0, 4}, {1437, 746}}";
 		};
 	};
 	65ABBD5510AA9F1F004B10BD /* aialpabeta.c */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{2213, 2239}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 9117}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1081, 4875}}";
-			sepNavSelRange = "{2615, 0}";
-			sepNavVisRange = "{2359, 813}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 6851}}";
+			sepNavSelRange = "{5380, 0}";
+			sepNavVisRange = "{5074, 661}";
 			sepNavWindowFrame = "{{0, 4}, {1437, 746}}";
 		};
 	};
@@ -762,7 +783,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 151";
 		rLen = 0;
-		rLoc = 3830;
+		rLoc = 3831;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 2682;
@@ -922,14 +943,14 @@
 	};
 	65B8A5E310230095008BA05A /* commitmove.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 716}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 632}}";
 			sepNavSelRange = "{139, 42}";
 			sepNavVisRange = "{0, 181}";
 		};
 	};
 	65B8A5E410230095008BA05A /* commitmove.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 716}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 632}}";
 			sepNavSelRange = "{173, 0}";
 			sepNavVisRange = "{0, 1013}";
 			sepNavWindowFrame = "{{3, 4}, {1437, 874}}";
@@ -1027,7 +1048,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 16";
 		rLen = 0;
-		rLoc = 357;
+		rLoc = 413;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;
@@ -1047,7 +1068,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
 		name = "main.c: 97";
 		rLen = 0;
-		rLoc = 1549;
+		rLoc = 1696;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 1258;
@@ -1057,7 +1078,7 @@
 		fRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */;
 		name = "aialpabeta.c: 330";
 		rLen = 0;
-		rLoc = 5933;
+		rLoc = 5782;
 		rType = 0;
 		vrLen = 889;
 		vrLoc = 5402;
@@ -1077,7 +1098,7 @@
 		fRef = 65ABBD5410AA9F1F004B10BD /* aialpabeta.h */;
 		name = "aialpabeta.h: 17";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 464;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 0;

@@ -1,7 +1,7 @@
 Thello
 v7
 r0
-t290275046.800173
+t290278929.720115
 cCheck dependencies
 cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
@@ -70,9 +70,9 @@ t1257542325
 s218
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c
-c000000004B9D07640000000000002360
-t1268582244
-s9056
+c000000004B9D16610000000000002398
+t1268586081
+s9112
 i<stdio.h>
 i<stdlib.h>
 i<math.h>
@@ -86,9 +86,9 @@ i"bitops.h"
 i"aialpabeta.h"
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.h
-c000000004B9D06EE000000000000019A
-t1268582126
-s410
+c000000004B9D0A5F00000000000001D2
+t1268583007
+s466
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c
 c000000004AFE85290000000000000A11
@@ -113,16 +113,16 @@ t1256346931
 s581
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
-t1268582246
-s40912
+t1268586129
+s45152
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/ai.o
 t1257874715
 s6540
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
-t1268582246
-s13112
+t1268586080
+s13452
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o
 t1259781540
@@ -150,8 +150,8 @@ t1259781540
 s11464
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
-t1268582126
-s10568
+t1268586127
+s11296
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
 t1259781540
@@ -205,9 +205,9 @@ t1257601660
 s410
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/main.c
-c000000004B16CB800000000000001846
-t1259785088
-s6214
+c000000004B9D168E0000000000001C8F
+t1268586126
+s7311
 i<stdio.h>
 i<stdlib.h>
 i<time.h>
@@ -448,7 +448,7 @@ s279
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies290275046#290275046#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies290278929#290278929#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal i386 c com.apple.compilers.gcc.4_2
 s273519401.794063
@@ -555,8 +555,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@57"Compile /Users/aronallen/Xcode Projects/Checkers GIT/ai.c279567515#279567515#0(0"0(0#0#49"/Users/aronallen/Xcode Projects/Checkers GIT/ai.c4300885448#1316"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/ai.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/ai.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290275046.697761
-e290275046.783800
+s290278929.689215
+e290278929.690580
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
@@ -565,11 +565,7 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompare':
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:325: warning: control reaches end of non-void function
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'heavyGameFromLightGame':
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:341: warning: implicit declaration of function 'piecesInGameForActivePlayer'
-lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290275046#290275046#0(432"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompare':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:325: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'heavyGameFromLightGame':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:341: warning: implicit declaration of function 'piecesInGameForActivePlayer'2(22@40"Control reaches end of non-void function290275046#87#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290275044#325#0#325#0#40"control reaches end of non-void function0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'290275046#297#135#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290275044#341#0#341#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o"0#
+lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290278929#290278929#0(640"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompareInverted':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:318: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompare':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:334: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'heavyGameFromLightGame':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:350: warning: implicit declaration of function 'piecesInGameForActivePlayer'3(22@40"Control reaches end of non-void function290278929#95#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290278881#318#0#318#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function290278929#295#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290278881#334#0#334#0#40"control reaches end of non-void function0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'290278929#505#135#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290278881#350#0#350#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s281474340.125442
@@ -720,8 +716,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@47"Compile /Users/aronallen/checkers copy/jumper.c273605353#273605353#0(0"0(0#0#39"/Users/aronallen/checkers copy/jumper.c4300882208#1170"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/jumper.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290274926.097077
-e290274926.237720
+s290278929.686487
+e290278929.687769
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
@@ -730,9 +726,7 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-o/Users/aronallen/Xcode Projects/Checkers GIT/main.c: In function 'main':
-o/Users/aronallen/Xcode Projects/Checkers GIT/main.c:219: warning: too few arguments for format
-lSLF07#2@59"Compile /Users/aronallen/Xcode Projects/Checkers GIT/main.c290274926#290274926#0(168"/Users/aronallen/Xcode Projects/Checkers GIT/main.c: In function 'main':/Users/aronallen/Xcode Projects/Checkers GIT/main.c:219: warning: too few arguments for format1(22@28"Too few arguments for format290274926#73#95#0(6@51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c281477888#219#0#219#0#0"0(0#0#51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c4300885448#1320"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
+lSLF07#2@59"Compile /Users/aronallen/Xcode Projects/Checkers GIT/main.c290278929#290278929#0(168"/Users/aronallen/Xcode Projects/Checkers GIT/main.c: In function 'main':/Users/aronallen/Xcode Projects/Checkers GIT/main.c:262: warning: too few arguments for format1(22@28"Too few arguments for format290278929#73#95#0(6@51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c290278926#262#0#262#0#0"0(0#0#51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c4300885448#1320"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/checkers copy/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273605447.788247
@@ -867,14 +861,14 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@46"Compile /Users/aronallen/checkers copy/print.c273604722#273604722#0(0"0(0#0#38"/Users/aronallen/checkers copy/print.c4300882208#1168"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/print.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o"0#
 
 CLd "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello" normal x86_64
-s290275046.783907
-e290275046.800114
+s290278929.690650
+e290278929.719835
 r1
 xLd
 x/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
 xnormal
 xx86_64
-lSLF07#2@67"Link /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello290275046#290275046#0(0"0(0#0#0"4300885448#530"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" -filelist "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello"0#
+lSLF07#2@67"Link /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello290278929#290278929#0(0"0(0#0#0"4300885448#530"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" -filelist "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello"0#
 
 CLd "/Users/aronallen/checkers copy/build/Debug/hello" normal i386
 s273604655.881398

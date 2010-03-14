@@ -21,6 +21,8 @@ int main (int argc, const char * argv[]) {
 	int gamesToPlay = 100;
 	
 	GAME theGame;
+	GAME testGame;
+	GAME gameHistory[200];
 	
 	
 	int theTime;
@@ -31,7 +33,10 @@ int main (int argc, const char * argv[]) {
 	int whiteWins = 0;
 	int blackWins = 0;
 	int staleWins = 0;
+	int turns;
+	int h;
 	int timeToSearch = 3;
+	int newPosition;
 
 	
 	int totalBlackPieces = 12;
@@ -74,20 +79,20 @@ int main (int argc, const char * argv[]) {
 			changeTurn(&theGame);
 		}
 
-	
+		turns = 0;
+		
 		while (theGame.white && theGame.black && (theGame.mjCount) && staleMateCount > 0) {
 		
 		
-
-			
+			gameHistory[turns] = theGame;
+			turns++;
 			
 			//Increment our move counter
 			moveCounter++;
 
 		
-			//Choose random mjump
-			
-			move = 0;
+			//Take the best or next best move
+			move = rand()%2;
 			
 
 			
@@ -103,21 +108,59 @@ int main (int argc, const char * argv[]) {
 			
 				
 			if (theGame.mjCount > 1) {
-				
-					
-					bestMJab(&theGame, timeToSearch);
-					
-
+				bestMJab(&theGame, timeToSearch);
+			}else {
+				move = 0;
 			}
+
 				
+			
+			testGame = theGame;
+			
+			newPosition = 0;
+			
+			//Check if gamestate has been there before.
+			if ((turns-2)>1) {
+				
+			
+				for (move; move<theGame.mjCount && !newPosition; move++) {
+				
+					//Asume it is a new game state
+					newPosition = 1;
+				
+					//Excecute move
+					if (testGame.canJ) {
+						makeJump(move, &testGame);
+					}else{
+						makeMove(move, &testGame);
+					}
+				
+					//Run through history to se if position has been taken before.
+					for (h = 0; h < turns-2; h++) {
+						if (gameHistory[h].black == testGame.black && gameHistory[h].white == testGame.white && gameHistory[h].kings == testGame.kings){
+							newPosition = 0;
+						}
+					}
+				
+					//Compensate for loop increment, if it is a new position
+					if (newPosition) {
+						move--;
+					}
+				}
+			}
 			
 			if (theGame.canJ) {
 				makeJump(move, &theGame);
-			}else{
+			}else {
 				makeMove(move, &theGame);
 			}
 
-
+			
+			if (theGame.turn == 'b') {
+				printf("Black's moved move %d\n", move);
+			}else {
+				printf("White's moved move %d\n", move);
+			}
 		
 		
 			//Stalemate checker
