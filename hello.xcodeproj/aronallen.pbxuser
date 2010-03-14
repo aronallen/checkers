@@ -151,9 +151,9 @@
 	};
 	08FB7796FE84155DC02AAC07 /* main.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1076, 5239}}";
-			sepNavSelRange = "{1851, 0}";
-			sepNavVisRange = "{1477, 782}";
+			sepNavIntBoundsRect = "{{0, 0}, {1076, 5616}}";
+			sepNavSelRange = "{3455, 0}";
+			sepNavVisRange = "{2486, 1087}";
 			sepNavWindowFrame = "{{61, 270}, {1084, 561}}";
 		};
 	};
@@ -905,9 +905,9 @@
 	};
 	65B8A22D1021B2AE008BA05A /* main.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 2106}}";
-			sepNavSelRange = "{629, 0}";
-			sepNavVisRange = "{24, 1303}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 2249}}";
+			sepNavSelRange = "{2243, 0}";
+			sepNavVisRange = "{1575, 939}";
 			sepNavWindowFrame = "{{38, 291}, {1084, 561}}";
 		};
 	};
@@ -920,37 +920,37 @@
 	};
 	65B8A2931021B956008BA05A /* mover.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 2873}}";
-			sepNavSelRange = "{964, 0}";
-			sepNavVisRange = "{706, 527}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 2496}}";
+			sepNavSelRange = "{4136, 0}";
+			sepNavVisRange = "{3623, 1444}";
 			sepNavWindowFrame = "{{15, 312}, {1084, 561}}";
 		};
 	};
 	65B8A2A41021E8B4008BA05A /* bitops.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 693}}";
-			sepNavSelRange = "{556, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 630}}";
+			sepNavSelRange = "{486, 0}";
 			sepNavVisRange = "{0, 581}";
 		};
 	};
 	65B8A2A51021E8B4008BA05A /* bitops.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 1508}}";
-			sepNavSelRange = "{2142, 0}";
-			sepNavVisRange = "{1820, 518}";
+			sepNavIntBoundsRect = "{{0, 0}, {1237, 1404}}";
+			sepNavSelRange = "{2240, 0}";
+			sepNavVisRange = "{1368, 1021}";
 			sepNavWindowFrame = "{{84, 249}, {1084, 561}}";
 		};
 	};
 	65B8A5E310230095008BA05A /* commitmove.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 632}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 607}}";
 			sepNavSelRange = "{139, 42}";
 			sepNavVisRange = "{0, 181}";
 		};
 	};
 	65B8A5E410230095008BA05A /* commitmove.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1023, 632}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 611}}";
 			sepNavSelRange = "{173, 0}";
 			sepNavVisRange = "{0, 1013}";
 			sepNavWindowFrame = "{{3, 4}, {1437, 874}}";
@@ -1002,6 +1002,11 @@
 		name = positions.c;
 		path = "/Users/aronallen/Xcode Projects/Checkers GIT/positions.c";
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1023, 1001}}";
+			sepNavSelRange = "{745, 11}";
+			sepNavVisRange = "{362, 913}";
+		};
 	};
 	65E87C2E10C6F52C00C71849 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1068,7 +1073,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
 		name = "main.c: 97";
 		rLen = 0;
-		rLoc = 1696;
+		rLoc = 2123;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 1258;

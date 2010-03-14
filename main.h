@@ -84,6 +84,9 @@ typedef struct _GAME {
 	//a BITBOARD containing all white pieces.	
 	BITBOARD white;
 	
+	//A bitboard containging all movers
+	BITBOARD movers;
+	
 	//Turn indicator, b for black, w for white.
 	char turn;
 	
