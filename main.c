@@ -21,6 +21,8 @@ int main (int argc, const char * argv[]) {
 	int gamesToPlay = 100;
 	
 	GAME theGame;
+	
+	
 	int theTime;
 	int move;
 	int moveCounter = 0;
@@ -84,21 +86,26 @@ int main (int argc, const char * argv[]) {
 
 		
 			//Choose random mjump
-			move = rand()%theGame.mjCount;
+			
+			move = 0;
+			
+
+			
+			if (theGame.turn == 'w') {
+				timeToSearch = 1;
+			}else {
+				timeToSearch = 1;
+			}
+
 			
 		
 			//Find best jump, and preform it.		
 			
 				
-			if (theGame.mjCount == 1 && staleMateCount > 30) {
-					
-					move = 0;
-
-			}else if (staleMateCount > 0) {
+			if (theGame.mjCount > 1) {
 				
 					
-				move = bestMJab(theGame, timeToSearch);
-					
+					bestMJab(&theGame, timeToSearch);
 					
 
 			}

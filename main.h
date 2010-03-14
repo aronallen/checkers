@@ -26,7 +26,7 @@
 #define BITBOARD unsigned
 #define MAX_MOVES 42
 #define MAX_MOVES_GAME 300
-#define MAX_INTERMEDIATES 7
+#define MAX_INTERMEDIATES 8
 
 static const BITBOARD LEGAL_NORTH_MOVE = ~(0x82000820);
 static const BITBOARD LEGAL_SOUTH_MOVE = ~(0x00041041);
@@ -66,6 +66,7 @@ typedef struct _MJ {
 	BITBOARD removePieces;
 	int intermediatePosistions;
 	int endOfJump;
+	double score;
 }MJ, * PMJ;
 
 //GAME struct, containing all pieces, BITBOARDS
@@ -91,7 +92,7 @@ typedef struct _GAME {
 	
 	int canJ;
 	
-	float score;
+	double score;
 		
 
 	//total available jump count	
@@ -126,7 +127,7 @@ typedef struct _LIGHTGAME {
 		
 	char turn;
 	
-	float score;
+	double score;
 		
 	int parrentGame;
 
