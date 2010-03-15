@@ -52,7 +52,7 @@ int main (int argc, const char * argv[]) {
 	theTime = time(0);
 	
 	printf("Welcome to the 'pwn' engine.\n");
-	printf("Select your color 'b' or 'w'. (select anything else to starts a computer vs. computer game)\n");
+	printf("Select your color 'b' or 'w'. (select anything else to start a computer vs. computer game)\n");
 	scanf("%c", &player);
 	printf("\nSelect the opponents difficulty 'e' or 'h'.\n");
 	while ((ch = getchar()) != '\n' && ch != EOF);
