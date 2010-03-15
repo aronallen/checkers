@@ -175,4 +175,7 @@ void cleanUp (PGAME game);
 //returns 0 or 1 depending on selection.
 int isPieceFriendly (GAME game, BITBOARD position);
 
+int askPlayerForMove(PGAME game);
+
+
 void addMoveToEndGameDatabase (PGAMESESSION db, PGAME theGame, int gameNumber);

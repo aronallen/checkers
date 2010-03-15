@@ -35,19 +35,13 @@ int main (int argc, const char * argv[]) {
 	int staleWins = 0;
 	int turns;
 	int h;
-	int timeToSearch = 3;
+	int timeToSearch = 1;
 	int newPosition;
 	
-	int from;
-	int to;
-	int noPiece;
-	
-	
-	BITBOARD canMove;
-	int canMoveLoopInt;
 	
 	char difficulty;
 	char player;
+	int   ch;	
 
 	
 	int totalBlackPieces = 12;
@@ -58,15 +52,16 @@ int main (int argc, const char * argv[]) {
 	theTime = time(0);
 	
 	printf("Welcome to the 'pwn' engine.\n");
-	printf("Select your color 'b' or 'w'.\n");
+	printf("Select your color 'b' or 'w'. (select anything else to starts a computer vs. computer game)\n");
 	scanf("%c", &player);
-	
 	printf("\nSelect the opponents difficulty 'e' or 'h'.\n");
-
-	int   ch;	
 	while ((ch = getchar()) != '\n' && ch != EOF);
-
 	scanf("%c", &difficulty);
+	
+	if(difficulty == 'h'){
+		timeToSearch = 10;
+		printf("you selected hard\n");
+	}
 	
 	
 	for (i=0;i<gamesToPlay;i++){
@@ -123,15 +118,6 @@ int main (int argc, const char * argv[]) {
 			}
 
 			
-
-			
-			if (theGame.turn == 'w') {
-				timeToSearch = 1;
-			}else {
-				timeToSearch = 1;
-			}
-
-			
 		
 			//Find best jump, and preform it.		
 			
@@ -177,66 +163,8 @@ int main (int argc, const char * argv[]) {
 					}
 				}
 			}
-			}else {
-				printGame(&theGame);
-				
-				
-				canMove = 0;
-				for(canMoveLoopInt = 0; canMoveLoopInt < theGame.mjCount; canMoveLoopInt++){
-					canMove = canMove|theGame.mjs[canMoveLoopInt].intermediates[0];
-				}
-				
-				noPiece = 0;
-				
-				while (!noPiece) {
-					printf("select piece to move (0-31)\n");
-					while ((ch = getchar()) != '\n' && ch != EOF);
-					scanf("%d", &from);
-					
-					if (canMove & bitboardForRealPosition[from]){
-							noPiece = 1;
-					}
-
-				}
-				
-				canMove = 0;
-				
-				for(canMoveLoopInt = 0; canMoveLoopInt < theGame.mjCount; canMoveLoopInt++){
-					if (theGame.mjs[canMoveLoopInt].intermediates[0] & bitboardForRealPosition[from]) {
-						if (theGame.mjs[canMoveLoopInt].intermediatePosistions) {
-							canMove = canMove|theGame.mjs[canMoveLoopInt].intermediates[theGame.mjs[canMoveLoopInt].intermediatePosistions];
-						}else {
-							canMove = canMove|theGame.mjs[canMoveLoopInt].intermediates[1];
-						}
-
-					}
-				}
-				printBitboard(canMove);
-				
-				noPiece = 0;
-				while (!noPiece) {
-					printf("select where to move to\n");
-					while ((ch = getchar()) != '\n' && ch != EOF);
-					scanf("%d", &to);
-					
-					if (canMove & bitboardForRealPosition[to]){
-						noPiece = 1;
-					}
-					if (!noPiece) {
-						printf("Piece at position %d cannot move to position %d\n", from, to);
-					}
-				}
-				
-				
-				for (canMoveLoopInt = 0; canMoveLoopInt < theGame.mjCount; canMoveLoopInt++) {
-					if (theGame.mjs[canMoveLoopInt].intermediates[0] & bitboardForRealPosition[from]) {
-						if (theGame.mjs[canMoveLoopInt].intermediatePosistions) {
-							move = canMoveLoopInt;
-						}else {
-							move = canMoveLoopInt;
-						}
-					}
-				}
+			}else{
+				move = askPlayerForMove(&theGame);
 			}
 			
 			if (theGame.canJ) {
@@ -245,12 +173,6 @@ int main (int argc, const char * argv[]) {
 				makeMove(move, &theGame);
 			}
 
-			
-			if (theGame.turn == 'b') {
-				printf("Black's moved move %d\n", move);
-			}else {
-				printf("White's moved move %d\n", move);
-			}
 		
 		
 			//Stalemate checker
@@ -470,5 +392,94 @@ void addMoveToEndGameDatabase (PGAMESESSION db, PGAME theGame, int gameNumber){
 	db[gameNumber].moves[db[gameNumber].moveCount].kings = (*theGame).kings;	
 	db[gameNumber].moves[db[gameNumber].moveCount].turn = (*theGame).turn;	
 	
+}
+
+int askPlayerForMove(PGAME playerGame){
+	
+	GAME theGame = (*playerGame);
+	int move = 0;
+	
+	printGame(&theGame);
+	int from;
+	int to;
+	int noPiece;
+	int ch;
+	
+	
+	BITBOARD canMove;
+	int canMoveLoopInt;
+	
+	
+	canMove = 0;
+	for(canMoveLoopInt = 0; canMoveLoopInt < theGame.mjCount; canMoveLoopInt++){
+		canMove = canMove|theGame.mjs[canMoveLoopInt].intermediates[0];
+	}
+	
+	noPiece = 0;
+	
+	while (!noPiece) {
+		printf("select piece to move (0-31)\n");
+		while ((ch = getchar()) != '\n' && ch != EOF);
+		scanf("%d", &from);
+		
+		if (canMove & bitboardForRealPosition[from]){
+			noPiece = 1;
+		}else {
+			printf("piece %d can not move.", from);
+			if (theGame.canJ) {
+				printf(" (you are forced to jump)");
+			}
+			printf("\n");
+		}
+		
+		
+	}
+	
+	canMove = 0;
+	
+	for(canMoveLoopInt = 0; canMoveLoopInt < theGame.mjCount; canMoveLoopInt++){
+		if (theGame.mjs[canMoveLoopInt].intermediates[0] & bitboardForRealPosition[from]) {
+			if (theGame.mjs[canMoveLoopInt].intermediatePosistions) {
+				printf("intermediate positions %d\n", theGame.mjs[canMoveLoopInt].intermediatePosistions);
+				canMove = canMove|theGame.mjs[canMoveLoopInt].intermediates[theGame.mjs[canMoveLoopInt].intermediatePosistions];
+			}else{
+				canMove = canMove|theGame.mjs[canMoveLoopInt].intermediates[1];
+			}
+			
+		}
+	}
+	
+	printf("you can move to the following positions\n");
+	printBitboard(canMove);
+	
+	noPiece = 0;
+	while (!noPiece) {
+		printf("select where to move to\n");
+		while ((ch = getchar()) != '\n' && ch != EOF);
+		scanf("%d", &to);
+		
+		if (canMove & bitboardForRealPosition[to]){
+			noPiece = 1;
+		}
+		if (!noPiece) {
+			printf("Piece at position %d cannot move to position %d\n", from, to);
+		}
+	}
+	
+	
+	for (canMoveLoopInt = 0; canMoveLoopInt < theGame.mjCount; canMoveLoopInt++) {
+		if (theGame.mjs[canMoveLoopInt].intermediates[0] & bitboardForRealPosition[from]) {
+			if (theGame.mjs[canMoveLoopInt].intermediatePosistions) {
+				if (bitboardForRealPosition[to]& theGame.mjs[canMoveLoopInt].intermediates[theGame.mjs[canMoveLoopInt].intermediatePosistions]) {
+					move = canMoveLoopInt;
+				}
+			}else{
+				if (bitboardForRealPosition[to]& theGame.mjs[canMoveLoopInt].intermediates[1]) {
+					move = canMoveLoopInt;
+				}
+			}
+		}
+	}
+	return move;
 }
 
