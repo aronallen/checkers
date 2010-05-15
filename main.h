@@ -9,6 +9,14 @@
 
 //Definitions
 /*
+ 
+ The game is stored in 3 integers
+ Each integer has 32 bits, corresponding to the 32 positions in checkers (half the squares are inaccessible)
+ The actual bit layout is different than the physical layout, this is to minimize exceptions in bit manipulatiions, when finding jumps, moves, etc.
+ 
+ for a more detailed description, head to this article:
+ http://www.3dkingdoms.com/checkers/bitboards.htm
+ 
  ###################################
    11  05  31  25     00  01  02  03 
  10  04  30  24     04  05  06  07 

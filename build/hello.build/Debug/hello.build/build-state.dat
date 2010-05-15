@@ -1,19 +1,19 @@
 Thello
 v7
 r0
-t292864804.015090
+t295642352.522915
 cCheck dependencies
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/pwn/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/pwn/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/Xcode Projects/pwn/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/Xcode Projects/pwn/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/Xcode Projects/pwn/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/pwn/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/Xcode Projects/pwn/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/Users/aronallen/Xcode Projects/pwn/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/pwn/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/Users/aronallen/Xcode Projects/pwn/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cLd "/Users/aronallen/Xcode Projects/pwn/build/Debug/hello" normal x86_64
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/users/aronallen/Xcode Projects/pwn/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/users/aronallen/Xcode Projects/pwn/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/users/aronallen/Xcode Projects/pwn/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/users/aronallen/Xcode Projects/pwn/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/users/aronallen/Xcode Projects/pwn/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/users/aronallen/Xcode Projects/pwn/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/users/aronallen/Xcode Projects/pwn/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/users/aronallen/Xcode Projects/pwn/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/users/aronallen/Xcode Projects/pwn/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/users/aronallen/Xcode Projects/pwn/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cLd "/users/aronallen/Xcode Projects/pwn/build/Debug/hello" normal x86_64
 
 N/Developer/SDKs/MacOSX10.5.sdk
 c000000004B7E366000000000000000EE
@@ -628,9 +628,191 @@ c000000004A7686640000000000000117
 t1249281636
 s279
 
+N/users/aronallen/Xcode Projects/pwn/aialpabeta.c
+c000000004BC47F2100000000000031F0
+t1271168801
+s12784
+i<stdio.h>
+i<stdlib.h>
+i<math.h>
+i<time.h>
+i"main.h"
+i"mover.h"
+i"jumper.h"
+i"commitmove.h"
+i"commitjump.h"
+i"bitops.h"
+i"aialpabeta.h"
+
+N/users/aronallen/Xcode Projects/pwn/aialpabeta.h
+c000000004BC44A6D000000000000025B
+t1271155309
+s603
+
+N/users/aronallen/Xcode Projects/pwn/aisearch.c
+c000000004BA10F4D00000000000009F7
+t1268846413
+s2551
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/aisearch.h
+c000000004AFA685800000000000000DA
+t1257924696
+s218
+
+N/users/aronallen/Xcode Projects/pwn/bitops.c
+c000000004AF9A5640000000000000A23
+t1257874788
+s2595
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/bitops.h
+c000000004AE255330000000000000245
+t1256346931
+s581
+
+N/users/aronallen/Xcode Projects/pwn/build/Debug/hello
+t1273949552
+s45536
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
+t1271168801
+s15812
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o
+t1269699318
+s6468
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
+t1269699317
+s7156
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o
+t1270884028
+s5312
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
+t1271166956
+s4728
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList
+c000000004BEEED700000000000000413
+t1273949552
+s1043
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
+t1271148390
+s11816
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
+t1271172002
+s15092
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
+t1269699317
+s9408
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
+t1269699317
+s4832
+
+N/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
+t1269699317
+s6364
+
+N/users/aronallen/Xcode Projects/pwn/commitjump.c
+c000000004BC026BA0000000000000816
+t1270884026
+s2070
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/commitjump.h
+c000000004AE43F6700000000000000B6
+t1256472423
+s182
+
+N/users/aronallen/Xcode Projects/pwn/commitmove.c
+c000000004BC477EB000000000000043A
+t1271166955
+s1082
+i<stdio.h>
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/commitmove.h
+c000000004AE253D100000000000000B5
+t1256346577
+s181
+
+N/users/aronallen/Xcode Projects/pwn/jumper.c
+c000000004BC411E40000000000001D5D
+t1271140836
+s7517
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/jumper.h
+c000000004AF57A7C000000000000019A
+t1257601660
+s410
+
+N/users/aronallen/Xcode Projects/pwn/main.c
+c000000004BC48BA20000000000002C61
+t1271172002
+s11361
+i<stdio.h>
+i<stdlib.h>
+i<time.h>
+i"main.h"
+i"print.h"
+i"mover.h"
+i"bitops.h"
+i"positions.h"
+i"commitmove.h"
+i"jumper.h"
+i"commitjump.h"
+i"aialpabeta.h"
+i"aisearch.h"
+
+N/users/aronallen/Xcode Projects/pwn/main.h
+c000000004BAE12E80000000000000F5F
+t1269699304
+s3935
+
+N/users/aronallen/Xcode Projects/pwn/mover.c
+c000000004B9D1F6A00000000000014B6
+t1268588394
+s5302
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/mover.h
+c000000004AF9A5030000000000000179
+t1257874691
+s377
+
+N/users/aronallen/Xcode Projects/pwn/positions.c
+c000000004AFDCCFB00000000000004FD
+t1258147067
+s1277
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/positions.h
+c000000004AFDCB7F00000000000000B8
+t1258146687
+s184
+
+N/users/aronallen/Xcode Projects/pwn/print.c
+c000000004B9E8EBB0000000000000536
+t1268682427
+s1334
+i"main.h"
+
+N/users/aronallen/Xcode Projects/pwn/print.h
+c000000004AE255480000000000000110
+t1256346952
+s272
+
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies292864803#292864804#0(0"0(0#1#0"4300739032#0"0#
+lSLF07#2@18"Check dependencies295642351#295642352#0(0"0(0#1#0"7947009927035180032#0"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal i386 c com.apple.compilers.gcc.4_2
 s273519401.794063
@@ -772,6 +954,9 @@ xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@56"Compile /Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#292861601#0(958"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'stackCompare':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:385: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'stackCompareInverted':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:401: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'scoreCompareInverted':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:419: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'scoreCompare':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:435: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'heavyGameFromLightGame':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:452: warning: implicit declaration of function 'piecesInGameForActivePlayer'5(22@40"Control reaches end of non-void function292861601#78#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#385#0#385#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function292861601#268#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#401#0#401#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function292861601#458#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#419#0#419#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function292861601#640#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#435#0#435#0#40"control reaches end of non-void function0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'292861601#832#126#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#452#0#452#0#36"implicit declaration of function '*'0(0#0#48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c4300739032#1233"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/aialpabeta.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o"0#
 
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/users/aronallen/Xcode Projects/pwn/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.956648
 e291392118.017129
@@ -797,6 +982,9 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:156: warning: implicit 
 lSLF07#2@63"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c291392117#291392118#0(1229"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c: In function 'bestMJ':/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:21: warning: implicit declaration of function 'malloc'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:21: warning: incompatible implicit declaration of built-in function 'malloc'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:49: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:58: warning: implicit declaration of function 'srand'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:58: warning: implicit declaration of function 'time'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:60: warning: implicit declaration of function 'rand'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:65: warning: implicit declaration of function 'makeJump'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:67: warning: implicit declaration of function 'makeMove'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:93: warning: implicit declaration of function 'findJumpersForGame'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:156: warning: implicit declaration of function 'free'10(22@41"Implicit declaration of function 'malloc'291392117#79#111#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#21#0#21#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'malloc'291392117#190#133#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#21#0#21#0#0"0(22@49"Implicit declaration of function 'bitsInBitboard'291392117#323#119#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#49#0#49#0#36"implicit declaration of function '*'0(22@40"Implicit declaration of function 'srand'291392117#442#110#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#58#0#58#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'time'291392117#552#109#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#58#0#58#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'rand'291392117#661#109#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#60#0#60#0#36"implicit declaration of function '*'0(22@43"Implicit declaration of function 'makeJump'291392117#770#113#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#65#0#65#0#36"implicit declaration of function '*'0(22@43"Implicit declaration of function 'makeMove'291392117#883#113#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#67#0#67#0#36"implicit declaration of function '*'0(22@53"Implicit declaration of function 'findJumpersForGame'291392117#996#123#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#93#0#93#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'free'291392117#1119#110#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#156#0#156#0#36"implicit declaration of function '*'0(0#0#55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c4300885448#1328"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/pwn/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/users/aronallen/Xcode Projects/pwn/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
 r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
@@ -831,6 +1019,9 @@ xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@47"Compile /Users/aronallen/checkers copy/bitops.c273604722#273604722#0(0"0(0#0#39"/Users/aronallen/checkers copy/bitops.c4300882208#1170"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/bitops.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o"0#
 
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/users/aronallen/Xcode Projects/pwn/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.952433
 e291392118.022402
@@ -864,6 +1055,9 @@ o/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: implicit declarat
 o/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'
 o/Users/aronallen/Xcode Projects/pwn/commitjump.c:17: warning: implicit declaration of function 'rand'
 lSLF07#2@56"Compile /Users/aronallen/Xcode Projects/pwn/commitjump.c292576828#292576828#0(406"/Users/aronallen/Xcode Projects/pwn/commitjump.c: In function 'makeJump':/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/pwn/commitjump.c:17: warning: implicit declaration of function 'rand'3(22@41"Implicit declaration of function 'printf'292576828#74#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitjump.c292576826#15#0#15#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'292576828#178#126#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitjump.c292576826#15#0#15#0#0"0(22@39"Implicit declaration of function 'rand'292576828#304#102#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitjump.c292576826#17#0#17#0#36"implicit declaration of function '*'0(0#0#48"/Users/aronallen/Xcode Projects/pwn/commitjump.c3907004821821025792#1233"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/commitjump.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/users/aronallen/Xcode Projects/pwn/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.854459
@@ -907,6 +1101,9 @@ xcom.apple.compilers.gcc.4_2
 o/Users/aronallen/checkers copy/commitmove.c: In function 'makeMove':
 o/Users/aronallen/checkers copy/commitmove.c:74: warning: unused variable 'destination'
 lSLF07#2@51"Compile /Users/aronallen/checkers copy/commitmove.c273604722#273604722#0(156"/Users/aronallen/checkers copy/commitmove.c: In function 'makeMove':/Users/aronallen/checkers copy/commitmove.c:74: warning: unused variable 'destination'1(22@29"Unused variable 'destination'273604722#69#87#0(6@43"/Users/aronallen/checkers copy/commitmove.c273604622#74#0#74#0#19"unused variable '*'0(0#0#43"/Users/aronallen/checkers copy/commitmove.c4300882208#1178"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/commitmove.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/users/aronallen/Xcode Projects/pwn/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.858105
@@ -991,6 +1188,9 @@ xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@47"Compile /Users/aronallen/checkers copy/jumper.c273605353#273605353#0(0"0(0#0#39"/Users/aronallen/checkers copy/jumper.c4300882208#1170"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/jumper.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
 
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/users/aronallen/Xcode Projects/pwn/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291394356.123891
 e291394356.125325
@@ -1029,6 +1229,9 @@ xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Users/aronallen/checkers copy/main.c273605447#273605447#0(0"0(0#0#37"/Users/aronallen/checkers copy/main.c4300882208#1166"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/main.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/users/aronallen/Xcode Projects/pwn/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/Xcode Projects/Checkers GIT/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.750107
@@ -1077,6 +1280,9 @@ xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@46"Compile /Users/aronallen/checkers copy/mover.c273604722#273604722#0(0"0(0#0#38"/Users/aronallen/checkers copy/mover.c4300882208#1168"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/mover.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o"0#
 
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/users/aronallen/Xcode Projects/pwn/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/Xcode Projects/Checkers GIT/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.920892
 e291392117.956495
@@ -1110,6 +1316,9 @@ xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@50"Compile /Users/aronallen/checkers copy/positions.c273604722#273604722#0(0"0(0#0#42"/Users/aronallen/checkers copy/positions.c4300882208#1176"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/positions.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/users/aronallen/Xcode Projects/pwn/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s291392117.712284
@@ -1158,6 +1367,9 @@ xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@46"Compile /Users/aronallen/checkers copy/print.c273604722#273604722#0(0"0(0#0#38"/Users/aronallen/checkers copy/print.c4300882208#1168"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/print.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o"0#
 
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/users/aronallen/Xcode Projects/pwn/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
 CLd "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello" normal x86_64
 s291394356.126983
 e291394356.149870
@@ -1197,4 +1409,14 @@ x/Users/aronallen/checkers copy/build/Debug/hello
 xnormal
 xx86_64
 lSLF07#2@53"Link /Users/aronallen/checkers copy/build/Debug/hello273605447#273605447#0(0"0(0#0#0"4300882208#460"    cd "/Users/aronallen/checkers copy"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/checkers copy/build/Debug" "-F/Users/aronallen/checkers copy/build/Debug" -filelist "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/checkers copy/build/Debug/hello"0#
+
+CLd "/users/aronallen/Xcode Projects/pwn/build/Debug/hello" normal x86_64
+s295642352.033036
+e295642352.522836
+r1
+xLd
+x/users/aronallen/Xcode Projects/pwn/build/Debug/hello
+xnormal
+xx86_64
+lSLF07#2@58"Link /users/aronallen/Xcode Projects/pwn/build/Debug/hello295642352#295642352#0(0"0(0#0#0"27866400654557296#485"    cd "/users/aronallen/Xcode Projects/pwn"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/users/aronallen/Xcode Projects/pwn/build/Debug" "-F/users/aronallen/Xcode Projects/pwn/build/Debug" -filelist "/users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/users/aronallen/Xcode Projects/pwn/build/Debug/hello"0#
 
