@@ -1,23 +1,23 @@
 Thello
 v7
 r0
-t290341815.029271
+t292864804.015090
 cCheck dependencies
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/Xcode Projects/Checkers GIT/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/Xcode Projects/Checkers GIT/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
-cLd "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello" normal x86_64
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/pwn/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/pwn/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/Xcode Projects/pwn/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/Xcode Projects/pwn/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/Xcode Projects/pwn/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/pwn/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/Xcode Projects/pwn/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/Users/aronallen/Xcode Projects/pwn/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/pwn/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/Users/aronallen/Xcode Projects/pwn/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cLd "/Users/aronallen/Xcode Projects/pwn/build/Debug/hello" normal x86_64
 
 N/Developer/SDKs/MacOSX10.5.sdk
-c000000004AB44D2500000000000000EE
-t1253330213
+c000000004B7E366000000000000000EE
+t1266562656
 s238
 
 N/Developer/SDKs/MacOSX10.5.sdk/usr/include/math.h
@@ -70,9 +70,9 @@ t1257542325
 s218
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c
-c000000004B9DF94A0000000000002407
-t1268644170
-s9223
+c000000004BAE0FA100000000000027D7
+t1269698465
+s10199
 i<stdio.h>
 i<stdlib.h>
 i<math.h>
@@ -86,14 +86,14 @@ i"bitops.h"
 i"aialpabeta.h"
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.h
-c000000004B9D0A5F00000000000001D2
-t1268583007
-s466
+c000000004BAE0D0A000000000000024C
+t1269697802
+s588
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c
-c000000004AFE85290000000000000A11
-t1258194217
-s2577
+c000000004BA10F4D00000000000009F7
+t1268846413
+s2551
 i"main.h"
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.h
@@ -113,32 +113,32 @@ t1256346931
 s581
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
-t1268649015
-s45392
+t1269701556
+s45664
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/ai.o
 t1257874715
 s6540
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
-t1268644173
-s13616
+t1269699318
+s15108
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o
-t1268591859
+t1269699318
 s6468
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
-t1268591859
+t1269699317
 s7156
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o
-t1268591859
-s5300
+t1269699318
+s5204
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
-t1268591859
-s4692
+t1269699317
+s4660
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList
 c000000004AFC5044000000000000046D
@@ -146,24 +146,24 @@ t1258049604
 s1133
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
-t1268591859
-s11464
+t1269699317
+s11848
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
-t1268649014
-s14184
+t1269701552
+s14764
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
-t1268591859
-s9504
+t1269699317
+s9408
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
-t1268591859
-s4864
+t1269699317
+s4832
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
-t1268591859
-s6240
+t1269699317
+s6364
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c
 c000000004AF9A4B700000000000007AB
@@ -194,8 +194,8 @@ t1248950987
 s139
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c
-c000000004B1053020000000000001D5D
-t1259361026
+c000000004BABD3070000000000001D5D
+t1269551879
 s7517
 i"main.h"
 
@@ -205,9 +205,9 @@ t1257601660
 s410
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/main.c
-c000000004B9E0C3400000000000026A4
-t1268649012
-s9892
+c000000004BAE1BB00000000000002AC7
+t1269701552
+s10951
 i<stdio.h>
 i<stdlib.h>
 i<time.h>
@@ -223,9 +223,9 @@ i"aialpabeta.h"
 i"aisearch.h"
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/main.h
-c000000004B9D2CF00000000000000F60
-t1268591856
-s3936
+c000000004BAE12E80000000000000F5F
+t1269699304
+s3935
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/mover.c
 c000000004B9D1F6A00000000000014B6
@@ -250,12 +250,194 @@ t1258146687
 s184
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/print.c
-c000000004AF9A57200000000000004DC
-t1257874802
-s1244
+c000000004B9E8EBB0000000000000536
+t1268682427
+s1334
 i"main.h"
 
 N/Users/aronallen/Xcode Projects/Checkers GIT/print.h
+c000000004AE255480000000000000110
+t1256346952
+s272
+
+N/Users/aronallen/Xcode Projects/pwn/aialpabeta.c
+c000000004BC47F2100000000000031F0
+t1271168801
+s12784
+i<stdio.h>
+i<stdlib.h>
+i<math.h>
+i<time.h>
+i"main.h"
+i"mover.h"
+i"jumper.h"
+i"commitmove.h"
+i"commitjump.h"
+i"bitops.h"
+i"aialpabeta.h"
+
+N/Users/aronallen/Xcode Projects/pwn/aialpabeta.h
+c000000004BC44A6D000000000000025B
+t1271155309
+s603
+
+N/Users/aronallen/Xcode Projects/pwn/aisearch.c
+c000000004BA10F4D00000000000009F7
+t1268846413
+s2551
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/aisearch.h
+c000000004AFA685800000000000000DA
+t1257924696
+s218
+
+N/Users/aronallen/Xcode Projects/pwn/bitops.c
+c000000004AF9A5640000000000000A23
+t1257874788
+s2595
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/bitops.h
+c000000004AE255330000000000000245
+t1256346931
+s581
+
+N/Users/aronallen/Xcode Projects/pwn/build/Debug/hello
+t1271172004
+s45536
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
+t1271168801
+s15812
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o
+t1269699318
+s6468
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
+t1269699317
+s7156
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o
+t1270884028
+s5312
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
+t1271166956
+s4728
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList
+c000000004BB211B40000000000000413
+t1269961140
+s1043
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
+t1271148390
+s11816
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
+t1271172002
+s15092
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
+t1269699317
+s9408
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
+t1269699317
+s4832
+
+N/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
+t1269699317
+s6364
+
+N/Users/aronallen/Xcode Projects/pwn/commitjump.c
+c000000004BC026BA0000000000000816
+t1270884026
+s2070
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/commitjump.h
+c000000004AE43F6700000000000000B6
+t1256472423
+s182
+
+N/Users/aronallen/Xcode Projects/pwn/commitmove.c
+c000000004BC477EB000000000000043A
+t1271166955
+s1082
+i<stdio.h>
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/commitmove.h
+c000000004AE253D100000000000000B5
+t1256346577
+s181
+
+N/Users/aronallen/Xcode Projects/pwn/jumper.c
+c000000004BC411E40000000000001D5D
+t1271140836
+s7517
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/jumper.h
+c000000004AF57A7C000000000000019A
+t1257601660
+s410
+
+N/Users/aronallen/Xcode Projects/pwn/main.c
+c000000004BC48BA20000000000002C61
+t1271172002
+s11361
+i<stdio.h>
+i<stdlib.h>
+i<time.h>
+i"main.h"
+i"print.h"
+i"mover.h"
+i"bitops.h"
+i"positions.h"
+i"commitmove.h"
+i"jumper.h"
+i"commitjump.h"
+i"aialpabeta.h"
+i"aisearch.h"
+
+N/Users/aronallen/Xcode Projects/pwn/main.h
+c000000004BAE12E80000000000000F5F
+t1269699304
+s3935
+
+N/Users/aronallen/Xcode Projects/pwn/mover.c
+c000000004B9D1F6A00000000000014B6
+t1268588394
+s5302
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/mover.h
+c000000004AF9A5030000000000000179
+t1257874691
+s377
+
+N/Users/aronallen/Xcode Projects/pwn/positions.c
+c000000004AFDCCFB00000000000004FD
+t1258147067
+s1277
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/positions.h
+c000000004AFDCB7F00000000000000B8
+t1258146687
+s184
+
+N/Users/aronallen/Xcode Projects/pwn/print.c
+c000000004B9E8EBB0000000000000536
+t1268682427
+s1334
+i"main.h"
+
+N/Users/aronallen/Xcode Projects/pwn/print.h
 c000000004AE255480000000000000110
 t1256346952
 s272
@@ -448,7 +630,7 @@ s279
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies290341814#290341814#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies292864803#292864804#0(0"0(0#1#0"4300739032#0"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/i386/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal i386 c com.apple.compilers.gcc.4_2
 s273519401.794063
@@ -555,8 +737,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@57"Compile /Users/aronallen/Xcode Projects/Checkers GIT/ai.c279567515#279567515#0(0"0(0#0#49"/Users/aronallen/Xcode Projects/Checkers GIT/ai.c4300885448#1316"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/ai.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/ai.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290336973.373319
-e290336973.729360
+s291392118.017229
+e291392118.127078
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
@@ -565,17 +747,34 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'stackCompare':
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:357: warning: control reaches end of non-void function
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'stackCompareInverted':
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:373: warning: control reaches end of non-void function
 o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompareInverted':
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:323: warning: control reaches end of non-void function
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:391: warning: control reaches end of non-void function
 o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompare':
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:339: warning: control reaches end of non-void function
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:407: warning: control reaches end of non-void function
 o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'heavyGameFromLightGame':
-o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:355: warning: implicit declaration of function 'piecesInGameForActivePlayer'
-lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290336973#290336973#0(640"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompareInverted':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:323: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompare':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:339: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'heavyGameFromLightGame':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:355: warning: implicit declaration of function 'piecesInGameForActivePlayer'3(22@40"Control reaches end of non-void function290336973#95#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290336970#323#0#323#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function290336973#295#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290336970#339#0#339#0#40"control reaches end of non-void function0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'290336973#505#135#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c290336970#355#0#355#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o"0#
+o/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:424: warning: implicit declaration of function 'piecesInGameForActivePlayer'
+lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c291392118#291392118#0(1048"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'stackCompare':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:357: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'stackCompareInverted':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:373: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompareInverted':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:391: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'scoreCompare':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:407: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c: In function 'heavyGameFromLightGame':/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c:424: warning: implicit declaration of function 'piecesInGameForActivePlayer'5(22@40"Control reaches end of non-void function291392118#87#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c291391265#357#0#357#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function291392118#295#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c291391265#373#0#373#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function291392118#503#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c291391265#391#0#391#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function291392118#703#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c291391265#407#0#407#0#40"control reaches end of non-void function0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'291392118#913#135#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c291391265#424#0#424#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aialpabeta.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o "/Users/aronallen/Xcode Projects/pwn/aialpabeta.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s292861601.547703
+e292861601.562040
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o
+x/Users/aronallen/Xcode Projects/pwn/aialpabeta.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#292861601#0(958"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'stackCompare':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:385: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'stackCompareInverted':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:401: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'scoreCompareInverted':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:419: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'scoreCompare':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:435: warning: control reaches end of non-void function/Users/aronallen/Xcode Projects/pwn/aialpabeta.c: In function 'heavyGameFromLightGame':/Users/aronallen/Xcode Projects/pwn/aialpabeta.c:452: warning: implicit declaration of function 'piecesInGameForActivePlayer'5(22@40"Control reaches end of non-void function292861601#78#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#385#0#385#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function292861601#268#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#401#0#401#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function292861601#458#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#419#0#419#0#40"control reaches end of non-void function0(22@40"Control reaches end of non-void function292861601#640#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#435#0#435#0#40"control reaches end of non-void function0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'292861601#832#126#0(6@48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c292861601#452#0#452#0#36"implicit declaration of function '*'0(0#0#48"/Users/aronallen/Xcode Projects/pwn/aialpabeta.c4300739032#1233"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/aialpabeta.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aialpabeta.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.248788
-e290284659.301038
+s291392117.956648
+e291392118.017129
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o
@@ -595,11 +794,14 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:65: warning: implicit d
 o/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:67: warning: implicit declaration of function 'makeMove'
 o/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:93: warning: implicit declaration of function 'findJumpersForGame'
 o/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:156: warning: implicit declaration of function 'free'
-lSLF07#2@63"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290284659#290284659#0(1229"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c: In function 'bestMJ':/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:21: warning: implicit declaration of function 'malloc'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:21: warning: incompatible implicit declaration of built-in function 'malloc'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:49: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:58: warning: implicit declaration of function 'srand'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:58: warning: implicit declaration of function 'time'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:60: warning: implicit declaration of function 'rand'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:65: warning: implicit declaration of function 'makeJump'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:67: warning: implicit declaration of function 'makeMove'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:93: warning: implicit declaration of function 'findJumpersForGame'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:156: warning: implicit declaration of function 'free'10(22@41"Implicit declaration of function 'malloc'290284659#79#111#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#21#0#21#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'malloc'290284659#190#133#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#21#0#21#0#0"0(22@49"Implicit declaration of function 'bitsInBitboard'290284659#323#119#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#49#0#49#0#36"implicit declaration of function '*'0(22@40"Implicit declaration of function 'srand'290284659#442#110#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#58#0#58#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'time'290284659#552#109#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#58#0#58#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'rand'290284659#661#109#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#60#0#60#0#36"implicit declaration of function '*'0(22@43"Implicit declaration of function 'makeJump'290284659#770#113#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#65#0#65#0#36"implicit declaration of function '*'0(22@43"Implicit declaration of function 'makeMove'290284659#883#113#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#67#0#67#0#36"implicit declaration of function '*'0(22@53"Implicit declaration of function 'findJumpersForGame'290284659#996#123#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#93#0#93#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'free'290284659#1119#110#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c279887017#156#0#156#0#36"implicit declaration of function '*'0(0#0#55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c4300885448#1328"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o"0#
+lSLF07#2@63"Compile /Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c291392117#291392118#0(1229"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c: In function 'bestMJ':/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:21: warning: implicit declaration of function 'malloc'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:21: warning: incompatible implicit declaration of built-in function 'malloc'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:49: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:58: warning: implicit declaration of function 'srand'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:58: warning: implicit declaration of function 'time'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:60: warning: implicit declaration of function 'rand'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:65: warning: implicit declaration of function 'makeJump'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:67: warning: implicit declaration of function 'makeMove'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:93: warning: implicit declaration of function 'findJumpersForGame'/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c:156: warning: implicit declaration of function 'free'10(22@41"Implicit declaration of function 'malloc'291392117#79#111#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#21#0#21#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'malloc'291392117#190#133#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#21#0#21#0#0"0(22@49"Implicit declaration of function 'bitsInBitboard'291392117#323#119#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#49#0#49#0#36"implicit declaration of function '*'0(22@40"Implicit declaration of function 'srand'291392117#442#110#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#58#0#58#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'time'291392117#552#109#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#58#0#58#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'rand'291392117#661#109#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#60#0#60#0#36"implicit declaration of function '*'0(22@43"Implicit declaration of function 'makeJump'291392117#770#113#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#65#0#65#0#36"implicit declaration of function '*'0(22@43"Implicit declaration of function 'makeMove'291392117#883#113#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#67#0#67#0#36"implicit declaration of function '*'0(22@53"Implicit declaration of function 'findJumpersForGame'291392117#996#123#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#93#0#93#0#36"implicit declaration of function '*'0(22@39"Implicit declaration of function 'free'291392117#1119#110#0(6@55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c290539213#156#0#156#0#36"implicit declaration of function '*'0(0#0#55"/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c4300885448#1328"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/aisearch.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/aisearch.o "/Users/aronallen/Xcode Projects/pwn/aisearch.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.095173
-e290284659.168118
+s291392117.787766
+e291392117.858010
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o
@@ -611,7 +813,10 @@ xcom.apple.compilers.gcc.4_2
 o/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c: In function 'northWestRotate':
 o/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c:14: warning: implicit declaration of function 'bitsInBitboard'
 o/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c:20: warning: implicit declaration of function 'realPositionForBitboard'
-lSLF07#2@61"Compile /Users/aronallen/Xcode Projects/Checkers GIT/bitops.c290284659#290284659#0(329"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c: In function 'northWestRotate':/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c:14: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c:20: warning: implicit declaration of function 'realPositionForBitboard'2(22@49"Implicit declaration of function 'bitsInBitboard'290284659#86#117#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c279567588#14#0#14#0#36"implicit declaration of function '*'0(22@58"Implicit declaration of function 'realPositionForBitboard'290284659#203#126#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c279567588#20#0#20#0#36"implicit declaration of function '*'0(0#0#53"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c4300885448#1324"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o"0#
+lSLF07#2@61"Compile /Users/aronallen/Xcode Projects/Checkers GIT/bitops.c291392117#291392117#0(329"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c: In function 'northWestRotate':/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c:14: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c:20: warning: implicit declaration of function 'realPositionForBitboard'2(22@49"Implicit declaration of function 'bitsInBitboard'291392117#86#117#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c279567588#14#0#14#0#36"implicit declaration of function '*'0(22@58"Implicit declaration of function 'realPositionForBitboard'291392117#203#126#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c279567588#20#0#20#0#36"implicit declaration of function '*'0(0#0#53"/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c4300885448#1324"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/bitops.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/Xcode Projects/pwn/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o "/Users/aronallen/checkers copy/bitops.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273604722.801880
@@ -627,8 +832,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@47"Compile /Users/aronallen/checkers copy/bitops.c273604722#273604722#0(0"0(0#0#39"/Users/aronallen/checkers copy/bitops.c4300882208#1170"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/bitops.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/bitops.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.245538
-e290284659.288308
+s291392117.952433
+e291392118.022402
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o
@@ -641,11 +846,28 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c: In function 'makeJum
 o/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:15: warning: implicit declaration of function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:16: warning: implicit declaration of function 'rand'
-lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c290284659#290284659#0(442"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c: In function 'makeJump':/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:15: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:16: warning: implicit declaration of function 'rand'3(22@41"Implicit declaration of function 'printf'290284659#83#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c279567415#15#0#15#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#196#135#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c279567415#15#0#15#0#0"0(22@39"Implicit declaration of function 'rand'290284659#331#111#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c279567415#16#0#16#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o"0#
+lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c291392117#291392118#0(442"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c: In function 'makeJump':/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:15: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c:16: warning: implicit declaration of function 'rand'3(22@41"Implicit declaration of function 'printf'291392117#83#113#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c279567415#15#0#15#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#196#135#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c279567415#15#0#15#0#0"0(22@39"Implicit declaration of function 'rand'291392117#331#111#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c279567415#16#0#16#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/commitjump.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o "/Users/aronallen/Xcode Projects/pwn/commitjump.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s292576828.368993
+e292576828.933143
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o
+x/Users/aronallen/Xcode Projects/pwn/commitjump.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/aronallen/Xcode Projects/pwn/commitjump.c: In function 'makeJump':
+o/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: implicit declaration of function 'printf'
+o/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'
+o/Users/aronallen/Xcode Projects/pwn/commitjump.c:17: warning: implicit declaration of function 'rand'
+lSLF07#2@56"Compile /Users/aronallen/Xcode Projects/pwn/commitjump.c292576828#292576828#0(406"/Users/aronallen/Xcode Projects/pwn/commitjump.c: In function 'makeJump':/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/pwn/commitjump.c:15: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/pwn/commitjump.c:17: warning: implicit declaration of function 'rand'3(22@41"Implicit declaration of function 'printf'292576828#74#104#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitjump.c292576826#15#0#15#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'292576828#178#126#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitjump.c292576826#15#0#15#0#0"0(22@39"Implicit declaration of function 'rand'292576828#304#102#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitjump.c292576826#17#0#17#0#36"implicit declaration of function '*'0(0#0#48"/Users/aronallen/Xcode Projects/pwn/commitjump.c3907004821821025792#1233"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/commitjump.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitjump.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.168233
-e290284659.211853
+s291392117.854459
+e291392117.920789
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
@@ -656,7 +878,20 @@ xc
 xcom.apple.compilers.gcc.4_2
 o/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c: In function 'makeMove':
 o/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c:17: warning: implicit declaration of function 'rand'
-lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c290284659#290284659#0(194"/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c: In function 'makeMove':/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c:17: warning: implicit declaration of function 'rand'1(22@39"Implicit declaration of function 'rand'290284659#83#111#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c279567522#17#0#17#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o"0#
+lSLF07#2@65"Compile /Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c291392117#291392117#0(194"/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c: In function 'makeMove':/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c:17: warning: implicit declaration of function 'rand'1(22@39"Implicit declaration of function 'rand'291392117#83#111#0(6@57"/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c279567522#17#0#17#0#36"implicit declaration of function '*'0(0#0#57"/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c4300885448#1332"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/commitmove.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/Xcode Projects/pwn/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s292859757.897540
+e292859757.898845
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o
+x/Users/aronallen/Xcode Projects/pwn/commitmove.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/aronallen/Xcode Projects/pwn/commitmove.c292859757#292859757#0(176"/Users/aronallen/Xcode Projects/pwn/commitmove.c: In function 'makeMove':/Users/aronallen/Xcode Projects/pwn/commitmove.c:19: warning: implicit declaration of function 'rand'1(22@39"Implicit declaration of function 'rand'292859757#74#102#0(6@48"/Users/aronallen/Xcode Projects/pwn/commitmove.c292859755#19#0#19#0#36"implicit declaration of function '*'0(0#0#48"/Users/aronallen/Xcode Projects/pwn/commitmove.c4300739032#1233"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/commitmove.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o "/Users/aronallen/checkers copy/commitmove.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273604722.870387
@@ -674,8 +909,8 @@ o/Users/aronallen/checkers copy/commitmove.c:74: warning: unused variable 'desti
 lSLF07#2@51"Compile /Users/aronallen/checkers copy/commitmove.c273604722#273604722#0(156"/Users/aronallen/checkers copy/commitmove.c: In function 'makeMove':/Users/aronallen/checkers copy/commitmove.c:74: warning: unused variable 'destination'1(22@29"Unused variable 'destination'273604722#69#87#0(6@43"/Users/aronallen/checkers copy/commitmove.c273604622#74#0#74#0#19"unused variable '*'0(0#0#43"/Users/aronallen/checkers copy/commitmove.c4300882208#1178"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/commitmove.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/commitmove.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.169902
-e290284659.245429
+s291392117.858105
+e291392117.952329
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
@@ -706,7 +941,42 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:162: warning: previous im
 o/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'newMJ':
 o/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:308: warning: implicit declaration of function 'memset'
 o/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:308: warning: incompatible implicit declaration of built-in function 'memset'
-lSLF07#2@61"Compile /Users/aronallen/Xcode Projects/Checkers GIT/jumper.c290284659#290284659#0(2336"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpNorthWest':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:36: warning: implicit declaration of function 'northWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpNorthEast':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:70: warning: implicit declaration of function 'northEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpSouthWest':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:101: warning: implicit declaration of function 'southWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpSouthEast':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:131: warning: implicit declaration of function 'southEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'findJumpsForPiece':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:162: warning: implicit declaration of function 'newMJ'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:237: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:237: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'findJumpersForGame':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:268: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:274: warning: implicit declaration of function 'piecesInGameForActivePlayer'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:301: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: At top level:/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:307: warning: conflicting types for 'newMJ'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:162: warning: previous implicit declaration of 'newMJ' was here/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'newMJ':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:308: warning: implicit declaration of function 'memset'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:308: warning: incompatible implicit declaration of built-in function 'memset'15(22@50"Implicit declaration of function 'northWestRotate'290284659#84#118#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#36#0#36#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'northEastRotate'290284659#286#118#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#70#0#70#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'southWestRotate'290284659#488#119#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#101#0#101#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'southEastRotate'290284659#691#119#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#131#0#131#0#36"implicit declaration of function '*'0(22@40"Implicit declaration of function 'newMJ'290284659#898#109#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#162#0#162#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'290284659#1007#110#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#237#0#237#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1117#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#237#0#237#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1338#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#268#0#268#0#0"0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'290284659#1470#131#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#274#0#274#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1601#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#301#0#301#0#0"0(23@13"At top level:290284659#1733#69#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#0#0#0#0#0"0(22@29"Conflicting types for 'newMJ'290284659#1802#98#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#307#0#307#0#25"conflicting types for '*'0(22@49"Previous implicit declaration of 'newMJ' was here290284659#1900#118#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#162#0#162#0#45"previous implicit declaration of '*' was here0(22@41"Implicit declaration of function 'memset'290284659#2094#110#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#308#0#308#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'memset'290284659#2204#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c281053826#308#0#308#0#0"0(0#0#53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c4300885448#1324"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
+lSLF07#2@61"Compile /Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291392117#291392117#0(2336"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpNorthWest':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:36: warning: implicit declaration of function 'northWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpNorthEast':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:70: warning: implicit declaration of function 'northEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpSouthWest':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:101: warning: implicit declaration of function 'southWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'jumpSouthEast':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:131: warning: implicit declaration of function 'southEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'findJumpsForPiece':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:162: warning: implicit declaration of function 'newMJ'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:237: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:237: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'findJumpersForGame':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:268: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:274: warning: implicit declaration of function 'piecesInGameForActivePlayer'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:301: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: At top level:/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:307: warning: conflicting types for 'newMJ'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:162: warning: previous implicit declaration of 'newMJ' was here/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c: In function 'newMJ':/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:308: warning: implicit declaration of function 'memset'/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c:308: warning: incompatible implicit declaration of built-in function 'memset'15(22@50"Implicit declaration of function 'northWestRotate'291392117#84#118#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#36#0#36#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'northEastRotate'291392117#286#118#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#70#0#70#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'southWestRotate'291392117#488#119#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#101#0#101#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'southEastRotate'291392117#691#119#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#131#0#131#0#36"implicit declaration of function '*'0(22@40"Implicit declaration of function 'newMJ'291392117#898#109#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#162#0#162#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'291392117#1007#110#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#237#0#237#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1117#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#237#0#237#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1338#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#268#0#268#0#0"0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'291392117#1470#131#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#274#0#274#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1601#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#301#0#301#0#0"0(23@13"At top level:291392117#1733#69#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#0#0#0#0#0"0(22@29"Conflicting types for 'newMJ'291392117#1802#98#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#307#0#307#0#25"conflicting types for '*'0(22@49"Previous implicit declaration of 'newMJ' was here291392117#1900#118#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#162#0#162#0#45"previous implicit declaration of '*' was here0(22@41"Implicit declaration of function 'memset'291392117#2094#110#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#308#0#308#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'memset'291392117#2204#132#0(6@53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c291244679#308#0#308#0#0"0(0#0#53"/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c4300885448#1324"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/jumper.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/Xcode Projects/pwn/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s292841190.209286
+e292841190.374202
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o
+x/Users/aronallen/Xcode Projects/pwn/jumper.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpNorthWest':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:36: warning: implicit declaration of function 'northWestRotate'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpNorthEast':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:70: warning: implicit declaration of function 'northEastRotate'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpSouthWest':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:101: warning: implicit declaration of function 'southWestRotate'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpSouthEast':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:131: warning: implicit declaration of function 'southEastRotate'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'findJumpsForPiece':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:162: warning: implicit declaration of function 'newMJ'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:237: warning: implicit declaration of function 'printf'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:237: warning: incompatible implicit declaration of built-in function 'printf'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'findJumpersForGame':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:268: warning: incompatible implicit declaration of built-in function 'printf'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:274: warning: implicit declaration of function 'piecesInGameForActivePlayer'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:301: warning: incompatible implicit declaration of built-in function 'printf'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: At top level:
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:307: warning: conflicting types for 'newMJ'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:162: warning: previous implicit declaration of 'newMJ' was here
+o/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'newMJ':
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:308: warning: implicit declaration of function 'memset'
+o/Users/aronallen/Xcode Projects/pwn/jumper.c:308: warning: incompatible implicit declaration of built-in function 'memset'
+lSLF07#2@52"Compile /Users/aronallen/Xcode Projects/pwn/jumper.c292841190#292841190#0(2138"/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpNorthWest':/Users/aronallen/Xcode Projects/pwn/jumper.c:36: warning: implicit declaration of function 'northWestRotate'/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpNorthEast':/Users/aronallen/Xcode Projects/pwn/jumper.c:70: warning: implicit declaration of function 'northEastRotate'/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpSouthWest':/Users/aronallen/Xcode Projects/pwn/jumper.c:101: warning: implicit declaration of function 'southWestRotate'/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'jumpSouthEast':/Users/aronallen/Xcode Projects/pwn/jumper.c:131: warning: implicit declaration of function 'southEastRotate'/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'findJumpsForPiece':/Users/aronallen/Xcode Projects/pwn/jumper.c:162: warning: implicit declaration of function 'newMJ'/Users/aronallen/Xcode Projects/pwn/jumper.c:237: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/pwn/jumper.c:237: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'findJumpersForGame':/Users/aronallen/Xcode Projects/pwn/jumper.c:268: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/pwn/jumper.c:274: warning: implicit declaration of function 'piecesInGameForActivePlayer'/Users/aronallen/Xcode Projects/pwn/jumper.c:301: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/pwn/jumper.c: At top level:/Users/aronallen/Xcode Projects/pwn/jumper.c:307: warning: conflicting types for 'newMJ'/Users/aronallen/Xcode Projects/pwn/jumper.c:162: warning: previous implicit declaration of 'newMJ' was here/Users/aronallen/Xcode Projects/pwn/jumper.c: In function 'newMJ':/Users/aronallen/Xcode Projects/pwn/jumper.c:308: warning: implicit declaration of function 'memset'/Users/aronallen/Xcode Projects/pwn/jumper.c:308: warning: incompatible implicit declaration of built-in function 'memset'15(22@50"Implicit declaration of function 'northWestRotate'292841190#75#109#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#36#0#36#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'northEastRotate'292841190#259#109#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#70#0#70#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'southWestRotate'292841190#443#110#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#101#0#101#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'southEastRotate'292841190#628#110#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#131#0#131#0#36"implicit declaration of function '*'0(22@40"Implicit declaration of function 'newMJ'292841190#817#100#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#162#0#162#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'292841190#917#101#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#237#0#237#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'292841190#1018#123#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#237#0#237#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'292841190#1221#123#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#268#0#268#0#0"0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'292841190#1344#122#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#274#0#274#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'292841190#1466#123#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#301#0#301#0#0"0(23@13"At top level:292841190#1589#60#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#0#0#0#0#0"0(22@29"Conflicting types for 'newMJ'292841190#1649#89#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#307#0#307#0#25"conflicting types for '*'0(22@49"Previous implicit declaration of 'newMJ' was here292841190#1738#109#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#162#0#162#0#45"previous implicit declaration of '*' was here0(22@41"Implicit declaration of function 'memset'292841190#1914#101#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#308#0#308#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'memset'292841190#2015#123#0(6@44"/Users/aronallen/Xcode Projects/pwn/jumper.c292833636#308#0#308#0#0"0(0#0#44"/Users/aronallen/Xcode Projects/pwn/jumper.c3907004821821025792#1225"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/jumper.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o "/Users/aronallen/checkers copy/jumper.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273605353.354774
@@ -722,8 +992,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@47"Compile /Users/aronallen/checkers copy/jumper.c273605353#273605353#0(0"0(0#0#39"/Users/aronallen/checkers copy/jumper.c4300882208#1170"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/jumper.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/jumper.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290341814.747494
-e290341814.987727
+s291394356.123891
+e291394356.125325
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
@@ -732,9 +1002,20 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-o/Users/aronallen/Xcode Projects/Checkers GIT/main.c: In function 'main':
-o/Users/aronallen/Xcode Projects/Checkers GIT/main.c:274: warning: too few arguments for format
-lSLF07#2@59"Compile /Users/aronallen/Xcode Projects/Checkers GIT/main.c290341814#290341814#0(168"/Users/aronallen/Xcode Projects/Checkers GIT/main.c: In function 'main':/Users/aronallen/Xcode Projects/Checkers GIT/main.c:274: warning: too few arguments for format1(22@28"Too few arguments for format290341814#73#95#0(6@51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c290341812#274#0#274#0#0"0(0#0#51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c4300885448#1320"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
+lSLF07#2@59"Compile /Users/aronallen/Xcode Projects/Checkers GIT/main.c291394356#291394356#0(264"/Users/aronallen/Xcode Projects/Checkers GIT/main.c: In function 'main':/Users/aronallen/Xcode Projects/Checkers GIT/main.c:309: warning: too few arguments for format/Users/aronallen/Xcode Projects/Checkers GIT/main.c:47: warning: unused variable 'startNewGame'2(22@28"Too few arguments for format291394356#73#95#0(6@51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c291394352#309#0#309#0#0"0(22@30"Unused variable 'startNewGame'291394356#168#96#0(6@51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c291394352#47#0#47#0#19"unused variable '*'0(0#0#51"/Users/aronallen/Xcode Projects/Checkers GIT/main.c4300885448#1320"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/main.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/Xcode Projects/pwn/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s292864803.984360
+e292864803.986843
+r1
+xCompileC
+xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o
+x/Users/aronallen/Xcode Projects/pwn/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@50"Compile /Users/aronallen/Xcode Projects/pwn/main.c292864803#292864804#0(237"/Users/aronallen/Xcode Projects/pwn/main.c: In function 'main':/Users/aronallen/Xcode Projects/pwn/main.c:329: warning: too few arguments for format/Users/aronallen/Xcode Projects/pwn/main.c:49: warning: unused variable 'startNewGame'2(22@28"Too few arguments for format292864803#64#86#0(6@42"/Users/aronallen/Xcode Projects/pwn/main.c292864802#329#0#329#0#0"0(22@30"Unused variable 'startNewGame'292864803#150#87#0(6@42"/Users/aronallen/Xcode Projects/pwn/main.c292864802#49#0#49#0#19"unused variable '*'0(0#0#42"/Users/aronallen/Xcode Projects/pwn/main.c4300739032#1221"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" "-I/Users/aronallen/Xcode Projects/pwn/build/Debug/include" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/pwn/main.c" -o "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o "/Users/aronallen/checkers copy/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273605447.788247
@@ -750,8 +1031,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Users/aronallen/checkers copy/main.c273605447#273605447#0(0"0(0#0#37"/Users/aronallen/checkers copy/main.c4300882208#1166"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/main.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/main.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/Xcode Projects/Checkers GIT/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.069041
-e290284659.169815
+s291392117.750107
+e291392117.854348
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o
@@ -778,7 +1059,10 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'findMoversFo
 o/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:104: warning: implicit declaration of function 'piecesInGameForActivePlayer'
 o/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:189: warning: incompatible implicit declaration of built-in function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:193: warning: incompatible implicit declaration of built-in function 'printf'
-lSLF07#2@60"Compile /Users/aronallen/Xcode Projects/Checkers GIT/mover.c290284659#290284659#0(2023"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveNorthWest':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:18: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:19: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:19: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:25: warning: implicit declaration of function 'northWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveNorthEast':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:42: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:48: warning: implicit declaration of function 'northEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveSouthWest':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:61: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:67: warning: implicit declaration of function 'southWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveSouthEast':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:82: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:88: warning: implicit declaration of function 'southEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'findMoversForGame':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:104: warning: implicit declaration of function 'piecesInGameForActivePlayer'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:189: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:193: warning: incompatible implicit declaration of built-in function 'printf'13(22@49"Implicit declaration of function 'bitsInBitboard'290284659#83#116#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#18#0#18#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'290284659#199#108#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#19#0#19#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#307#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#19#0#19#0#0"0(22@50"Implicit declaration of function 'northWestRotate'290284659#437#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#25#0#25#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#637#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#42#0#42#0#0"0(22@50"Implicit declaration of function 'northEastRotate'290284659#767#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#48#0#48#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#967#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#61#0#61#0#0"0(22@50"Implicit declaration of function 'southWestRotate'290284659#1097#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#67#0#67#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1297#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#82#0#82#0#0"0(22@50"Implicit declaration of function 'southEastRotate'290284659#1427#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#88#0#88#0#36"implicit declaration of function '*'0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'290284659#1631#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#104#0#104#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1761#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#189#0#189#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1892#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#193#0#193#0#0"0(0#0#52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c4300885448#1322"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/mover.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o"0#
+lSLF07#2@60"Compile /Users/aronallen/Xcode Projects/Checkers GIT/mover.c291392117#291392117#0(2023"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveNorthWest':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:18: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:19: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:19: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:25: warning: implicit declaration of function 'northWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveNorthEast':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:42: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:48: warning: implicit declaration of function 'northEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveSouthWest':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:61: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:67: warning: implicit declaration of function 'southWestRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'moveSouthEast':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:82: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:88: warning: implicit declaration of function 'southEastRotate'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c: In function 'findMoversForGame':/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:104: warning: implicit declaration of function 'piecesInGameForActivePlayer'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:189: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/mover.c:193: warning: incompatible implicit declaration of built-in function 'printf'13(22@49"Implicit declaration of function 'bitsInBitboard'291392117#83#116#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#18#0#18#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'291392117#199#108#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#19#0#19#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#307#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#19#0#19#0#0"0(22@50"Implicit declaration of function 'northWestRotate'291392117#437#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#25#0#25#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#637#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#42#0#42#0#0"0(22@50"Implicit declaration of function 'northEastRotate'291392117#767#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#48#0#48#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#967#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#61#0#61#0#0"0(22@50"Implicit declaration of function 'southWestRotate'291392117#1097#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#67#0#67#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1297#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#82#0#82#0#0"0(22@50"Implicit declaration of function 'southEastRotate'291392117#1427#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#88#0#88#0#36"implicit declaration of function '*'0(22@62"Implicit declaration of function 'piecesInGameForActivePlayer'291392117#1631#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#104#0#104#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1761#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#189#0#189#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1892#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c290281194#193#0#193#0#0"0(0#0#52"/Users/aronallen/Xcode Projects/Checkers GIT/mover.c4300885448#1322"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/mover.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/Xcode Projects/pwn/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o "/Users/aronallen/checkers copy/mover.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273604722.800721
@@ -794,8 +1078,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@46"Compile /Users/aronallen/checkers copy/mover.c273604722#273604722#0(0"0(0#0#38"/Users/aronallen/checkers copy/mover.c4300882208#1168"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/mover.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/mover.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/Xcode Projects/Checkers GIT/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284659.212047
-e290284659.248683
+s291392117.920892
+e291392117.956495
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o
@@ -809,7 +1093,10 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:18: warning: implicit 
 o/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:45: warning: implicit declaration of function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:45: warning: incompatible implicit declaration of built-in function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:68: warning: incompatible implicit declaration of built-in function 'printf'
-lSLF07#2@64"Compile /Users/aronallen/Xcode Projects/Checkers GIT/positions.c290284659#290284659#0(601"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c: In function 'piecesInGameForActivePlayer':/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:18: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:45: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:45: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:68: warning: incompatible implicit declaration of built-in function 'printf'4(22@49"Implicit declaration of function 'bitsInBitboard'290284659#101#120#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#18#0#18#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'290284659#221#112#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#45#0#45#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#333#134#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#45#0#45#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#467#134#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#68#0#68#0#0"0(0#0#56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c4300885448#1330"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/positions.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o"0#
+lSLF07#2@64"Compile /Users/aronallen/Xcode Projects/Checkers GIT/positions.c291392117#291392117#0(601"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c: In function 'piecesInGameForActivePlayer':/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:18: warning: implicit declaration of function 'bitsInBitboard'/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:45: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:45: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/positions.c:68: warning: incompatible implicit declaration of built-in function 'printf'4(22@49"Implicit declaration of function 'bitsInBitboard'291392117#101#120#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#18#0#18#0#36"implicit declaration of function '*'0(22@41"Implicit declaration of function 'printf'291392117#221#112#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#45#0#45#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#333#134#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#45#0#45#0#0"0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#467#134#0(6@56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c279839867#68#0#68#0#0"0(0#0#56"/Users/aronallen/Xcode Projects/Checkers GIT/positions.c4300885448#1330"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/positions.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/Xcode Projects/pwn/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o "/Users/aronallen/checkers copy/positions.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273604722.950378
@@ -825,8 +1112,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@50"Compile /Users/aronallen/checkers copy/positions.c273604722#273604722#0(0"0(0#0#42"/Users/aronallen/checkers copy/positions.c4300882208#1176"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/positions.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/positions.o"0#
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s290284658.974894
-e290284659.068491
+s291392117.712284
+e291392117.787472
 r1
 xCompileC
 xbuild/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o
@@ -842,18 +1129,21 @@ o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:26: warning: implicit decl
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: implicit declaration of function 'printSquareWithPiece'
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: implicit declaration of function 'pieceAtPosition'
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printBitboard':
-o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:55: warning: incompatible implicit declaration of built-in function 'printf'
+o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:65: warning: incompatible implicit declaration of built-in function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c: At top level:
-o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:89: warning: conflicting types for 'printSquareWithPiece'
+o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:99: warning: conflicting types for 'printSquareWithPiece'
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: previous implicit declaration of 'printSquareWithPiece' was here
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printSquareWithPiece':
-o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:91: warning: incompatible implicit declaration of built-in function 'printf'
+o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:101: warning: incompatible implicit declaration of built-in function 'printf'
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c: At top level:
-o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:95: warning: conflicting types for 'printBlankSquare'
+o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:105: warning: conflicting types for 'printBlankSquare'
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:26: warning: previous implicit declaration of 'printBlankSquare' was here
 o/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printBlankSquare':
-o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:97: warning: incompatible implicit declaration of built-in function 'printf'
-lSLF07#2@60"Compile /Users/aronallen/Xcode Projects/Checkers GIT/print.c290284658#290284659#0(1935"/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printGame':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:17: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:17: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:26: warning: implicit declaration of function 'printBlankSquare'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: implicit declaration of function 'printSquareWithPiece'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: implicit declaration of function 'pieceAtPosition'/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printBitboard':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:55: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c: At top level:/Users/aronallen/Xcode Projects/Checkers GIT/print.c:89: warning: conflicting types for 'printSquareWithPiece'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: previous implicit declaration of 'printSquareWithPiece' was here/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printSquareWithPiece':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:91: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c: At top level:/Users/aronallen/Xcode Projects/Checkers GIT/print.c:95: warning: conflicting types for 'printBlankSquare'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:26: warning: previous implicit declaration of 'printBlankSquare' was here/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printBlankSquare':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:97: warning: incompatible implicit declaration of built-in function 'printf'14(22@41"Implicit declaration of function 'printf'290284659#79#108#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#17#0#17#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#187#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#17#0#17#0#0"0(22@51"Implicit declaration of function 'printBlankSquare'290284659#317#118#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#26#0#26#0#36"implicit declaration of function '*'0(22@55"Implicit declaration of function 'printSquareWithPiece'290284659#435#122#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#29#0#29#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'pieceAtPosition'290284659#557#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#29#0#29#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#757#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#55#0#55#0#0"0(23@13"At top level:290284659#887#68#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#0#0#0#0#0"0(22@44"Conflicting types for 'printSquareWithPiece'290284659#955#111#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#89#0#89#0#25"conflicting types for '*'0(22@64"Previous implicit declaration of 'printSquareWithPiece' was here290284659#1066#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#29#0#29#0#45"previous implicit declaration of '*' was here0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1287#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#91#0#91#0#0"0(23@13"At top level:290284659#1417#68#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#0#0#0#0#0"0(22@40"Conflicting types for 'printBlankSquare'290284659#1485#107#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#95#0#95#0#25"conflicting types for '*'0(22@60"Previous implicit declaration of 'printBlankSquare' was here290284659#1592#127#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#26#0#26#0#45"previous implicit declaration of '*' was here0(22@63"Incompatible implicit declaration of built-in function 'printf'290284659#1805#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c279567602#97#0#97#0#0"0(0#0#52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c4300885448#1322"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o"0#
+o/Users/aronallen/Xcode Projects/Checkers GIT/print.c:107: warning: incompatible implicit declaration of built-in function 'printf'
+lSLF07#2@60"Compile /Users/aronallen/Xcode Projects/Checkers GIT/print.c291392117#291392117#0(1938"/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printGame':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:17: warning: implicit declaration of function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:17: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:26: warning: implicit declaration of function 'printBlankSquare'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: implicit declaration of function 'printSquareWithPiece'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: implicit declaration of function 'pieceAtPosition'/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printBitboard':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:65: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c: At top level:/Users/aronallen/Xcode Projects/Checkers GIT/print.c:99: warning: conflicting types for 'printSquareWithPiece'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:29: warning: previous implicit declaration of 'printSquareWithPiece' was here/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printSquareWithPiece':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:101: warning: incompatible implicit declaration of built-in function 'printf'/Users/aronallen/Xcode Projects/Checkers GIT/print.c: At top level:/Users/aronallen/Xcode Projects/Checkers GIT/print.c:105: warning: conflicting types for 'printBlankSquare'/Users/aronallen/Xcode Projects/Checkers GIT/print.c:26: warning: previous implicit declaration of 'printBlankSquare' was here/Users/aronallen/Xcode Projects/Checkers GIT/print.c: In function 'printBlankSquare':/Users/aronallen/Xcode Projects/Checkers GIT/print.c:107: warning: incompatible implicit declaration of built-in function 'printf'14(22@41"Implicit declaration of function 'printf'291392117#79#108#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#17#0#17#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#187#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#17#0#17#0#0"0(22@51"Implicit declaration of function 'printBlankSquare'291392117#317#118#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#26#0#26#0#36"implicit declaration of function '*'0(22@55"Implicit declaration of function 'printSquareWithPiece'291392117#435#122#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#29#0#29#0#36"implicit declaration of function '*'0(22@50"Implicit declaration of function 'pieceAtPosition'291392117#557#117#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#29#0#29#0#36"implicit declaration of function '*'0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#757#130#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#65#0#65#0#0"0(23@13"At top level:291392117#887#68#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#0#0#0#0#0"0(22@44"Conflicting types for 'printSquareWithPiece'291392117#955#111#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#99#0#99#0#25"conflicting types for '*'0(22@64"Previous implicit declaration of 'printSquareWithPiece' was here291392117#1066#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#29#0#29#0#45"previous implicit declaration of '*' was here0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1287#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#101#0#101#0#0"0(23@13"At top level:291392117#1418#68#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#0#0#0#0#0"0(22@40"Conflicting types for 'printBlankSquare'291392117#1486#108#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#105#0#105#0#25"conflicting types for '*'0(22@60"Previous implicit declaration of 'printBlankSquare' was here291392117#1594#127#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#26#0#26#0#45"previous implicit declaration of '*' was here0(22@63"Incompatible implicit declaration of built-in function 'printf'291392117#1807#131#0(6@52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c290375227#107#0#107#0#0"0(0#0#52"/Users/aronallen/Xcode Projects/Checkers GIT/print.c4300885448#1322"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/include" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/Xcode Projects/Checkers GIT/print.c" -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o"0#
+
+CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/Xcode Projects/pwn/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
+r0
 
 CCompileC build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o "/Users/aronallen/checkers copy/print.c" normal x86_64 c com.apple.compilers.gcc.4_2
 s273604722.692459
@@ -869,14 +1159,24 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@46"Compile /Users/aronallen/checkers copy/print.c273604722#273604722#0(0"0(0#0#38"/Users/aronallen/checkers copy/print.c4300882208#1168"    cd "/Users/aronallen/checkers copy"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.5.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-generated-files.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-own-target-headers.hmap" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-all-target-headers.hmap" -iquote "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/hello-project-headers.hmap" "-F/Users/aronallen/checkers copy/build/Debug" "-I/Users/aronallen/checkers copy/build/Debug/include" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources/x86_64" "-I/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/DerivedSources" -c "/Users/aronallen/checkers copy/print.c" -o "/Users/aronallen/checkers copy/build/hello.build/Debug/hello.build/Objects-normal/x86_64/print.o"0#
 
 CLd "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello" normal x86_64
-s290341814.987828
-e290341815.029209
+s291394356.126983
+e291394356.149870
 r1
 xLd
 x/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello
 xnormal
 xx86_64
-lSLF07#2@67"Link /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello290341814#290341815#0(0"0(0#0#0"4300885448#530"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" -filelist "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello"0#
+lSLF07#2@67"Link /Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello291394356#291394356#0(0"0(0#0#0"4300885448#530"    cd "/Users/aronallen/Xcode Projects/Checkers GIT"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" "-F/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug" -filelist "/Users/aronallen/Xcode Projects/Checkers GIT/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/Checkers GIT/build/Debug/hello"0#
+
+CLd "/Users/aronallen/Xcode Projects/pwn/build/Debug/hello" normal x86_64
+s292864803.988512
+e292864804.015042
+r1
+xLd
+x/Users/aronallen/Xcode Projects/pwn/build/Debug/hello
+xnormal
+xx86_64
+lSLF07#2@58"Link /Users/aronallen/Xcode Projects/pwn/build/Debug/hello292864803#292864804#0(0"0(0#0#0"4300739032#485"    cd "/Users/aronallen/Xcode Projects/pwn"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk "-L/Users/aronallen/Xcode Projects/pwn/build/Debug" "-F/Users/aronallen/Xcode Projects/pwn/build/Debug" -filelist "/Users/aronallen/Xcode Projects/pwn/build/hello.build/Debug/hello.build/Objects-normal/x86_64/hello.LinkFileList" -mmacosx-version-min=10.5 -o "/Users/aronallen/Xcode Projects/pwn/build/Debug/hello"0#
 
 CLd "/Users/aronallen/checkers copy/build/Debug/hello" normal i386
 s273604655.881398

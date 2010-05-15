@@ -18,11 +18,13 @@ int main (int argc, const char * argv[]) {
 	
 
 	int i;
-	int gamesToPlay = 1;
+	int j;
+	int gamesToPlay = 1000;
 	
 	GAME theGame;
 	GAME testGame;
 	GAME gameHistory[200];
+	
 	
 	
 	int theTime;
@@ -37,15 +39,20 @@ int main (int argc, const char * argv[]) {
 	int h;
 	int timeToSearch = 1;
 	int newPosition;
+	int blackPlyNodeLimit = 10000;
+	int whitePlyNodeLimit = 10000;
+	int plyLimit = blackPlyNodeLimit;
 	
 	
 	char difficulty;
 	char player;
-	int   ch;	
+	char startNewGame = 0;
+	int  ch;	
 
 	
 	int totalBlackPieces = 12;
 	int totalWhitePieces = 12;
+	int totalKings = 0;
 	
 	srand(time(0));
 	
@@ -54,15 +61,28 @@ int main (int argc, const char * argv[]) {
 	printf("Welcome to the 'pwn' engine.\n");
 	printf("Select your color 'b' or 'w'. (select anything else to start a computer vs. computer game)\n");
 	scanf("%c", &player);
+	
+	if (player == 'b') {
+		printf("you selected black\n");
+	}else if(player == 'w'){
+		printf("you selected white\n");
+	}else {
+		printf("you selected a computer vs. computer game\n");
+	}
+	
 	printf("\nSelect the opponents difficulty 'e' or 'h'.\n");
 	while ((ch = getchar()) != '\n' && ch != EOF);
 	scanf("%c", &difficulty);
 	
 	if(difficulty == 'h'){
-		timeToSearch = 10;
+		timeToSearch = 5;
 		printf("you selected hard\n");
+	}else {
+		printf("you selected easy\n");
 	}
-	
+
+
+
 	
 	for (i=0;i<gamesToPlay;i++){
 		
@@ -98,6 +118,13 @@ int main (int argc, const char * argv[]) {
 		turns = 0;
 		
 		while (theGame.white && theGame.black && (theGame.mjCount) && staleMateCount > 0) {
+			
+			if (theGame.turn == 'w') {
+				plyLimit = whitePlyNodeLimit;
+			}else {
+				plyLimit = blackPlyNodeLimit;
+			}
+
 		
 		
 			gameHistory[turns] = theGame;
@@ -112,22 +139,38 @@ int main (int argc, const char * argv[]) {
 		
 			//Take the best or next best move
 			if (difficulty == 'e') {
-				move = rand()%2;	
+				move = 0;	
 			}else {
 				move = 0;
 			}
 
+			
 			
 		
 			//Find best jump, and preform it.		
 			
 				
 			if (theGame.mjCount > 1) {
-				bestMJab(&theGame, timeToSearch);
+				bestMJab(&theGame, timeToSearch, plyLimit);
+				move = 0;
+				for (j = 0; j < theGame.mjCount; j++) {
+					if (theGame.mjs[0].score == theGame.mjs[j+1].score) {
+						move++;
+					}else {
+					}
+
+
+				}
+				
+				printf("%d moves of %d are	equal", move, theGame.mjCount);
+				if (move){
+					move = rand() % move;
+				}
 			}else {
 				move = 0;
 			}
 
+				
 				
 			
 			testGame = theGame;
@@ -140,8 +183,8 @@ int main (int argc, const char * argv[]) {
 			
 				for (move; move<theGame.mjCount && !newPosition; move++) {
 				
-					//Asume it is a new game state
-					newPosition = 1;
+					//Max gamestate reocurrance
+					newPosition = 3;
 				
 					//Excecute move
 					if (testGame.canJ) {
@@ -153,7 +196,7 @@ int main (int argc, const char * argv[]) {
 					//Run through history to se if position has been taken before.
 					for (h = 0; h < turns-2; h++) {
 						if (gameHistory[h].black == testGame.black && gameHistory[h].white == testGame.white && gameHistory[h].kings == testGame.kings){
-							newPosition = 0;
+							newPosition--;
 						}
 					}
 				
@@ -176,12 +219,13 @@ int main (int argc, const char * argv[]) {
 		
 		
 			//Stalemate checker
-			if (totalBlackPieces == bitsInBitboard(theGame.black) && totalWhitePieces == bitsInBitboard(theGame.white)) {
+			if (totalBlackPieces == bitsInBitboard(theGame.black) && totalWhitePieces == bitsInBitboard(theGame.white) && totalKings == bitsInBitboard(theGame.kings)) {
 				staleMateCount--;
 			}
 			else {
 				totalBlackPieces = bitsInBitboard(theGame.black);
 				totalWhitePieces = bitsInBitboard(theGame.white);
+				totalKings = bitsInBitboard(theGame.kings);
 				staleMateCount = 40;
 			}
 			
@@ -226,12 +270,16 @@ int main (int argc, const char * argv[]) {
 		//If stalemate count is reached, no one wins	
 		if (staleMateCount <= 0) {
 			theGame.turn = 'n';
+			plyLimit = whitePlyNodeLimit;
+			whitePlyNodeLimit = blackPlyNodeLimit;
+			blackPlyNodeLimit = plyLimit;
 		}
 		
 		//If black is eliminated, White wins.
 		if (theGame.black == 0) {
 			whiteWins++;
 			victoryCount++;
+			blackPlyNodeLimit -= 10;
 			theGame.turn = 'W';
 
 		} 
@@ -239,6 +287,8 @@ int main (int argc, const char * argv[]) {
 		if (theGame.white == 0) {
 			blackWins++;
 			victoryCount--;
+			whitePlyNodeLimit -= 10;
+
 			theGame.turn = 'B';
 			
 		}
@@ -249,12 +299,15 @@ int main (int argc, const char * argv[]) {
 		if (theGame.turn == 'w' ){
 			whiteWins++;
 			victoryCount++;
+			blackPlyNodeLimit -= 10;
+
 		}
 	
 		//If white has no more moves, black wins
 		if (theGame.turn == 'b' ){
 			blackWins++;
 			victoryCount--;
+			whitePlyNodeLimit -= 10;
 
 
 		}
@@ -262,7 +315,9 @@ int main (int argc, const char * argv[]) {
 		//No winner.
 		if (theGame.turn == 'n'){
 			staleWins++;
-	
+			plyLimit = whitePlyNodeLimit;
+			whitePlyNodeLimit = blackPlyNodeLimit;
+			blackPlyNodeLimit = plyLimit;
 	
 		}
 	
@@ -273,8 +328,16 @@ int main (int argc, const char * argv[]) {
 
 		printf("%d, games, whiteWins is %d, blackWins is %d, staleWins is %d, games to search: %d\n",i+1, whiteWins, blackWins, staleWins);
 		
+		printf("\n\nwhitePly: %d, blackPly %d\n", whitePlyNodeLimit, blackPlyNodeLimit);
+		/*
 		
-	
+		printf("New game 'y' or 'n'\?\n");
+		while ((ch = getchar()) != '\n' && ch != EOF);
+		scanf("%c", &startNewGame);
+		if (startNewGame == 'y') {
+			gamesToPlay++;
+		}
+		*/
 
 	}
 	theTime = time(0) - theTime;

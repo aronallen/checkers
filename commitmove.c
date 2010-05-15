@@ -14,7 +14,15 @@
 void makeMove(int moveNumber, PGAME game){	
 	if ((*game).mjCount == 0 || moveNumber > (*game).mjCount){
 		printf("error, movecount:%d passedmove%d, making random move instead\n",(*game).mjCount,moveNumber);
-		moveNumber = rand()%(*game).mjCount;
+
+		if ((*game).mjCount) {
+			moveNumber = rand()%(*game).mjCount;
+
+		}else {
+			printf("no moves\n");
+		}
+
+
 	}
 	
 	BITBOARD origin = (*game).mjs[moveNumber].intermediates[0];

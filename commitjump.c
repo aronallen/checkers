@@ -12,8 +12,14 @@
 void makeJump(int jumpNumber, PGAME game){
 	
 	if ((*game).mjCount == 0 || jumpNumber > (*game).mjCount){
-		printf("error, jumpCount:%d passedJump%d, making random jump instead\n",(*game).mjCount,jumpNumber);
-		jumpNumber = rand()%(*game).mjCount;
+		printf("error, jumpCount: %d passedJump: %d, making random jump instead\n",(*game).mjCount,jumpNumber);
+		if ((*game).mjCount) {
+			jumpNumber = rand()%(*game).mjCount;
+		}else {
+			printf("no jumps, something is really wrong\n");
+			return;
+		}
+
 	}
 	
 	if ((*game).turn == 'w'){

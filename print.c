@@ -31,16 +31,26 @@ void printGame (PGAME game){
 		if (row % 2 == 1)
 			printBlankSquare();
 		
+		
 		if ((i+1)%4 == 0){
+
 			b = b +4;
 			if (b >= 10) {
 				b = b -10;
 				a = a + 1;
 			}
 			
+			if (b!=0) {
+				printf("|%d%d",a,b-1);
+
+			}else {
+				printf("|%d%d",a,0);
+			}
+
+
+			
 			row++;
 			printf("\n");
-			
 			if (a!=3)
 				printf("%d%d|",a,b);
 		}

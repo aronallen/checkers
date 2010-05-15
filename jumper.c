@@ -265,7 +265,7 @@ void findJumpersForGame(PGAME game){
 
 	
 	if ((*game).turn != 'w' && (*game).turn !='b') {
- 		printf("ERROR ERROR ERROR wrong player, %c\n", (*game).turn );
+			printf("ERROR ERROR ERROR wrong player, %c\n", (*game).turn );
 	}
 	
 	if ((*game).turn=='w'){
