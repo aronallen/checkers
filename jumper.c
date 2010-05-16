@@ -16,7 +16,6 @@ int jumpNorthWest(PGAME game, PMJ jump){
 	BITBOARD me;
 	BITBOARD enemy;
 	BITBOARD position;
-	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_WEST_MOVE;
 	BITBOARD origin = (*jump).intermediates[0];
 	
 	
@@ -33,7 +32,7 @@ int jumpNorthWest(PGAME game, PMJ jump){
 	if (((*game).white & origin) || ((*game).black&(*game).kings&origin)){
 				
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
-		if (position & legalMove   &&   northWestRotate(position) & enemy & legalMove &&    northWestRotate(northWestRotate(position)) & (*game).notOccupied){
+		if (position & LEGAL_NORTH_WEST_MOVE   &&   northWestRotate(position) & enemy & LEGAL_NORTH_WEST_MOVE &&    northWestRotate(northWestRotate(position)) & (*game).notOccupied){
 
 //			printf("piece can jump NW \n");					
 			(*jump).intermediatePosistions ++;			
@@ -56,7 +55,6 @@ int jumpNorthEast(PGAME game, PMJ jump){
 
 	BITBOARD enemy;
 	BITBOARD position;
-	BITBOARD legalMove = LEGAL_NORTH_MOVE & LEGAL_EAST_MOVE;
 	BITBOARD origin = (*jump).intermediates[0];
 	
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
@@ -67,7 +65,7 @@ int jumpNorthEast(PGAME game, PMJ jump){
 	if (((*game).white & origin) || ((*game).black&(*game).kings&origin)){
 		
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
-		if (position & legalMove   &&   northEastRotate(position) & enemy & legalMove &&    northEastRotate(northEastRotate(position)) & (*game).notOccupied){
+		if (position & LEGAL_NORTH_EAST_MOVE   &&   northEastRotate(position) & enemy & LEGAL_NORTH_EAST_MOVE &&    northEastRotate(northEastRotate(position)) & (*game).notOccupied){
 //			printf("piece can jump NE \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = northEastRotate(northEastRotate(position));
@@ -87,7 +85,6 @@ int jumpSouthWest(PGAME game, PMJ jump){
 	
 	BITBOARD enemy;
 	BITBOARD position;
-	BITBOARD legalMove = LEGAL_SOUTH_MOVE & LEGAL_WEST_MOVE;
 	BITBOARD origin = (*jump).intermediates[0];
 	
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
@@ -98,7 +95,7 @@ int jumpSouthWest(PGAME game, PMJ jump){
 	if (((*game).black & origin || ((*game).white&(*game).kings & origin))){
 		
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
-		if (position & legalMove   &&   southWestRotate(position) & enemy & legalMove &&    southWestRotate(southWestRotate(position)) & (*game).notOccupied){
+		if (position & LEGAL_SOUTH_WEST_MOVE   &&   southWestRotate(position) & enemy & LEGAL_SOUTH_WEST_MOVE &&    southWestRotate(southWestRotate(position)) & (*game).notOccupied){
 //			printf("piece can jump SW \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = southWestRotate(southWestRotate(position));
@@ -119,7 +116,6 @@ int jumpSouthEast(PGAME game, PMJ jump){
 
 	BITBOARD enemy;
 	BITBOARD position;
-	BITBOARD legalMove = LEGAL_SOUTH_MOVE & LEGAL_EAST_MOVE;
 	BITBOARD origin = (*jump).intermediates[0];
 	
 	enemy = ((*game).turn == 'w') ?(*game).black :(*game).white;
@@ -128,7 +124,7 @@ int jumpSouthEast(PGAME game, PMJ jump){
 	
 	if (((*game).black & origin) || ((*game).white&(*game).kings&origin)){
 		//Cecks if the selected piece can move NW once | checks if the NW field is occupied ny an enemy, and NW is legal from there, and that it is not jumped already | checks if landing spot is empty.
-		if (position & legalMove   &&   southEastRotate(position) & enemy & legalMove &&  southEastRotate(southEastRotate(position)) & (*game).notOccupied){
+		if (position & LEGAL_SOUTH_EAST_MOVE   &&   southEastRotate(position) & enemy & LEGAL_SOUTH_EAST_MOVE &&  southEastRotate(southEastRotate(position)) & (*game).notOccupied){
 //			printf("piece can jump SE \n");					
 			(*jump).intermediatePosistions ++;			
 			(*jump).intermediates[(*jump).intermediatePosistions] = southEastRotate(southEastRotate(position));

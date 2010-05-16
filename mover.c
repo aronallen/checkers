@@ -20,7 +20,7 @@ BITBOARD moveNorthWest(PGAME game, BITBOARD piece){
 		return move;
 	}
 
-	if (piece & LEGAL_NORTH_MOVE & LEGAL_WEST_MOVE){
+	if (piece & LEGAL_NORTH_WEST_MOVE){
 
 		if ((((*game).white & piece) || ((*game).black&piece&(*game).kings)) && (northWestRotate(piece) & (*game).notOccupied)){
 			
@@ -43,7 +43,7 @@ BITBOARD moveNorthEast(PGAME game, BITBOARD piece){
 		return 0;
 	}
 	
-	if (piece & LEGAL_NORTH_MOVE & LEGAL_EAST_MOVE){
+	if (piece & LEGAL_NORTH_EAST_MOVE){
 		
 		if ((((*game).white & piece) || ((*game).black & (*game).kings & piece)) && (northEastRotate(piece) & (*game).notOccupied)){
 			
@@ -62,7 +62,7 @@ BITBOARD moveSouthWest(PGAME game, BITBOARD piece){
 		return 0;
 	}
 	
-	if (piece & LEGAL_SOUTH_MOVE & LEGAL_WEST_MOVE){
+	if (piece & LEGAL_SOUTH_WEST_MOVE){
 		
 		if ((((*game).black & piece) || ((*game).white & (*game).kings & piece)) && (southWestRotate(piece) & (*game).notOccupied)){
 			
@@ -83,7 +83,7 @@ BITBOARD moveSouthEast(PGAME game, BITBOARD piece){
 		return 0;
 	}
 	
-	if (piece & LEGAL_SOUTH_MOVE & LEGAL_EAST_MOVE){
+	if (piece & LEGAL_SOUTH_EAST_MOVE){
 		
 		if ((((*game).black & piece) || ((*game).white & (*game).kings & piece)) && (southEastRotate(piece) & (*game).notOccupied)){
 			move = southEastRotate(piece);

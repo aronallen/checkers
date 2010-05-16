@@ -20,7 +20,7 @@
  ###################################
    11  05  31  25     00  01  02  03 
  10  04  30  24     04  05  06  07 
-   03  29  23  17	  08  09  10  11
+   03  29  23  17	     08  09  10  11
  02  28  22  16     12  13  14  15
    27  21  15  09     16  17  18  19
  26  20  14  08     20  21  22  23
@@ -36,10 +36,17 @@
 #define MAX_MOVES_GAME 300
 #define MAX_INTERMEDIATES 12
 
-static const BITBOARD LEGAL_NORTH_MOVE = ~(0x82000820);
-static const BITBOARD LEGAL_SOUTH_MOVE = ~(0x00041041);
-static const BITBOARD LEGAL_EAST_MOVE  = ~(0x02020202);
-static const BITBOARD LEGAL_WEST_MOVE  = ~(0x04040404);
+//Four Directions
+#define LEGAL_NORTH_MOVE  ~(0x82000820)
+#define LEGAL_SOUTH_MOVE  ~(0x00041041)
+#define LEGAL_EAST_MOVE   ~(0x02020202)
+#define LEGAL_WEST_MOVE   ~(0x04040404)
+
+//Four Diagonals
+#define LEGAL_NORTH_WEST_MOVE ~(0x86040C24)
+#define LEGAL_NORTH_EAST_MOVE ~(0x82020A22)
+#define LEGAL_SOUTH_WEST_MOVE ~(0x04041445)
+#define LEGAL_SOUTH_EAST_MOVE ~(0x02061243)
 
 //BitMaskArray used for locating bits on BITBOARD
 static const BITBOARD bitboardForRealPosition[32] = {
