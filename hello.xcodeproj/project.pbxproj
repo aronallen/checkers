@@ -11,6 +11,7 @@
 		65369CA81025A01D005CDDB2 /* positions.c in Sources */ = {isa = PBXBuildFile; fileRef = 65369CA71025A01D005CDDB2 /* positions.c */; };
 		655AA3C21094739E0007AB5A /* commitjump.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA3C11094739E0007AB5A /* commitjump.c */; };
 		655AA58E109507540007AB5A /* aisearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA58D109507540007AB5A /* aisearch.c */; };
+		655B18F7135C406000B4E9A3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B18F6135C406000B4E9A3 /* CoreFoundation.framework */; };
 		65ABBD5610AA9F1F004B10BD /* aialpabeta.c in Sources */ = {isa = PBXBuildFile; fileRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */; };
 		65B8A1601021AC7B008BA05A /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A15F1021AC7B008BA05A /* print.c */; };
 		65B8A2941021B956008BA05A /* mover.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A2931021B956008BA05A /* mover.c */; };
@@ -43,6 +44,7 @@
 		655AA3C11094739E0007AB5A /* commitjump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commitjump.c; sourceTree = "<group>"; };
 		655AA58C109507540007AB5A /* aisearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aisearch.h; sourceTree = "<group>"; };
 		655AA58D109507540007AB5A /* aisearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aisearch.c; sourceTree = "<group>"; };
+		655B18F6135C406000B4E9A3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
 		65ABBD5410AA9F1F004B10BD /* aialpabeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aialpabeta.h; sourceTree = "<group>"; };
 		65ABBD5510AA9F1F004B10BD /* aialpabeta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aialpabeta.c; sourceTree = "<group>"; };
 		65B8A15E1021AC7B008BA05A /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655B18F7135C406000B4E9A3 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		08FB7794FE84155DC02AAC07 /* hello */ = {
 			isa = PBXGroup;
 			children = (
+				655B18F6135C406000B4E9A3 /* CoreFoundation.framework */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -190,7 +194,11 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "hello" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* hello */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,7 +234,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -240,6 +248,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;
@@ -250,26 +260,28 @@
 		1DEB928A08733DD80010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		1DEB928B08733DD80010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
