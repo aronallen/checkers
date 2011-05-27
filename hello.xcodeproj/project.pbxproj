@@ -10,8 +10,8 @@
 		651CA278102340B6001C558B /* jumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 651CA277102340B6001C558B /* jumper.c */; };
 		65369CA81025A01D005CDDB2 /* positions.c in Sources */ = {isa = PBXBuildFile; fileRef = 65369CA71025A01D005CDDB2 /* positions.c */; };
 		655AA3C21094739E0007AB5A /* commitjump.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA3C11094739E0007AB5A /* commitjump.c */; };
-		655AA58E109507540007AB5A /* aisearch.c in Sources */ = {isa = PBXBuildFile; fileRef = 655AA58D109507540007AB5A /* aisearch.c */; };
 		655B18F7135C406000B4E9A3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655B18F6135C406000B4E9A3 /* CoreFoundation.framework */; };
+		65A933EA135C92CA0041088D /* alphabeta.c in Sources */ = {isa = PBXBuildFile; fileRef = 65A933E8135C92CA0041088D /* alphabeta.c */; };
 		65ABBD5610AA9F1F004B10BD /* aialpabeta.c in Sources */ = {isa = PBXBuildFile; fileRef = 65ABBD5510AA9F1F004B10BD /* aialpabeta.c */; };
 		65B8A1601021AC7B008BA05A /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A15F1021AC7B008BA05A /* print.c */; };
 		65B8A2941021B956008BA05A /* mover.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B8A2931021B956008BA05A /* mover.c */; };
@@ -42,9 +42,9 @@
 		65369CA71025A01D005CDDB2 /* positions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = positions.c; sourceTree = "<group>"; };
 		655AA3C01094739E0007AB5A /* commitjump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commitjump.h; sourceTree = "<group>"; };
 		655AA3C11094739E0007AB5A /* commitjump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commitjump.c; sourceTree = "<group>"; };
-		655AA58C109507540007AB5A /* aisearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aisearch.h; sourceTree = "<group>"; };
-		655AA58D109507540007AB5A /* aisearch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aisearch.c; sourceTree = "<group>"; };
 		655B18F6135C406000B4E9A3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<group>"; };
+		65A933E8135C92CA0041088D /* alphabeta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alphabeta.c; sourceTree = "<group>"; };
+		65A933E9135C92CA0041088D /* alphabeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alphabeta.h; sourceTree = "<group>"; };
 		65ABBD5410AA9F1F004B10BD /* aialpabeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aialpabeta.h; sourceTree = "<group>"; };
 		65ABBD5510AA9F1F004B10BD /* aialpabeta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aialpabeta.c; sourceTree = "<group>"; };
 		65B8A15E1021AC7B008BA05A /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
@@ -150,8 +150,8 @@
 		65ABBD5B10AA9F86004B10BD /* AI */ = {
 			isa = PBXGroup;
 			children = (
-				655AA58C109507540007AB5A /* aisearch.h */,
-				655AA58D109507540007AB5A /* aisearch.c */,
+				65A933E9135C92CA0041088D /* alphabeta.h */,
+				65A933E8135C92CA0041088D /* alphabeta.c */,
 				65ABBD5410AA9F1F004B10BD /* aialpabeta.h */,
 				65ABBD5510AA9F1F004B10BD /* aialpabeta.c */,
 			);
@@ -221,8 +221,8 @@
 				651CA278102340B6001C558B /* jumper.c in Sources */,
 				65369CA81025A01D005CDDB2 /* positions.c in Sources */,
 				655AA3C21094739E0007AB5A /* commitjump.c in Sources */,
-				655AA58E109507540007AB5A /* aisearch.c in Sources */,
 				65ABBD5610AA9F1F004B10BD /* aialpabeta.c in Sources */,
+				65A933EA135C92CA0041088D /* alphabeta.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

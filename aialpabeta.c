@@ -435,39 +435,7 @@ int scoreCompare(const void *a, const void *b){
 }
 
 
-GAME heavyGameFromLightGame(LIGHTGAME lg){
-	GAME hg;
 
-	hg.black = lg.black;
-	hg.white = lg.white;
-	hg.kings = lg.kings;
-	hg.turn = lg.turn;
-	hg.score = lg.score;
-	hg.notOccupied = ~(lg.black|lg.white);
-	hg.canJ = 0;
-	hg.mjCount = 0;
-	hg.parrentGame = lg.parrentGame;
-	hg.blackPieces.piecesCount = bitsInBitboard(hg.black);
-	hg.whitePieces.piecesCount = bitsInBitboard(hg.white);
-	piecesInGameForActivePlayer(&hg);
-	
-	return hg;
-}
-
-LIGHTGAME lightGameFromHeavyGame(GAME hg){
-
-	LIGHTGAME lg;
-	
-	lg.parrentGame = hg.parrentGame;
-	
-	lg.black = hg.black;
-	lg.white = hg.white;
-	lg.kings = hg.kings;
-	lg.turn = hg.turn;
-	lg.score = hg.score;
-
-	return lg;
-}
 
 
 

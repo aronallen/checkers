@@ -11,4 +11,3 @@
 
 
 int bestMJ(PGAME game, PGAMESESSION winsDatabase, int winsDatabaseSessionCounter);
-

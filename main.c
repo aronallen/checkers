@@ -5,13 +5,11 @@
 #include "print.h"
 #include "mover.h"
 #include "bitops.h"
+#include <string.h>
 #include "positions.h"
 #include "commitmove.h"
 #include "jumper.h"
 #include "commitjump.h"
-#include "aialpabeta.h"
-#include "aisearch.h"
-
 
 
 int main (int argc, const char * argv[]) {
@@ -148,24 +146,13 @@ int main (int argc, const char * argv[]) {
 			
 		
 			//Find best jump, and preform it.		
-			
 				
 			if (theGame.mjCount > 1) {
-				bestMJab(&theGame, timeToSearch, plyLimit);
-				move = 0;
-				for (j = 0; j < theGame.mjCount; j++) {
-					if (theGame.mjs[0].score == theGame.mjs[j+1].score) {
-						move++;
-					}else {
-					}
+                if(theGame.turn == 'w')
+				move = bestMJalt(&theGame, &theGame, 6, 2, 0);
+                else
+                move = bestMJalt(&theGame, &theGame, 6, 2, 0);				
 
-
-				}
-				
-				printf("%d moves of %d are	equal", move, theGame.mjCount);
-				if (move){
-					move = rand() % move;
-				}
 			}else {
 				move = 0;
 			}
@@ -177,35 +164,13 @@ int main (int argc, const char * argv[]) {
 			
 			newPosition = 0;
 			
-			//Check if gamestate has been there before.
-			if ((turns-2)>1) {
-				
-			
-				for (move; move<theGame.mjCount && !newPosition; move++) {
-				
-					//Max gamestate reocurrance
-					newPosition = 3;
-				
-					//Excecute move
-					if (testGame.canJ) {
-						makeJump(move, &testGame);
-					}else{
-						makeMove(move, &testGame);
-					}
-				
-					//Run through history to se if position has been taken before.
-					for (h = 0; h < turns-2; h++) {
-						if (gameHistory[h].black == testGame.black && gameHistory[h].white == testGame.white && gameHistory[h].kings == testGame.kings){
-							newPosition--;
-						}
-					}
-				
-					//Compensate for loop increment, if it is a new position
-					if (newPosition) {
-						move--;
-					}
-				}
-			}
+            //Excecute move
+            if (testGame.canJ) {
+                makeJump(move, &testGame);
+            }else{
+                makeMove(move, &testGame);
+            }
+                
 			}else{
 				move = askPlayerForMove(&theGame);
 			}
